@@ -19,13 +19,7 @@ const Index = () => {
           <div className="text-center">
             {/* Enhanced Authority Badge */}
             <div className="flex items-center justify-center mb-8">
-              <Badge className="glass-card text-green-700 px-8 py-4 text-base font-bold rounded-full premium-shadow border-0 hover:scale-105 transition-all duration-300">
-                <Award className="w-5 h-5 mr-3 text-green-600" />
-                <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
-                  Metodologia #1 entre candidatos da OAB
-                </span>
-                <Sparkles className="w-4 h-4 ml-2 text-green-500" />
-              </Badge>
+              
             </div>
 
             {/* Premium Headline */}
@@ -67,7 +61,7 @@ const Index = () => {
               <Button size="lg" className="bg-future-blue hover:bg-blue-600 text-white px-12 py-8 text-2xl font-bold rounded-2xl premium-shadow hover-lift border-0 group relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <TrendingUp className="mr-4 w-7 h-7 relative z-10" />
-                <span className="relative z-10">GARANTIR MINHA VAGA AGORA</span>
+                <span className="relative z-10">QUERO COMPRAR AGORA!</span>
                 <ArrowRight className="ml-4 w-7 h-7 relative z-10 group-hover:translate-x-1 transition-transform" />
               </Button>
               
