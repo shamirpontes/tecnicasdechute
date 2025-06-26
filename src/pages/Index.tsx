@@ -54,8 +54,8 @@ const Index = () => {
             <div className="flex flex-col items-center gap-6 mb-12 animate-slide-up" style={{
               animationDelay: '0.8s'
             }}>
-              <Button size="lg" className="bg-crimson-primary hover:bg-crimson-secondary text-white px-12 py-8 text-2xl font-bold rounded-2xl cinematic-shadow hover-lift border-0 group relative overflow-hidden colored-shadow-red">
-                <div className="absolute inset-0 bg-gradient-to-r from-rose-accent to-crimson-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-12 py-8 text-2xl font-bold rounded-2xl cinematic-shadow hover-lift border-0 group relative overflow-hidden colored-shadow-navy">
+                <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <TrendingUp className="mr-4 w-7 h-7 relative z-10" />
                 <span className="relative z-10">QUERO COMPLETAR MINHA PREPARAÇÃO!</span>
                 <ArrowRight className="ml-4 w-7 h-7 relative z-10 group-hover:translate-x-1 transition-transform" />
