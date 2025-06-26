@@ -90,14 +90,7 @@ const Index = () => {
             animationDelay: `${1 + index * 0.2}s`
           }}>
                 <div className={`absolute inset-0 bg-gradient-to-br ${stat.bgGradient} opacity-0 group-hover:opacity-30 transition-opacity duration-500`}></div>
-                <CardContent className="p-8 text-center relative z-10 bg-slate-950">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${stat.gradient} rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 soft-glow animate-float`}>
-                    <stat.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <div className="text-4xl font-black text-white mb-2 font-poppins">{stat.number}</div>
-                  <div className="text-lg font-bold text-white/90 mb-1">{stat.label}</div>
-                  <div className="text-sm text-white/70 font-medium">{stat.sublabel}</div>
-                </CardContent>
+                
               </Card>)}
           </div>
         </div>
