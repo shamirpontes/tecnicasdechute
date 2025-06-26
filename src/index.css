@@ -85,14 +85,31 @@
 
   body {
     @apply bg-background text-foreground font-inter;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
   }
 }
 
 @layer components {
   .glass-effect {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
   }
 
   .cyber-border {
@@ -102,10 +119,22 @@
                 linear-gradient(135deg, #06b6d4, #6366f1, #8b5cf6) border-box;
   }
 
+  .premium-border {
+    position: relative;
+    border: 1px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(6, 182, 212, 0.3)) border-box;
+  }
+
   .neon-glow {
     box-shadow: 0 0 20px rgba(99, 102, 241, 0.3),
                 0 0 40px rgba(99, 102, 241, 0.2),
                 0 0 60px rgba(99, 102, 241, 0.1);
+  }
+
+  .soft-glow {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.15),
+                0 0 40px rgba(99, 102, 241, 0.1);
   }
 
   .text-gradient {
@@ -113,5 +142,31 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  .text-gradient-premium {
+    background: linear-gradient(135deg, #0066FF 0%, #6366F1 50%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .premium-shadow {
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.08),
+                0 4px 25px -5px rgba(0, 0, 0, 0.05);
+  }
+
+  .hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px -10px rgba(0, 0, 0, 0.15);
+  }
+
+  .pattern-dots {
+    background-image: radial-gradient(circle at 1px 1px, rgba(99, 102, 241, 0.1) 1px, transparent 0);
+    background-size: 20px 20px;
   }
 }
