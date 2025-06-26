@@ -261,7 +261,7 @@ const Index = () => {
             
             <h2 className="text-5xl md:text-7xl font-black font-poppins mb-4 text-gray-900 leading-tight">
               <span className="block text-red-600">Última Oportunidade</span>
-              <span className="block text-gradient-premium mt-2">de Entrar com Desconto Exclusivo!</span>
+              <span className="block text-gradient-premium mt-2">Técnicas de Chute Inteligentes para OAB e Consursos</span>
             </h2>
           </div>
 
