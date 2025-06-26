@@ -276,13 +276,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto text-center relative z-10">
           {/* Emotional headline with urgency */}
           <div className="mb-8">
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <Timer className="w-8 h-8 text-red-500 animate-pulse" />
-              <Badge className="bg-red-500 text-white px-6 py-3 text-lg font-bold rounded-full animate-bounce">
-                ÚLTIMAS HORAS
-              </Badge>
-              <Timer className="w-8 h-8 text-red-500 animate-pulse" />
-            </div>
+            
             
             <h2 className="text-5xl md:text-7xl font-black font-poppins mb-4 text-gray-900 leading-tight">
               <span className="block text-red-600">Última Oportunidade</span>
@@ -407,14 +401,8 @@ const Index = () => {
 
           {/* Additional urgency reinforcement */}
           <div className="mt-12 flex items-center justify-center gap-4">
-            <div className="flex items-center gap-2 glass-card px-6 py-3 rounded-full bg-red-50/50 border-red-200">
-              <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-              <span className="text-gray-700 font-semibold">247 pessoas visualizando esta oferta</span>
-            </div>
-            <div className="flex items-center gap-2 glass-card px-6 py-3 rounded-full bg-green-50/50 border-green-200">
-              <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-gray-700 font-semibold">18 vagas vendidas nas últimas 2 horas</span>
-            </div>
+            
+            
           </div>
         </div>
       </section>
