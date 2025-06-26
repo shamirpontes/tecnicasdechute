@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -67,12 +68,25 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
+				// Navy palette inspired by the reference image
+				navy: {
+					primary: 'hsl(var(--navy-primary))',
+					secondary: 'hsl(var(--navy-secondary))',
+					accent: 'hsl(var(--navy-accent))',
+				},
+				crimson: {
+					primary: 'hsl(var(--red-primary))',
+					secondary: 'hsl(var(--red-secondary))',
+				},
+				rose: {
+					accent: 'hsl(var(--pink-accent))',
+				},
 				future: {
-					blue: '#2563eb',
-					purple: '#6366F1',
-					cyan: '#06B6D4',
-					teal: '#14B8A6',
-					emerald: '#10B981',
+					blue: '#1e3a8a',
+					purple: '#dc2626',
+					cyan: '#e11d48',
+					teal: '#be123c',
+					emerald: '#881337',
 				}
 			},
 			borderRadius: {
@@ -102,16 +116,16 @@ export default {
 					'50%': { transform: 'translateY(-6px)' }
 				},
 				'glow': {
-					'0%, 100%': { boxShadow: '0 0 15px rgba(37, 99, 235, 0.2)' },
-					'50%': { boxShadow: '0 0 25px rgba(37, 99, 235, 0.4)' }
+					'0%, 100%': { boxShadow: '0 0 15px hsl(var(--red-primary) / 0.4)' },
+					'50%': { boxShadow: '0 0 25px hsl(var(--red-primary) / 0.6)' }
 				},
 				'pulse-glow': {
 					'0%, 100%': { 
-						boxShadow: '0 0 15px rgba(99, 102, 241, 0.3)',
+						boxShadow: '0 0 15px hsl(var(--red-primary) / 0.5)',
 						transform: 'scale(1)'
 					},
 					'50%': { 
-						boxShadow: '0 0 30px rgba(99, 102, 241, 0.5)',
+						boxShadow: '0 0 30px hsl(var(--red-primary) / 0.7)',
 						transform: 'scale(1.01)'
 					}
 				},
@@ -151,25 +165,25 @@ export default {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-				'future-gradient': 'linear-gradient(135deg, #3b82f6 0%, #6366f1 100%)',
-				'cyber-gradient': 'linear-gradient(90deg, #06b6d4 0%, #3b82f6 50%, #6366f1 100%)',
-				'glass-gradient': 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)',
-				'atmospheric-gradient': 'linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(6, 182, 212, 0.05) 25%, rgba(16, 185, 129, 0.05) 50%, rgba(99, 102, 241, 0.05) 75%, rgba(37, 99, 235, 0.05) 100%)'
+				'navy-gradient': 'linear-gradient(135deg, hsl(var(--navy-primary)) 0%, hsl(var(--navy-secondary)) 100%)',
+				'red-gradient': 'linear-gradient(90deg, hsl(var(--red-primary)) 0%, hsl(var(--pink-accent)) 100%)',
+				'glass-gradient': 'linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.05) 100%)',
+				'atmospheric-gradient': 'linear-gradient(135deg, hsl(var(--navy-primary) / 0.8) 0%, hsl(var(--navy-secondary) / 0.6) 25%, hsl(var(--navy-accent) / 0.4) 50%, hsl(var(--red-primary) / 0.1) 75%, hsl(var(--pink-accent) / 0.1) 100%)'
 			},
 			backdropBlur: {
 				xs: '2px',
 			},
 			boxShadow: {
-				'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.2)',
-				'premium': '0 20px 60px -20px rgba(0, 0, 0, 0.08)',
-				'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
-				'glow-blue': '0 0 20px rgba(37, 99, 235, 0.2)',
-				'glow-purple': '0 0 20px rgba(99, 102, 241, 0.2)',
-				'glow-green': '0 0 20px rgba(34, 197, 94, 0.2)',
-				'cinematic': '0 4px 12px -2px rgba(0, 0, 0, 0.05), 0 8px 24px -4px rgba(0, 0, 0, 0.04), 0 16px 48px -8px rgba(0, 0, 0, 0.03)',
-				'colored-blue': '0 8px 32px -8px rgba(37, 99, 235, 0.15), 0 4px 16px -4px rgba(37, 99, 235, 0.1)',
-				'colored-purple': '0 8px 32px -8px rgba(99, 102, 241, 0.15), 0 4px 16px -4px rgba(99, 102, 241, 0.1)',
-				'colored-green': '0 8px 32px -8px rgba(34, 197, 94, 0.15), 0 4px 16px -4px rgba(34, 197, 94, 0.1)'
+				'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.4)',
+				'premium': '0 20px 60px -20px rgba(0, 0, 0, 0.3)',
+				'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.2)',
+				'glow-red': '0 0 20px hsl(var(--red-primary) / 0.4)',
+				'glow-pink': '0 0 20px hsl(var(--pink-accent) / 0.4)',
+				'glow-navy': '0 0 20px hsl(var(--navy-accent) / 0.4)',
+				'cinematic': '0 4px 12px -2px rgba(0, 0, 0, 0.3), 0 8px 24px -4px rgba(0, 0, 0, 0.2), 0 16px 48px -8px rgba(0, 0, 0, 0.1)',
+				'colored-red': '0 8px 32px -8px hsl(var(--red-primary) / 0.4), 0 4px 16px -4px hsl(var(--red-primary) / 0.3)',
+				'colored-pink': '0 8px 32px -8px hsl(var(--pink-accent) / 0.4), 0 4px 16px -4px hsl(var(--pink-accent) / 0.3)',
+				'colored-navy': '0 8px 32px -8px hsl(var(--navy-accent) / 0.4), 0 4px 16px -4px hsl(var(--navy-accent) / 0.3)'
 			}
 		}
 	},
