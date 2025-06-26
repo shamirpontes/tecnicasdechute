@@ -262,7 +262,7 @@ const Index = () => {
 
           <div className="max-w-4xl mx-auto">
             <Card className="glass-card border-0 cinematic-shadow hover-lift overflow-hidden relative color-bleed">
-              <CardContent className="relative z-10 p-12 text-center bg-slate-900">
+              <CardContent className="relative z-10 p-12 text-center bg-slate-950">
                 <div className="mb-12">
                   <p className="text-xl text-white mb-6">
                     Esse material + bônus normalmente custa <span className="text-crimson-primary font-bold">R$ 600</span>
