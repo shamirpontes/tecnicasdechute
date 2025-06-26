@@ -310,11 +310,9 @@ const Index = () => {
 
           {/* Scarcity badge */}
           <div className="flex items-center justify-center gap-3 mb-12">
-            <AlertCircle className="w-6 h-6 text-orange-500" />
-            <Badge variant="outline" className="bg-orange-100 border-orange-300 text-orange-800 px-8 py-4 text-xl font-bold rounded-full animate-pulse">
-              🔥 Apenas 100 vagas — e correndo rápido!
-            </Badge>
-            <AlertCircle className="w-6 h-6 text-orange-500" />
+            
+            
+            
           </div>
 
           {/* Main offer card */}
