@@ -257,7 +257,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <h2 className="text-4xl md:text-6xl font-black font-poppins mb-8 text-white leading-tight">
             <span className="block text-crimson-primary">Oferta Exclusiva</span>
-            <span className="block text-gradient-premium mt-2 animate-gradient-shift">com Ancoragem</span>
+            <span className="block text-gradient-premium mt-2 animate-gradient-shift"></span>
           </h2>
 
           <div className="max-w-4xl mx-auto">
