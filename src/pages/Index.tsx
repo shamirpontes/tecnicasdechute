@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -229,9 +228,20 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Seção Depoimentos - Navy Theme */}
-      <section className="py-24 px-4 relative z-10">
-        <div className="max-w-7xl mx-auto">
+      {/* Seção Depoimentos - Navy Theme com Ambiência 3D */}
+      <section className="py-24 px-4 relative z-10 overflow-hidden">
+        {/* Fundo Atmosférico 3D para Depoimentos */}
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-navy-primary/90 via-navy-secondary/80 to-navy-accent/70"></div>
+          <div className="absolute inset-0 pattern-dots opacity-15"></div>
+          <div className="absolute top-1/4 left-1/6 w-64 h-64 bg-gradient-to-r from-crimson-primary/25 to-rose-accent/20 rounded-full blur-2xl animate-ambient-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/6 w-80 h-80 bg-gradient-to-r from-rose-accent/20 to-crimson-secondary/15 rounded-full blur-3xl animate-breathing" style={{
+            animationDelay: '2s'
+          }}></div>
+          <div className="absolute top-0 right-1/3 w-48 h-48 bg-gradient-to-r from-navy-accent/30 to-crimson-primary/15 rounded-full blur-2xl animate-rim-light"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
           <h2 className="text-5xl md:text-6xl font-black font-poppins text-center mb-16 text-white">
             Veja como as <span className="text-gradient-premium animate-gradient-shift">técnicas</span> foram decisivas
           </h2>
@@ -256,16 +266,21 @@ const Index = () => {
                 rating: 5
               }
             ].map((testimonial, index) => (
-              <Card key={index} className="glass-card hover-lift border-0 cinematic-shadow group color-bleed">
-                <CardContent className="p-8">
+              <Card key={index} className="glass-card hover-lift border-0 cinematic-shadow group color-bleed relative overflow-hidden">
+                {/* Efeito 3D interno */}
+                <div className="absolute inset-0 bg-gradient-to-br from-navy-accent/20 via-transparent to-crimson-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                <CardContent className="p-8 relative z-10">
                   <div className="flex items-center gap-1 mb-6">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-6 h-6 fill-yellow-500 text-yellow-500" />
+                      <Star key={i} className="w-6 h-6 fill-yellow-500 text-yellow-500 animate-float" style={{
+                        animationDelay: `${i * 0.1}s`
+                      }} />
                     ))}
                   </div>
                   <p className="text-white/90 mb-8 leading-relaxed text-lg font-medium italic">"{testimonial.text}"</p>
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-crimson-primary to-rose-accent rounded-full flex items-center justify-center soft-glow">
+                    <div className="w-12 h-12 bg-gradient-to-br from-crimson-primary to-rose-accent rounded-full flex items-center justify-center soft-glow animate-pulse-glow">
                       <span className="text-white font-bold text-lg">{testimonial.name.charAt(0)}</span>
                     </div>
                     <div>
@@ -280,14 +295,23 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Seção Urgência - Navy/Red Theme */}
-      <section className="py-32 px-4 bg-gradient-to-br from-crimson-primary/30 via-navy-secondary/60 to-rose-accent/20 relative overflow-hidden z-10">
+      {/* Seção Urgência - Navy/Red Theme com Ambiência 3D Melhorada */}
+      <section className="py-32 px-4 relative overflow-hidden z-10">
+        {/* Fundo Atmosférico 3D Aprimorado */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-crimson-primary/20 via-navy-accent/40 to-rose-accent/10"></div>
-          <div className="absolute inset-0 pattern-mesh opacity-15"></div>
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-r from-crimson-primary/30 to-rose-accent/20 rounded-full blur-3xl animate-ambient-pulse"></div>
-          <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-to-r from-rose-accent/25 to-crimson-secondary/15 rounded-full blur-3xl animate-breathing" style={{
+          <div className="absolute inset-0 bg-gradient-to-br from-navy-primary/95 via-navy-secondary/85 to-navy-accent/75"></div>
+          <div className="absolute inset-0 pattern-mesh opacity-20"></div>
+          
+          {/* Elementos 3D Flutuantes */}
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-r from-crimson-primary/30 to-rose-accent/25 rounded-full blur-3xl animate-ambient-pulse"></div>
+          <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-to-r from-rose-accent/25 to-crimson-secondary/20 rounded-full blur-3xl animate-breathing" style={{
             animationDelay: '1s'
+          }}></div>
+          <div className="absolute top-1/2 left-0 w-72 h-72 bg-gradient-to-r from-navy-accent/25 to-crimson-primary/15 rounded-full blur-3xl animate-rim-light" style={{
+            animationDelay: '3s'
+          }}></div>
+          <div className="absolute top-1/3 right-0 w-64 h-64 bg-gradient-to-r from-crimson-primary/20 to-rose-accent/15 rounded-full blur-2xl animate-ambient-pulse" style={{
+            animationDelay: '2s'
           }}></div>
         </div>
 
@@ -301,25 +325,32 @@ const Index = () => {
 
           {/* Contador Navy Theme */}
           <div className="flex items-center justify-center gap-4 mb-8">
-            <div className="glass-card bg-crimson-primary/20 border border-crimson-primary/30 px-6 py-4 rounded-2xl cinematic-shadow">
+            <div className="glass-card bg-crimson-primary/20 border border-crimson-primary/30 px-6 py-4 rounded-2xl cinematic-shadow animate-pulse-glow">
               <div className="text-3xl font-black text-crimson-primary">23</div>
               <div className="text-sm font-bold text-white">HORAS</div>
             </div>
             <div className="text-2xl font-bold text-crimson-primary animate-pulse">:</div>
-            <div className="glass-card bg-crimson-primary/20 border border-crimson-primary/30 px-6 py-4 rounded-2xl cinematic-shadow">
+            <div className="glass-card bg-crimson-primary/20 border border-crimson-primary/30 px-6 py-4 rounded-2xl cinematic-shadow animate-pulse-glow" style={{
+              animationDelay: '0.5s'
+            }}>
               <div className="text-3xl font-black text-crimson-primary">47</div>
               <div className="text-sm font-bold text-white">MINUTOS</div>
             </div>
             <div className="text-2xl font-bold text-crimson-primary animate-pulse">:</div>
-            <div className="glass-card bg-crimson-primary/20 border border-crimson-primary/30 px-6 py-4 rounded-2xl cinematic-shadow">
+            <div className="glass-card bg-crimson-primary/20 border border-crimson-primary/30 px-6 py-4 rounded-2xl cinematic-shadow animate-pulse-glow" style={{
+              animationDelay: '1s'
+            }}>
               <div className="text-3xl font-black text-crimson-primary">33</div>
               <div className="text-sm font-bold text-white">SEGUNDOS</div>
             </div>
           </div>
 
-          {/* Card da Oferta Principal Navy Theme */}
+          {/* Card da Oferta Principal Navy Theme com Ambiência 3D */}
           <div className="max-w-4xl mx-auto">
-            <Card className="glass-card border-0 cinematic-shadow hover-lift overflow-hidden relative color-bleed">
+            <Card className="glass-card border-0 cinematic-shadow hover-lift overflow-hidden relative color-bleed group">
+              {/* Efeito 3D Interno */}
+              <div className="absolute inset-0 bg-gradient-to-br from-navy-accent/15 via-transparent to-crimson-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              
               <CardContent className="relative z-10 p-12 text-center">
                 {/* Seção de Preços */}
                 <div className="mb-12">
@@ -337,7 +368,7 @@ const Index = () => {
                       R$ 197
                     </div>
                     <div className="flex items-center justify-center gap-4 mb-4">
-                      <Badge className="bg-gradient-to-r from-crimson-primary to-rose-accent text-white px-6 py-3 text-xl font-bold rounded-full cinematic-shadow">
+                      <Badge className="bg-gradient-to-r from-crimson-primary to-rose-accent text-white px-6 py-3 text-xl font-bold rounded-full cinematic-shadow animate-float">
                         60% DE DESCONTO
                       </Badge>
                       <Badge className="bg-gradient-to-r from-rose-accent to-crimson-secondary text-white px-6 py-3 text-xl font-bold rounded-full cinematic-shadow animate-pulse">
@@ -351,11 +382,11 @@ const Index = () => {
                   </p>
                 </div>
 
-                {/* Benefícios Navy Theme */}
+                {/* Benefícios Navy Theme com Efeitos 3D */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                  <div className="flex items-center gap-4 glass-card p-6 rounded-2xl bg-green-900/20 color-bleed">
-                    <div className="w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl flex items-center justify-center soft-glow">
-                      <Heart className="w-6 h-6 text-white" />
+                  <div className="flex items-center gap-4 glass-card p-6 rounded-2xl bg-green-900/20 color-bleed hover-lift group">
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl flex items-center justify-center soft-glow animate-float">
+                      <Heart className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
                     </div>
                     <div className="text-left">
                       <div className="font-bold text-white">Acesso Vitalício</div>
@@ -363,9 +394,11 @@ const Index = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-4 glass-card p-6 rounded-2xl bg-blue-900/20 color-bleed">
-                    <div className="w-12 h-12 bg-gradient-to-br from-navy-accent to-crimson-primary rounded-2xl flex items-center justify-center soft-glow">
-                      <Shield className="w-6 h-6 text-white" />
+                  <div className="flex items-center gap-4 glass-card p-6 rounded-2xl bg-navy-accent/20 color-bleed hover-lift group">
+                    <div className="w-12 h-12 bg-gradient-to-br from-navy-accent to-crimson-primary rounded-2xl flex items-center justify-center soft-glow animate-float" style={{
+                      animationDelay: '0.5s'
+                    }}>
+                      <Shield className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
                     </div>
                     <div className="text-left">
                       <div className="font-bold text-white">Garantia 30 Dias</div>
@@ -373,9 +406,11 @@ const Index = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-4 glass-card p-6 rounded-2xl bg-red-900/20 color-bleed">
-                    <div className="w-12 h-12 bg-gradient-to-br from-crimson-primary to-rose-accent rounded-2xl flex items-center justify-center soft-glow">
-                      <Award className="w-6 h-6 text-white" />
+                  <div className="flex items-center gap-4 glass-card p-6 rounded-2xl bg-crimson-primary/20 color-bleed hover-lift group">
+                    <div className="w-12 h-12 bg-gradient-to-br from-crimson-primary to-rose-accent rounded-2xl flex items-center justify-center soft-glow animate-float" style={{
+                      animationDelay: '1s'
+                    }}>
+                      <Award className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
                     </div>
                     <div className="text-left">
                       <div className="font-bold text-white">Técnicas Secretas</div>
