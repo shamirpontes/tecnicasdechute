@@ -31,14 +31,10 @@ const Index = () => {
             {/* Premium Headline */}
             <div className="mb-10">
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-black font-poppins mb-6 leading-none">
-                <span className="block text-gradient-premium animate-fade-in">
-                  Técnicas de Chute
-                </span>
+                <span className="block text-gradient-premium animate-fade-in">Agora que você</span>
                 <span className="block text-future-blue animate-slide-up" style={{
                 animationDelay: '0.2s'
-              }}>
-                  Inteligentes
-                </span>
+              }}>já tem as 197 questões...</span>
               </h1>
               
               {/* Enhanced Authority Subtitle */}
@@ -57,9 +53,7 @@ const Index = () => {
           }}>
               <div className="glass-card p-8 rounded-3xl premium-shadow">
                 <p className="text-2xl md:text-3xl text-gray-700 leading-relaxed font-medium">
-                  <span className="text-gray-900 font-bold block mb-3">
-                    Você estudou, mas ainda não se sente pronto?
-                  </span>
+                  <span className="text-gray-900 font-bold block mb-3"></span>
                   Descubra como usar técnicas comprovadas de chute para garantir sua aprovação na 
                   <strong className="text-gradient-premium"> OAB e Concursos Públicos</strong> — mesmo nas questões mais difíceis.
                 </p>
@@ -115,14 +109,7 @@ const Index = () => {
             animationDelay: `${1 + index * 0.2}s`
           }}>
                 <div className={`absolute inset-0 bg-gradient-to-br ${stat.bgGradient} opacity-0 group-hover:opacity-30 transition-opacity duration-500`}></div>
-                <CardContent className="p-8 text-center relative z-10">
-                  <div className={`w-20 h-20 bg-gradient-to-br ${stat.gradient} rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 soft-glow`}>
-                    <stat.icon className="w-10 h-10 text-white" />
-                  </div>
-                  <div className="text-5xl font-black text-gray-900 mb-2 group-hover:scale-105 transition-transform duration-300">{stat.number}</div>
-                  <div className="text-gray-800 font-bold text-xl mb-2">{stat.label}</div>
-                  <div className="text-gray-600 font-medium text-sm">{stat.sublabel}</div>
-                </CardContent>
+                
               </Card>)}
           </div>
         </div>
