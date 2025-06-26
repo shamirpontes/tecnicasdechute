@@ -7,25 +7,25 @@ import { ArrowRight, Brain, Target, Trophy, CheckCircle, Star, Users, Clock, Boo
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white overflow-hidden relative">
-      {/* Enhanced Global Background */}
+    <div className="min-h-screen bg-gray-50 overflow-hidden relative">
+      {/* Fundo Atmosférico Otimizado */}
       <div className="fixed inset-0 z-0">
-        <div className="absolute inset-0 bg-atmospheric-gradient"></div>
-        <div className="absolute inset-0 pattern-mesh opacity-40"></div>
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-400/30 to-purple-400/30 rounded-full blur-3xl animate-ambient-pulse"></div>
-        <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-gradient-to-r from-cyan-400/25 to-blue-400/25 rounded-full blur-3xl animate-breathing"></div>
-        <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-full blur-3xl animate-rim-light"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-white to-purple-50/20"></div>
+        <div className="absolute inset-0 pattern-mesh opacity-30"></div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-200/20 to-purple-200/20 rounded-full blur-3xl animate-ambient-pulse"></div>
+        <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-gradient-to-r from-cyan-200/15 to-blue-200/15 rounded-full blur-3xl animate-breathing"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-gradient-to-r from-purple-200/15 to-pink-200/15 rounded-full blur-3xl animate-rim-light"></div>
       </div>
 
-      {/* Hero Section - Enhanced with Advanced Effects */}
-      <section className="relative py-24 px-4 lg:py-32 z-10 floating-particles noise-texture">
+      {/* Hero Section - Cores Otimizadas */}
+      <section className="relative py-24 px-4 lg:py-32 z-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
-            {/* Premium Headline with Enhanced Effects */}
+            {/* Títulos com Melhor Contraste */}
             <div className="mb-10">
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-black font-poppins mb-6 leading-none">
-                <span className="block text-gradient-premium animate-fade-in drop-shadow-glow">Agora que você</span>
-                <span className="block text-future-blue animate-slide-up cinematic-shadow" style={{
+                <span className="block text-gray-900 animate-fade-in">Agora que você</span>
+                <span className="block text-future-blue animate-slide-up font-bold" style={{
                   animationDelay: '0.2s'
                 }}>já tem as 197 questões...</span>
               </h1>
@@ -33,29 +33,29 @@ const Index = () => {
               <div className="flex items-center justify-center gap-4 mb-8 animate-scale-in" style={{
                 animationDelay: '0.4s'
               }}>
-                <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent flex-1 max-w-24"></div>
-                <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent flex-1 max-w-24"></div>
+                <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent flex-1 max-w-24"></div>
+                <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent flex-1 max-w-24"></div>
               </div>
             </div>
 
-            {/* Enhanced Emotional Subtitle */}
+            {/* Subtítulo com Fundo Mais Limpo */}
             <div className="max-w-5xl mx-auto mb-12 animate-fade-in" style={{
               animationDelay: '0.6s'
             }}>
-              <div className="glass-card p-8 rounded-3xl cinematic-shadow hover-glow color-bleed breathing">
-                <p className="text-2xl md:text-3xl text-gray-700 leading-relaxed font-medium">
+              <div className="glass-card p-8 rounded-3xl cinematic-shadow hover-glow">
+                <p className="text-2xl md:text-3xl text-gray-800 leading-relaxed font-medium">
                   Descubra como usar técnicas comprovadas de chute para garantir sua aprovação na 
                   <strong className="text-gradient-premium"> OAB e Concursos Públicos</strong> — mesmo nas questões mais difíceis.
                 </p>
               </div>
             </div>
 
-            {/* Enhanced CTA Section */}
+            {/* CTA Principal */}
             <div className="flex flex-col items-center gap-6 mb-12 animate-slide-up" style={{
               animationDelay: '0.8s'
             }}>
-              <Button size="lg" className="bg-future-blue hover:bg-blue-600 text-white px-12 py-8 text-2xl font-bold rounded-2xl cinematic-shadow hover-lift border-0 group relative overflow-hidden colored-shadow-blue transform-3d hover-3d">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <Button size="lg" className="bg-future-blue hover:bg-blue-700 text-white px-12 py-8 text-2xl font-bold rounded-2xl cinematic-shadow hover-lift border-0 group relative overflow-hidden colored-shadow-blue">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <TrendingUp className="mr-4 w-7 h-7 relative z-10" />
                 <span className="relative z-10">QUERO COMPRAR AGORA!</span>
                 <ArrowRight className="ml-4 w-7 h-7 relative z-10 group-hover:translate-x-1 transition-transform" />
@@ -63,7 +63,7 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Enhanced Premium Stats Cards */}
+          {/* Cards de Estatísticas com Melhor Contraste */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
@@ -71,7 +71,7 @@ const Index = () => {
                 number: "12,847",
                 label: "Alunos Aprovados",
                 sublabel: "Nos últimos 2 anos",
-                gradient: "from-green-500 to-emerald-600",
+                gradient: "from-green-600 to-emerald-700",
                 bgGradient: "from-green-50 to-emerald-50",
                 shadowClass: "colored-shadow-green"
               }, 
@@ -80,7 +80,7 @@ const Index = () => {
                 number: "89%",
                 label: "Taxa de Aprovação",
                 sublabel: "Acima da média nacional",
-                gradient: "from-yellow-500 to-orange-500",
+                gradient: "from-yellow-600 to-orange-600",
                 bgGradient: "from-yellow-50 to-orange-50",
                 shadowClass: "colored-shadow-blue"
               }, 
@@ -89,15 +89,15 @@ const Index = () => {
                 number: "4.9/5",
                 label: "Avaliação Média",
                 sublabel: "Baseado em 8.439 reviews",
-                gradient: "from-purple-500 to-pink-500",
+                gradient: "from-purple-600 to-pink-600",
                 bgGradient: "from-purple-50 to-pink-50",
                 shadowClass: "colored-shadow-purple"
               }
             ].map((stat, index) => (
-              <Card key={index} className={`group relative overflow-hidden glass-card hover-lift border-0 cinematic-shadow ${stat.shadowClass} animate-scale-in floating-particles color-bleed`} style={{
+              <Card key={index} className={`group relative overflow-hidden glass-card hover-lift border-0 cinematic-shadow ${stat.shadowClass} animate-scale-in color-bleed`} style={{
                 animationDelay: `${1 + index * 0.2}s`
               }}>
-                <div className={`absolute inset-0 bg-gradient-to-br ${stat.bgGradient} opacity-0 group-hover:opacity-30 transition-opacity duration-500`}></div>
+                <div className={`absolute inset-0 bg-gradient-to-br ${stat.bgGradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500`}></div>
                 <CardContent className="p-8 text-center relative z-10">
                   <div className={`w-16 h-16 bg-gradient-to-br ${stat.gradient} rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 soft-glow animate-float`}>
                     <stat.icon className="w-8 h-8 text-white" />
@@ -112,12 +112,12 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Problem Section - Enhanced with Atmospheric Effects */}
-      <section className="py-24 px-4 bg-gradient-to-br from-red-50/50 to-orange-50/50 relative z-10 noise-texture">
-        <div className="absolute inset-0 pattern-dots opacity-20"></div>
+      {/* Seção Problema - Cores Melhoradas */}
+      <section className="py-24 px-4 bg-gradient-to-br from-red-50/40 to-orange-50/30 relative z-10">
+        <div className="absolute inset-0 pattern-dots opacity-15"></div>
         <div className="max-w-5xl mx-auto text-center relative">
-          <h2 className="text-5xl md:text-6xl font-black font-poppins mb-12 text-gray-900 drop-shadow-ambient">
-            Você está <span className="text-red-500 animate-pulse">desperdiçando tempo</span> estudando de forma ineficiente?
+          <h2 className="text-5xl md:text-6xl font-black font-poppins mb-12 text-gray-900">
+            Você está <span className="text-red-600 animate-pulse">desperdiçando tempo</span> estudando de forma ineficiente?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {[
@@ -126,16 +126,16 @@ const Index = () => {
               "Não sabe como eliminar alternativas incorretas",
               "Fica em dúvida entre duas opções na prova"
             ].map((problem, index) => (
-              <div key={index} className="flex items-center gap-4 glass-card p-6 rounded-2xl cinematic-shadow hover-lift color-bleed breathing">
-                <div className="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center flex-shrink-0 ambient-glow">
-                  <span className="text-red-500 text-2xl font-bold">✗</span>
+              <div key={index} className="flex items-center gap-4 glass-card p-6 rounded-2xl cinematic-shadow hover-lift color-bleed">
+                <div className="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <span className="text-red-600 text-2xl font-bold">✗</span>
                 </div>
-                <span className="text-gray-700 font-medium text-lg">{problem}</span>
+                <span className="text-gray-800 font-medium text-lg">{problem}</span>
               </div>
             ))}
           </div>
-          <div className="glass-card p-8 rounded-3xl cinematic-shadow breathing hover-glow">
-            <p className="text-2xl text-gray-700 leading-relaxed font-medium">
+          <div className="glass-card p-8 rounded-3xl cinematic-shadow hover-glow">
+            <p className="text-2xl text-gray-800 leading-relaxed font-medium">
               Se você se identificou com algum desses problemas, 
               <strong className="text-gradient-premium"> este método vai revolucionar sua preparação!</strong>
             </p>
@@ -143,17 +143,17 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Solution Section - Enhanced with 3D Effects */}
-      <section className="py-24 px-4 relative z-10 floating-particles">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-purple-50/30"></div>
+      {/* Seção Solução - Contraste Otimizado */}
+      <section className="py-24 px-4 relative z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 to-purple-50/15"></div>
         <div className="max-w-7xl mx-auto relative">
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-black font-poppins mb-8 text-gray-900 drop-shadow-glow">
+            <h2 className="text-5xl md:text-6xl font-black font-poppins mb-8 text-gray-900">
               A Metodologia que vai 
               <span className="text-gradient-premium block mt-2 animate-gradient-shift"> Transformar</span> seus resultados
             </h2>
             <div className="max-w-4xl mx-auto">
-              <p className="text-2xl text-gray-600 font-medium leading-relaxed">
+              <p className="text-2xl text-gray-700 font-medium leading-relaxed">
                 Sistema comprovado que ensina técnicas avançadas de eliminação e raciocínio lógico 
                 para maximizar sua pontuação mesmo nas questões mais difíceis.
               </p>
@@ -166,33 +166,33 @@ const Index = () => {
                 icon: Brain,
                 title: "Análise Cognitiva",
                 description: "Aprenda a identificar padrões nas questões e eliminar alternativas incorretas com precisão científica",
-                gradient: "from-blue-500 to-cyan-500",
+                gradient: "from-blue-600 to-cyan-600",
                 shadowClass: "colored-shadow-blue"
               },
               {
                 icon: Target,
                 title: "Estratégia Direcionada", 
                 description: "Técnicas específicas para cada tipo de prova, adaptadas ao seu perfil e objetivos",
-                gradient: "from-purple-500 to-pink-500",
+                gradient: "from-purple-600 to-pink-600",
                 shadowClass: "colored-shadow-purple"
               },
               {
                 icon: Zap,
                 title: "Resultados Rápidos",
                 description: "Veja melhorias significativas já nas primeiras semanas de aplicação do método",
-                gradient: "from-yellow-500 to-orange-500",
+                gradient: "from-yellow-600 to-orange-600",
                 shadowClass: "colored-shadow-green"
               }
             ].map((feature, index) => (
-              <Card key={index} className={`group glass-card hover-lift border-0 cinematic-shadow animate-scale-in transform-3d hover-3d color-bleed ${feature.shadowClass}`} style={{
+              <Card key={index} className={`group glass-card hover-lift border-0 cinematic-shadow animate-scale-in color-bleed ${feature.shadowClass}`} style={{
                 animationDelay: `${index * 0.2}s`
               }}>
                 <CardContent className="p-8 text-center">
-                  <div className={`w-20 h-20 bg-gradient-to-br ${feature.gradient} rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300 soft-glow animate-float rim-lighting`}>
+                  <div className={`w-20 h-20 bg-gradient-to-br ${feature.gradient} rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300 soft-glow animate-float`}>
                     <feature.icon className="w-10 h-10 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold mb-6 text-gray-900 font-poppins">{feature.title}</h3>
-                  <p className="text-gray-600 leading-relaxed text-lg font-medium">{feature.description}</p>
+                  <p className="text-gray-700 leading-relaxed text-lg font-medium">{feature.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -200,11 +200,11 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Benefits Section - Enhanced with Particle Effects */}
-      <section className="py-24 px-4 bg-gradient-to-br from-blue-50/50 to-purple-50/50 relative z-10 floating-particles noise-texture">
-        <div className="absolute inset-0 pattern-dots opacity-20"></div>
+      {/* Seção Benefícios - Texto Mais Legível */}
+      <section className="py-24 px-4 bg-gradient-to-br from-blue-50/30 to-purple-50/20 relative z-10">
+        <div className="absolute inset-0 pattern-dots opacity-15"></div>
         <div className="max-w-5xl mx-auto relative">
-          <h2 className="text-5xl md:text-6xl font-black font-poppins text-center mb-16 text-gray-900 drop-shadow-glow">
+          <h2 className="text-5xl md:text-6xl font-black font-poppins text-center mb-16 text-gray-900">
             O que você vai <span className="text-gradient-premium animate-gradient-shift">dominar</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -218,21 +218,21 @@ const Index = () => {
               "Padrões de questões por banca examinadora",
               "Chutes inteligentes baseados em estatística"
             ].map((benefit, index) => (
-              <div key={index} className="flex items-center gap-4 glass-card p-6 rounded-2xl cinematic-shadow hover-lift group color-bleed breathing">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform soft-glow">
+              <div key={index} className="flex items-center gap-4 glass-card p-6 rounded-2xl cinematic-shadow hover-lift group color-bleed">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform soft-glow">
                   <CheckCircle className="w-6 h-6 text-white" />
                 </div>
-                <span className="text-gray-700 font-semibold text-lg">{benefit}</span>
+                <span className="text-gray-800 font-semibold text-lg">{benefit}</span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section - Enhanced with Advanced Glass Effects */}
+      {/* Seção Depoimentos - Fundos Mais Limpos */}
       <section className="py-24 px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-black font-poppins text-center mb-16 text-gray-900 drop-shadow-glow">
+          <h2 className="text-5xl md:text-6xl font-black font-poppins text-center mb-16 text-gray-900">
             Veja os <span className="text-gradient-premium animate-gradient-shift">resultados</span> dos nossos alunos
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -256,21 +256,21 @@ const Index = () => {
                 rating: 5
               }
             ].map((testimonial, index) => (
-              <Card key={index} className="glass-card hover-lift border-0 cinematic-shadow group transform-3d hover-3d color-bleed breathing">
+              <Card key={index} className="glass-card hover-lift border-0 cinematic-shadow group color-bleed">
                 <CardContent className="p-8">
                   <div className="flex items-center gap-1 mb-6">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400 animate-pulse" style={{animationDelay: `${i * 0.1}s`}} />
+                      <Star key={i} className="w-6 h-6 fill-yellow-500 text-yellow-500" />
                     ))}
                   </div>
-                  <p className="text-gray-600 mb-8 leading-relaxed text-lg font-medium italic">"{testimonial.text}"</p>
+                  <p className="text-gray-700 mb-8 leading-relaxed text-lg font-medium italic">"{testimonial.text}"</p>
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center soft-glow">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center soft-glow">
                       <span className="text-white font-bold text-lg">{testimonial.name.charAt(0)}</span>
                     </div>
                     <div>
                       <div className="font-bold text-gray-900 text-lg">{testimonial.name}</div>
-                      <div className="text-gray-600 font-medium">{testimonial.role}</div>
+                      <div className="text-gray-700 font-medium">{testimonial.role}</div>
                     </div>
                   </div>
                 </CardContent>
@@ -280,124 +280,121 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Enhanced Urgency Section with Advanced Visual Effects */}
-      <section className="py-32 px-4 bg-gradient-to-br from-orange-50 via-red-50 to-pink-50 relative overflow-hidden z-10 floating-particles noise-texture">
-        {/* Enhanced background elements */}
+      {/* Seção Urgência - Cores Balanceadas */}
+      <section className="py-32 px-4 bg-gradient-to-br from-orange-50/50 via-red-50/40 to-pink-50/30 relative overflow-hidden z-10">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-red-50/80 via-orange-50/90 to-yellow-50/80"></div>
-          <div className="absolute inset-0 pattern-mesh opacity-30"></div>
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-r from-red-400/20 to-orange-400/20 rounded-full blur-3xl animate-ambient-pulse"></div>
-          <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-to-r from-yellow-400/20 to-red-400/20 rounded-full blur-3xl animate-breathing" style={{
+          <div className="absolute inset-0 bg-gradient-to-br from-red-50/60 via-orange-50/70 to-yellow-50/60"></div>
+          <div className="absolute inset-0 pattern-mesh opacity-20"></div>
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-r from-red-200/15 to-orange-200/15 rounded-full blur-3xl animate-ambient-pulse"></div>
+          <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-to-r from-yellow-200/15 to-red-200/15 rounded-full blur-3xl animate-breathing" style={{
             animationDelay: '1s'
           }}></div>
         </div>
 
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="mb-8">
-            <h2 className="text-5xl md:text-7xl font-black font-poppins mb-4 text-gray-900 leading-tight drop-shadow-glow">
-              <span className="block text-red-600 animate-pulse">Última Oportunidade</span>
+            <h2 className="text-5xl md:text-7xl font-black font-poppins mb-4 text-gray-900 leading-tight">
+              <span className="block text-red-700 animate-pulse">Última Oportunidade</span>
               <span className="block text-gradient-premium mt-2 animate-gradient-shift">Técnicas de Chute Inteligentes para OAB e Concursos</span>
             </h2>
           </div>
 
-          {/* Enhanced countdown visual element */}
+          {/* Contador com Melhor Contraste */}
           <div className="flex items-center justify-center gap-4 mb-8">
-            <div className="glass-card bg-red-500/10 border-red-200 px-6 py-4 rounded-2xl cinematic-shadow breathing">
-              <div className="text-3xl font-black text-red-600">23</div>
-              <div className="text-sm font-bold text-red-500">HORAS</div>
+            <div className="glass-card bg-red-50 border border-red-200 px-6 py-4 rounded-2xl cinematic-shadow">
+              <div className="text-3xl font-black text-red-700">23</div>
+              <div className="text-sm font-bold text-red-600">HORAS</div>
             </div>
-            <div className="text-2xl font-bold text-red-500 animate-pulse">:</div>
-            <div className="glass-card bg-red-500/10 border-red-200 px-6 py-4 rounded-2xl cinematic-shadow breathing">
-              <div className="text-3xl font-black text-red-600">47</div>
-              <div className="text-sm font-bold text-red-500">MINUTOS</div>
+            <div className="text-2xl font-bold text-red-600 animate-pulse">:</div>
+            <div className="glass-card bg-red-50 border border-red-200 px-6 py-4 rounded-2xl cinematic-shadow">
+              <div className="text-3xl font-black text-red-700">47</div>
+              <div className="text-sm font-bold text-red-600">MINUTOS</div>
             </div>
-            <div className="text-2xl font-bold text-red-500 animate-pulse">:</div>
-            <div className="glass-card bg-red-500/10 border-red-200 px-6 py-4 rounded-2xl cinematic-shadow breathing">
-              <div className="text-3xl font-black text-red-600">33</div>
-              <div className="text-sm font-bold text-red-500">SEGUNDOS</div>
+            <div className="text-2xl font-bold text-red-600 animate-pulse">:</div>
+            <div className="glass-card bg-red-50 border border-red-200 px-6 py-4 rounded-2xl cinematic-shadow">
+              <div className="text-3xl font-black text-red-700">33</div>
+              <div className="text-sm font-bold text-red-600">SEGUNDOS</div>
             </div>
           </div>
 
-          {/* Enhanced main offer card */}
+          {/* Card da Oferta Principal */}
           <div className="max-w-4xl mx-auto">
-            <Card className="glass-card border-0 cinematic-shadow hover-lift overflow-hidden relative transform-3d hover-3d color-bleed">
-              <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 via-yellow-500/20 to-red-500/20 rounded-3xl blur-sm animate-gradient-shift"></div>
-              
+            <Card className="glass-card border-0 cinematic-shadow hover-lift overflow-hidden relative color-bleed">
               <CardContent className="relative z-10 p-12 text-center">
-                {/* Enhanced price section */}
+                {/* Seção de Preços */}
                 <div className="mb-12">
                   <div className="mb-4">
-                    <span className="text-4xl md:text-5xl font-black text-red-500 line-through opacity-60">
+                    <span className="text-4xl md:text-5xl font-black text-red-600 line-through opacity-70">
                       R$ 497
                     </span>
-                    <div className="inline-block ml-4 bg-red-500 text-white px-4 py-2 rounded-full text-lg font-bold transform -rotate-12 animate-bounce-soft">
+                    <div className="inline-block ml-4 bg-red-600 text-white px-4 py-2 rounded-full text-lg font-bold transform -rotate-12 animate-bounce-soft">
                       ACABOU!
                     </div>
                   </div>
 
                   <div className="mb-6">
-                    <div className="text-8xl md:text-9xl font-black text-transparent bg-gradient-to-r from-green-500 to-emerald-600 bg-clip-text mb-4 animate-pulse drop-shadow-glow">
+                    <div className="text-8xl md:text-9xl font-black text-transparent bg-gradient-to-r from-green-600 to-emerald-700 bg-clip-text mb-4 animate-pulse">
                       R$ 197
                     </div>
                     <div className="flex items-center justify-center gap-4 mb-4">
-                      <Badge className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-6 py-3 text-xl font-bold rounded-full cinematic-shadow">
+                      <Badge className="bg-gradient-to-r from-red-600 to-orange-600 text-white px-6 py-3 text-xl font-bold rounded-full cinematic-shadow">
                         60% DE DESCONTO
                       </Badge>
-                      <Badge className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-6 py-3 text-xl font-bold rounded-full cinematic-shadow animate-pulse">
+                      <Badge className="bg-gradient-to-r from-yellow-600 to-orange-600 text-white px-6 py-3 text-xl font-bold rounded-full cinematic-shadow animate-pulse">
                         SÓ HOJE
                       </Badge>
                     </div>
                   </div>
 
-                  <p className="text-2xl text-gray-600 font-semibold mb-8">
-                    💸 <strong className="text-green-600">Economize R$ 300</strong> e garante sua aprovação hoje mesmo!
+                  <p className="text-2xl text-gray-700 font-semibold mb-8">
+                    💸 <strong className="text-green-700">Economize R$ 300</strong> e garante sua aprovação hoje mesmo!
                   </p>
                 </div>
 
-                {/* Enhanced benefits icons */}
+                {/* Benefícios com Contraste Melhorado */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                  <div className="flex items-center gap-4 glass-card p-6 rounded-2xl bg-green-50/50 color-bleed breathing">
-                    <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center soft-glow">
+                  <div className="flex items-center gap-4 glass-card p-6 rounded-2xl bg-green-50 color-bleed">
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl flex items-center justify-center soft-glow">
                       <Heart className="w-6 h-6 text-white" />
                     </div>
                     <div className="text-left">
                       <div className="font-bold text-gray-900">Acesso Vitalício</div>
-                      <div className="text-sm text-gray-600">Para sempre</div>
+                      <div className="text-sm text-gray-700">Para sempre</div>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-4 glass-card p-6 rounded-2xl bg-blue-50/50 color-bleed breathing">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center soft-glow">
+                  <div className="flex items-center gap-4 glass-card p-6 rounded-2xl bg-blue-50 color-bleed">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center soft-glow">
                       <Shield className="w-6 h-6 text-white" />
                     </div>
                     <div className="text-left">
                       <div className="font-bold text-gray-900">Garantia 30 Dias</div>
-                      <div className="text-sm text-gray-600">Risco zero</div>
+                      <div className="text-sm text-gray-700">Risco zero</div>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-4 glass-card p-6 rounded-2xl bg-purple-50/50 color-bleed breathing">
-                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center soft-glow">
+                  <div className="flex items-center gap-4 glass-card p-6 rounded-2xl bg-purple-50 color-bleed">
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl flex items-center justify-center soft-glow">
                       <Award className="w-6 h-6 text-white" />
                     </div>
                     <div className="text-left">
                       <div className="font-bold text-gray-900">Técnicas Validadas</div>
-                      <div className="text-sm text-gray-600">Por especialistas</div>
+                      <div className="text-sm text-gray-700">Por especialistas</div>
                     </div>
                   </div>
                 </div>
 
-                {/* Enhanced CTA Button */}
+                {/* Botão CTA Final */}
                 <div className="space-y-4">
-                  <Button size="lg" className="w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-16 py-8 text-2xl md:text-3xl font-black rounded-2xl cinematic-shadow hover-lift border-0 group relative overflow-hidden animate-pulse colored-shadow-green transform-3d hover-3d">
-                    <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <Button size="lg" className="w-full bg-gradient-to-r from-green-700 to-emerald-700 hover:from-green-800 hover:to-emerald-800 text-white px-16 py-8 text-2xl md:text-3xl font-black rounded-2xl cinematic-shadow hover-lift border-0 group relative overflow-hidden animate-pulse colored-shadow-green">
+                    <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <Heart className="mr-4 w-8 h-8 relative z-10 animate-bounce" />
                     <span className="relative z-10">SIM, EU QUERO MINHA VAGA COM 60% OFF</span>
                     <ArrowRight className="ml-4 w-8 h-8 relative z-10 group-hover:translate-x-2 transition-transform" />
                   </Button>
                   
-                  <p className="text-lg text-gray-600 font-medium">
-                    ⚡ <strong className="text-green-600">Acesso instantâneo</strong> • 🔒 <strong className="text-blue-600">Compra 100% segura</strong>
+                  <p className="text-lg text-gray-700 font-medium">
+                    ⚡ <strong className="text-green-700">Acesso instantâneo</strong> • 🔒 <strong className="text-blue-700">Compra 100% segura</strong>
                   </p>
                 </div>
               </CardContent>
@@ -406,13 +403,13 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer - Enhanced with Atmospheric Effects */}
+      {/* Footer - Texto Mais Legível */}
       <footer className="py-16 px-4 bg-gray-900 text-white relative overflow-hidden z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-800"></div>
-        <div className="absolute inset-0 pattern-dots opacity-10"></div>
+        <div className="absolute inset-0 pattern-dots opacity-5"></div>
         <div className="max-w-5xl mx-auto text-center relative">
           <h3 className="text-3xl font-bold mb-6 font-poppins text-gradient">Técnicas de Chute Inteligentes</h3>
-          <p className="text-gray-400 mb-8 text-xl">
+          <p className="text-gray-300 mb-8 text-xl">
             Transformando a forma como você se prepara para concursos
           </p>
           <div className="flex justify-center gap-12 text-gray-400 font-medium">
