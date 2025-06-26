@@ -1,13 +1,10 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Brain, Target, Trophy, CheckCircle, Star, Users, Clock, BookOpen, Zap, Award, TrendingUp, Shield, Sparkles, Timer, AlertCircle, Heart } from 'lucide-react';
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-navy-primary overflow-hidden relative">
+  return <div className="min-h-screen bg-navy-primary overflow-hidden relative">
       {/* Fundo Atmosférico Navy */}
       <div className="fixed inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-primary via-navy-secondary to-navy-accent"></div>
@@ -26,13 +23,13 @@ const Index = () => {
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-black font-poppins mb-6 leading-none">
                 <span className="block text-white animate-fade-in">Agora que você já tem</span>
                 <span className="block text-crimson-primary animate-slide-up font-bold" style={{
-                  animationDelay: '0.2s'
-                }}>todo o material da OAB...</span>
+                animationDelay: '0.2s'
+              }}>todo o material da OAB...</span>
               </h1>
               
               <div className="flex items-center justify-center gap-4 mb-8 animate-scale-in" style={{
-                animationDelay: '0.4s'
-              }}>
+              animationDelay: '0.4s'
+            }}>
                 <div className="h-px bg-gradient-to-r from-transparent via-white/30 to-transparent flex-1 max-w-24"></div>
                 <div className="h-px bg-gradient-to-r from-transparent via-white/30 to-transparent flex-1 max-w-24"></div>
               </div>
@@ -40,8 +37,8 @@ const Index = () => {
 
             {/* Subtítulo Navy/Red Theme */}
             <div className="max-w-5xl mx-auto mb-12 animate-fade-in" style={{
-              animationDelay: '0.6s'
-            }}>
+            animationDelay: '0.6s'
+          }}>
               <div className="glass-card p-8 rounded-3xl cinematic-shadow hover-glow">
                 <p className="text-2xl md:text-3xl text-white leading-relaxed font-medium">
                   Descubra as <strong className="text-gradient-premium">Técnicas Secretas da FGV</strong> para acertar questões que você 
@@ -52,8 +49,8 @@ const Index = () => {
 
             {/* CTA Principal Navy/Red */}
             <div className="flex flex-col items-center gap-6 mb-12 animate-slide-up" style={{
-              animationDelay: '0.8s'
-            }}>
+            animationDelay: '0.8s'
+          }}>
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-12 py-8 text-2xl font-bold rounded-2xl cinematic-shadow hover-lift border-0 group relative overflow-hidden colored-shadow-navy">
                 <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <TrendingUp className="mr-4 w-7 h-7 relative z-10" />
@@ -65,40 +62,35 @@ const Index = () => {
 
           {/* Cards de Estatísticas Navy Theme */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Users,
-                number: "8,347",
-                label: "Alunos Aprovados",
-                sublabel: "Usando técnicas de chute da FGV",
-                gradient: "from-green-600 to-emerald-700",
-                bgGradient: "from-green-900/20 to-emerald-900/20",
-                shadowClass: "colored-shadow-navy"
-              }, 
-              {
-                icon: Trophy,
-                number: "73%",
-                label: "Acertos em Questões",
-                sublabel: "Não estudadas com as técnicas",
-                gradient: "from-yellow-500 to-orange-500",
-                bgGradient: "from-yellow-900/20 to-orange-900/20",
-                shadowClass: "colored-shadow-red"
-              }, 
-              {
-                icon: Star,
-                number: "4.9/5",
-                label: "Confiança na Prova",
-                sublabel: "Relatada pelos nossos alunos",
-                gradient: "from-crimson-primary to-rose-accent",
-                bgGradient: "from-red-900/20 to-pink-900/20",
-                shadowClass: "colored-shadow-pink"
-              }
-            ].map((stat, index) => (
-              <Card key={index} className={`group relative overflow-hidden glass-card hover-lift border-0 cinematic-shadow ${stat.shadowClass} animate-scale-in color-bleed`} style={{
-                animationDelay: `${1 + index * 0.2}s`
-              }}>
+            {[{
+            icon: Users,
+            number: "8,347",
+            label: "Alunos Aprovados",
+            sublabel: "Usando técnicas de chute da FGV",
+            gradient: "from-green-600 to-emerald-700",
+            bgGradient: "from-green-900/20 to-emerald-900/20",
+            shadowClass: "colored-shadow-navy"
+          }, {
+            icon: Trophy,
+            number: "73%",
+            label: "Acertos em Questões",
+            sublabel: "Não estudadas com as técnicas",
+            gradient: "from-yellow-500 to-orange-500",
+            bgGradient: "from-yellow-900/20 to-orange-900/20",
+            shadowClass: "colored-shadow-red"
+          }, {
+            icon: Star,
+            number: "4.9/5",
+            label: "Confiança na Prova",
+            sublabel: "Relatada pelos nossos alunos",
+            gradient: "from-crimson-primary to-rose-accent",
+            bgGradient: "from-red-900/20 to-pink-900/20",
+            shadowClass: "colored-shadow-pink"
+          }].map((stat, index) => <Card key={index} className={`group relative overflow-hidden glass-card hover-lift border-0 cinematic-shadow ${stat.shadowClass} animate-scale-in color-bleed`} style={{
+            animationDelay: `${1 + index * 0.2}s`
+          }}>
                 <div className={`absolute inset-0 bg-gradient-to-br ${stat.bgGradient} opacity-0 group-hover:opacity-30 transition-opacity duration-500`}></div>
-                <CardContent className="p-8 text-center relative z-10">
+                <CardContent className="p-8 text-center relative z-10 bg-slate-950">
                   <div className={`w-16 h-16 bg-gradient-to-br ${stat.gradient} rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 soft-glow animate-float`}>
                     <stat.icon className="w-8 h-8 text-white" />
                   </div>
@@ -106,8 +98,7 @@ const Index = () => {
                   <div className="text-lg font-bold text-white/90 mb-1">{stat.label}</div>
                   <div className="text-sm text-white/70 font-medium">{stat.sublabel}</div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -120,19 +111,12 @@ const Index = () => {
             Você tem medo de <span className="text-crimson-primary animate-pulse">questões que não estudou</span> aparecerem na prova?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            {[
-              "Fica nervoso com questões fora do seu foco de estudo",
-              "Não sabe como eliminar alternativas da FGV", 
-              "Perde pontos por chutes aleatórios sem técnica",
-              "Sente insegurança no dia da prova com o desconhecido"
-            ].map((problem, index) => (
-              <div key={index} className="flex items-center gap-4 glass-card p-6 rounded-2xl cinematic-shadow hover-lift color-bleed">
+            {["Fica nervoso com questões fora do seu foco de estudo", "Não sabe como eliminar alternativas da FGV", "Perde pontos por chutes aleatórios sem técnica", "Sente insegurança no dia da prova com o desconhecido"].map((problem, index) => <div key={index} className="flex items-center gap-4 glass-card p-6 rounded-2xl cinematic-shadow hover-lift color-bleed">
                 <div className="w-12 h-12 bg-crimson-primary/20 rounded-2xl flex items-center justify-center flex-shrink-0">
                   <span className="text-crimson-primary text-2xl font-bold">✗</span>
                 </div>
                 <span className="text-white font-medium text-lg">{problem}</span>
-              </div>
-            ))}
+              </div>)}
           </div>
           <div className="glass-card p-8 rounded-3xl cinematic-shadow hover-glow">
             <p className="text-2xl text-white leading-relaxed font-medium">
@@ -161,41 +145,35 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Brain,
-                title: "Decodificação FGV",
-                description: "Aprenda a identificar os padrões exclusivos que a FGV usa nas questões e como explorar suas pegadinhas típicas",
-                gradient: "from-navy-accent to-crimson-primary",
-                shadowClass: "colored-shadow-navy"
-              },
-              {
-                icon: Target,
-                title: "Chute Inteligente", 
-                description: "Técnicas estatísticas baseadas no comportamento histórico da banca para chutes com 73% de precisão",
-                gradient: "from-crimson-primary to-rose-accent",
-                shadowClass: "colored-shadow-red"
-              },
-              {
-                icon: Zap,
-                title: "Confiança Total",
-                description: "Elimine o nervosismo e entre na prova sabendo que pode lidar com qualquer questão que aparecer",
-                gradient: "from-rose-accent to-crimson-secondary",
-                shadowClass: "colored-shadow-pink"
-              }
-            ].map((feature, index) => (
-              <Card key={index} className={`group glass-card hover-lift border-0 cinematic-shadow animate-scale-in color-bleed ${feature.shadowClass}`} style={{
-                animationDelay: `${index * 0.2}s`
-              }}>
-                <CardContent className="p-8 text-center">
+            {[{
+            icon: Brain,
+            title: "Decodificação FGV",
+            description: "Aprenda a identificar os padrões exclusivos que a FGV usa nas questões e como explorar suas pegadinhas típicas",
+            gradient: "from-navy-accent to-crimson-primary",
+            shadowClass: "colored-shadow-navy"
+          }, {
+            icon: Target,
+            title: "Chute Inteligente",
+            description: "Técnicas estatísticas baseadas no comportamento histórico da banca para chutes com 73% de precisão",
+            gradient: "from-crimson-primary to-rose-accent",
+            shadowClass: "colored-shadow-red"
+          }, {
+            icon: Zap,
+            title: "Confiança Total",
+            description: "Elimine o nervosismo e entre na prova sabendo que pode lidar com qualquer questão que aparecer",
+            gradient: "from-rose-accent to-crimson-secondary",
+            shadowClass: "colored-shadow-pink"
+          }].map((feature, index) => <Card key={index} className={`group glass-card hover-lift border-0 cinematic-shadow animate-scale-in color-bleed ${feature.shadowClass}`} style={{
+            animationDelay: `${index * 0.2}s`
+          }}>
+                <CardContent className="p-8 text-center bg-slate-950">
                   <div className={`w-20 h-20 bg-gradient-to-br ${feature.gradient} rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300 soft-glow animate-float`}>
                     <feature.icon className="w-10 h-10 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold mb-6 text-white font-poppins">{feature.title}</h3>
                   <p className="text-white/80 leading-relaxed text-lg font-medium">{feature.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -208,23 +186,12 @@ const Index = () => {
             O que você vai <span className="text-gradient-premium animate-gradient-shift">dominar</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              "Análise de padrões específicos da FGV",
-              "Técnicas de eliminação por contexto jurídico",
-              "Identificação de alternativas-armadilha típicas",
-              "Método estatístico para chutes precisos",
-              "Controle emocional para questões desconhecidas",
-              "Estratégias de tempo em questões não estudadas",
-              "Reconhecimento de estruturas repetitivas da banca",
-              "Confiança total no dia da prova"
-            ].map((benefit, index) => (
-              <div key={index} className="flex items-center gap-4 glass-card p-6 rounded-2xl cinematic-shadow hover-lift group color-bleed">
+            {["Análise de padrões específicos da FGV", "Técnicas de eliminação por contexto jurídico", "Identificação de alternativas-armadilha típicas", "Método estatístico para chutes precisos", "Controle emocional para questões desconhecidas", "Estratégias de tempo em questões não estudadas", "Reconhecimento de estruturas repetitivas da banca", "Confiança total no dia da prova"].map((benefit, index) => <div key={index} className="flex items-center gap-4 glass-card p-6 rounded-2xl cinematic-shadow hover-lift group color-bleed">
                 <div className="w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-700 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform soft-glow">
                   <CheckCircle className="w-6 h-6 text-white" />
                 </div>
                 <span className="text-white font-semibold text-lg">{benefit}</span>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -236,32 +203,25 @@ const Index = () => {
             Veja como as <span className="text-gradient-premium animate-gradient-shift">técnicas</span> foram decisivas
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Marina Santos",
-                role: "Aprovada OAB - 1ª Fase",
-                text: "Acertei 8 questões que nunca havia estudado usando as técnicas da FGV. Foi o que garantiu minha aprovação com folga!",
-                rating: 5
-              },
-              {
-                name: "Carlos Oliveira", 
-                role: "Analista Judiciário - TRT",
-                text: "As técnicas de chute me salvaram em 12 questões difíceis. Passei do 15º para 3º lugar só por causa delas!",
-                rating: 5
-              },
-              {
-                name: "Ana Costa",
-                role: "Procuradora Federal",
-                text: "Entrei na prova confiante sabendo que podia lidar com qualquer surpresa. As técnicas da FGV são realmente eficazes.",
-                rating: 5
-              }
-            ].map((testimonial, index) => (
-              <Card key={index} className="glass-card hover-lift border-0 cinematic-shadow group color-bleed">
-                <CardContent className="p-8">
+            {[{
+            name: "Marina Santos",
+            role: "Aprovada OAB - 1ª Fase",
+            text: "Acertei 8 questões que nunca havia estudado usando as técnicas da FGV. Foi o que garantiu minha aprovação com folga!",
+            rating: 5
+          }, {
+            name: "Carlos Oliveira",
+            role: "Analista Judiciário - TRT",
+            text: "As técnicas de chute me salvaram em 12 questões difíceis. Passei do 15º para 3º lugar só por causa delas!",
+            rating: 5
+          }, {
+            name: "Ana Costa",
+            role: "Procuradora Federal",
+            text: "Entrei na prova confiante sabendo que podia lidar com qualquer surpresa. As técnicas da FGV são realmente eficazes.",
+            rating: 5
+          }].map((testimonial, index) => <Card key={index} className="glass-card hover-lift border-0 cinematic-shadow group color-bleed">
+                <CardContent className="p-8 bg-slate-950">
                   <div className="flex items-center gap-1 mb-6">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-6 h-6 fill-yellow-500 text-yellow-500" />
-                    ))}
+                    {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="w-6 h-6 fill-yellow-500 text-yellow-500" />)}
                   </div>
                   <p className="text-white/90 mb-8 leading-relaxed text-lg font-medium italic">"{testimonial.text}"</p>
                   <div className="flex items-center gap-4">
@@ -274,8 +234,7 @@ const Index = () => {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -287,8 +246,8 @@ const Index = () => {
           <div className="absolute inset-0 pattern-mesh opacity-15"></div>
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-r from-crimson-primary/30 to-rose-accent/20 rounded-full blur-3xl animate-ambient-pulse"></div>
           <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-to-r from-rose-accent/25 to-crimson-secondary/15 rounded-full blur-3xl animate-breathing" style={{
-            animationDelay: '1s'
-          }}></div>
+          animationDelay: '1s'
+        }}></div>
         </div>
 
         <div className="max-w-6xl mx-auto text-center relative z-10">
@@ -320,7 +279,7 @@ const Index = () => {
           {/* Card da Oferta Principal Navy Theme */}
           <div className="max-w-4xl mx-auto">
             <Card className="glass-card border-0 cinematic-shadow hover-lift overflow-hidden relative color-bleed">
-              <CardContent className="relative z-10 p-12 text-center">
+              <CardContent className="relative z-10 p-12 text-center bg-slate-950">
                 {/* Seção de Preços */}
                 <div className="mb-12">
                   <div className="mb-4">
@@ -419,8 +378,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
