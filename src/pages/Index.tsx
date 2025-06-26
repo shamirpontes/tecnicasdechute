@@ -1,13 +1,10 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Brain, Target, Trophy, CheckCircle, Star, Users, Clock, BookOpen, Zap, Award, TrendingUp, Shield, Sparkles } from 'lucide-react';
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-white overflow-hidden">
+  return <div className="min-h-screen bg-white overflow-hidden">
       {/* Hero Section - Redesigned Premium */}
       <section className="relative py-24 px-4 lg:py-32">
         {/* Enhanced Background */}
@@ -37,25 +34,27 @@ const Index = () => {
                 <span className="block text-gradient-premium animate-fade-in">
                   Técnicas de Chute
                 </span>
-                <span className="block text-future-blue animate-slide-up" style={{animationDelay: '0.2s'}}>
+                <span className="block text-future-blue animate-slide-up" style={{
+                animationDelay: '0.2s'
+              }}>
                   Inteligentes
                 </span>
               </h1>
               
               {/* Enhanced Authority Subtitle */}
-              <div className="flex items-center justify-center gap-4 mb-8 animate-scale-in" style={{animationDelay: '0.4s'}}>
+              <div className="flex items-center justify-center gap-4 mb-8 animate-scale-in" style={{
+              animationDelay: '0.4s'
+            }}>
                 <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent flex-1 max-w-24"></div>
-                <div className="glass-card px-6 py-3 rounded-full">
-                  <p className="text-lg md:text-xl font-bold text-gray-800">
-                    Já ajudou mais de <span className="text-green-600 font-black text-2xl">12.847 alunos</span> a passarem chutando com técnica
-                  </p>
-                </div>
+                
                 <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent flex-1 max-w-24"></div>
               </div>
             </div>
 
             {/* Enhanced Emotional Subtitle */}
-            <div className="max-w-5xl mx-auto mb-12 animate-fade-in" style={{animationDelay: '0.6s'}}>
+            <div className="max-w-5xl mx-auto mb-12 animate-fade-in" style={{
+            animationDelay: '0.6s'
+          }}>
               <div className="glass-card p-8 rounded-3xl premium-shadow">
                 <p className="text-2xl md:text-3xl text-gray-700 leading-relaxed font-medium">
                   <span className="text-gray-900 font-bold block mb-3">
@@ -68,11 +67,10 @@ const Index = () => {
             </div>
 
             {/* Enhanced CTA Section */}
-            <div className="flex flex-col items-center gap-6 mb-12 animate-slide-up" style={{animationDelay: '0.8s'}}>
-              <Button 
-                size="lg" 
-                className="bg-future-blue hover:bg-blue-600 text-white px-12 py-8 text-2xl font-bold rounded-2xl premium-shadow hover-lift border-0 group relative overflow-hidden"
-              >
+            <div className="flex flex-col items-center gap-6 mb-12 animate-slide-up" style={{
+            animationDelay: '0.8s'
+          }}>
+              <Button size="lg" className="bg-future-blue hover:bg-blue-600 text-white px-12 py-8 text-2xl font-bold rounded-2xl premium-shadow hover-lift border-0 group relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <TrendingUp className="mr-4 w-7 h-7 relative z-10" />
                 <span className="relative z-10">GARANTIR MINHA VAGA AGORA</span>
@@ -80,83 +78,42 @@ const Index = () => {
               </Button>
               
               {/* Enhanced Microcopy */}
-              <div className="glass-card px-6 py-4 rounded-full premium-shadow border border-orange-200">
-                <div className="flex items-center gap-3 text-orange-700 font-semibold">
-                  <Clock className="w-5 h-5 text-orange-500 animate-bounce-soft" />
-                  <span className="text-base">⏳ Vagas limitadas — próxima turma em breve</span>
-                </div>
-              </div>
+              
             </div>
 
             {/* Enhanced Social Proof Seal */}
-            <div className="inline-flex items-center gap-4 glass-card px-8 py-6 rounded-2xl premium-shadow border border-gray-100 mb-16 hover-lift">
-              <div className="flex items-center gap-4">
-                <div className="relative">
-                  <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center soft-glow">
-                    <Users className="w-7 h-7 text-white" />
-                  </div>
-                  <div className="absolute -top-1 -right-1 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                    <CheckCircle className="w-4 h-4 text-white" />
-                  </div>
-                </div>
-                <div className="text-left">
-                  <div className="text-2xl font-black text-gray-900">+12.847</div>
-                  <div className="text-sm font-semibold text-gray-600">Alunos Aprovados</div>
-                </div>
-              </div>
-              
-              <div className="w-px h-12 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
-              
-              <div className="flex items-center gap-2">
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <span className="text-xl font-black text-gray-800">4.9/5</span>
-              </div>
-              
-              <div className="w-px h-12 bg-gradient-to-b from-transparent via-gray-300 to-transparent"></div>
-              
-              <div className="flex items-center gap-2">
-                <Shield className="w-6 h-6 text-blue-500" />
-                <span className="text-sm font-bold text-gray-700">Garantia 30 dias</span>
-              </div>
-            </div>
+            
           </div>
 
           {/* Enhanced Premium Stats Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { 
-                icon: Users, 
-                number: "12,847", 
-                label: "Alunos Aprovados",
-                sublabel: "Nos últimos 2 anos",
-                gradient: "from-green-500 to-emerald-600",
-                bgGradient: "from-green-50 to-emerald-50",
-                glowColor: "shadow-green-500/20"
-              },
-              { 
-                icon: Trophy, 
-                number: "89%", 
-                label: "Taxa de Aprovação",
-                sublabel: "Acima da média nacional",
-                gradient: "from-yellow-500 to-orange-500",
-                bgGradient: "from-yellow-50 to-orange-50",
-                glowColor: "shadow-yellow-500/20"
-              },
-              { 
-                icon: Star, 
-                number: "4.9/5", 
-                label: "Avaliação Média",
-                sublabel: "Baseado em 8.439 reviews",
-                gradient: "from-purple-500 to-pink-500",
-                bgGradient: "from-purple-50 to-pink-50",
-                glowColor: "shadow-purple-500/20"
-              }
-            ].map((stat, index) => (
-              <Card key={index} className={`group relative overflow-hidden glass-card hover-lift border-0 premium-shadow ${stat.glowColor} animate-scale-in`} style={{animationDelay: `${1 + index * 0.2}s`}}>
+            {[{
+            icon: Users,
+            number: "12,847",
+            label: "Alunos Aprovados",
+            sublabel: "Nos últimos 2 anos",
+            gradient: "from-green-500 to-emerald-600",
+            bgGradient: "from-green-50 to-emerald-50",
+            glowColor: "shadow-green-500/20"
+          }, {
+            icon: Trophy,
+            number: "89%",
+            label: "Taxa de Aprovação",
+            sublabel: "Acima da média nacional",
+            gradient: "from-yellow-500 to-orange-500",
+            bgGradient: "from-yellow-50 to-orange-50",
+            glowColor: "shadow-yellow-500/20"
+          }, {
+            icon: Star,
+            number: "4.9/5",
+            label: "Avaliação Média",
+            sublabel: "Baseado em 8.439 reviews",
+            gradient: "from-purple-500 to-pink-500",
+            bgGradient: "from-purple-50 to-pink-50",
+            glowColor: "shadow-purple-500/20"
+          }].map((stat, index) => <Card key={index} className={`group relative overflow-hidden glass-card hover-lift border-0 premium-shadow ${stat.glowColor} animate-scale-in`} style={{
+            animationDelay: `${1 + index * 0.2}s`
+          }}>
                 <div className={`absolute inset-0 bg-gradient-to-br ${stat.bgGradient} opacity-0 group-hover:opacity-30 transition-opacity duration-500`}></div>
                 <CardContent className="p-8 text-center relative z-10">
                   <div className={`w-20 h-20 bg-gradient-to-br ${stat.gradient} rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 soft-glow`}>
@@ -166,8 +123,7 @@ const Index = () => {
                   <div className="text-gray-800 font-bold text-xl mb-2">{stat.label}</div>
                   <div className="text-gray-600 font-medium text-sm">{stat.sublabel}</div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -180,19 +136,12 @@ const Index = () => {
             Você está <span className="text-red-500">desperdiçando tempo</span> estudando de forma ineficiente?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            {[
-              "Estuda por meses mas não consegue ser aprovado",
-              "Perde pontos em questões que poderia acertar",
-              "Não sabe como eliminar alternativas incorretas",
-              "Fica em dúvida entre duas opções na prova"
-            ].map((problem, index) => (
-              <div key={index} className="flex items-center gap-4 glass-card p-6 rounded-2xl premium-shadow hover-lift">
+            {["Estuda por meses mas não consegue ser aprovado", "Perde pontos em questões que poderia acertar", "Não sabe como eliminar alternativas incorretas", "Fica em dúvida entre duas opções na prova"].map((problem, index) => <div key={index} className="flex items-center gap-4 glass-card p-6 rounded-2xl premium-shadow hover-lift">
                 <div className="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center flex-shrink-0">
                   <span className="text-red-500 text-2xl font-bold">✗</span>
                 </div>
                 <span className="text-gray-700 font-medium text-lg">{problem}</span>
-              </div>
-            ))}
+              </div>)}
           </div>
           <div className="glass-card p-8 rounded-3xl premium-shadow">
             <p className="text-2xl text-gray-700 leading-relaxed font-medium">
@@ -221,27 +170,24 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Brain,
-                title: "Análise Cognitiva",
-                description: "Aprenda a identificar padrões nas questões e eliminar alternativas incorretas com precisão científica",
-                gradient: "from-blue-500 to-cyan-500"
-              },
-              {
-                icon: Target,
-                title: "Estratégia Direcionada",
-                description: "Técnicas específicas para cada tipo de prova, adaptadas ao seu perfil e objetivos",
-                gradient: "from-purple-500 to-pink-500"
-              },
-              {
-                icon: Zap,
-                title: "Resultados Rápidos",
-                description: "Veja melhorias significativas já nas primeiras semanas de aplicação do método",
-                gradient: "from-yellow-500 to-orange-500"
-              }
-            ].map((feature, index) => (
-              <Card key={index} className="group glass-card hover-lift border-0 premium-shadow animate-scale-in" style={{animationDelay: `${index * 0.2}s`}}>
+            {[{
+            icon: Brain,
+            title: "Análise Cognitiva",
+            description: "Aprenda a identificar padrões nas questões e eliminar alternativas incorretas com precisão científica",
+            gradient: "from-blue-500 to-cyan-500"
+          }, {
+            icon: Target,
+            title: "Estratégia Direcionada",
+            description: "Técnicas específicas para cada tipo de prova, adaptadas ao seu perfil e objetivos",
+            gradient: "from-purple-500 to-pink-500"
+          }, {
+            icon: Zap,
+            title: "Resultados Rápidos",
+            description: "Veja melhorias significativas já nas primeiras semanas de aplicação do método",
+            gradient: "from-yellow-500 to-orange-500"
+          }].map((feature, index) => <Card key={index} className="group glass-card hover-lift border-0 premium-shadow animate-scale-in" style={{
+            animationDelay: `${index * 0.2}s`
+          }}>
                 <CardContent className="p-8 text-center">
                   <div className={`w-20 h-20 bg-gradient-to-br ${feature.gradient} rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300 soft-glow animate-float`}>
                     <feature.icon className="w-10 h-10 text-white" />
@@ -249,8 +195,7 @@ const Index = () => {
                   <h3 className="text-2xl font-bold mb-6 text-gray-900 font-poppins">{feature.title}</h3>
                   <p className="text-gray-600 leading-relaxed text-lg font-medium">{feature.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -263,23 +208,12 @@ const Index = () => {
             O que você vai <span className="text-gradient-premium">dominar</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              "Técnicas de eliminação por absurdo",
-              "Análise de pegadinhas mais comuns",
-              "Estratégias de tempo para cada tipo de questão",
-              "Método de leitura dinâmica aplicada",
-              "Técnicas de concentração e foco",
-              "Gestão de ansiedade durante a prova",
-              "Padrões de questões por banca examinadora",
-              "Chutes inteligentes baseados em estatística"
-            ].map((benefit, index) => (
-              <div key={index} className="flex items-center gap-4 glass-card p-6 rounded-2xl premium-shadow hover-lift group">
+            {["Técnicas de eliminação por absurdo", "Análise de pegadinhas mais comuns", "Estratégias de tempo para cada tipo de questão", "Método de leitura dinâmica aplicada", "Técnicas de concentração e foco", "Gestão de ansiedade durante a prova", "Padrões de questões por banca examinadora", "Chutes inteligentes baseados em estatística"].map((benefit, index) => <div key={index} className="flex items-center gap-4 glass-card p-6 rounded-2xl premium-shadow hover-lift group">
                 <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                   <CheckCircle className="w-6 h-6 text-white" />
                 </div>
                 <span className="text-gray-700 font-semibold text-lg">{benefit}</span>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -291,32 +225,25 @@ const Index = () => {
             Veja os <span className="text-gradient-premium">resultados</span> dos nossos alunos
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Marina Santos",
-                role: "Aprovada OAB - 1ª Fase",
-                text: "Aumentei minha pontuação em 40% depois de aplicar as técnicas. Consegui identificar as pegadinhas que antes me faziam errar.",
-                rating: 5
-              },
-              {
-                name: "Carlos Oliveira",
-                role: "Analista Judiciário - TRT",
-                text: "O método de chute inteligente me salvou em várias questões. Passei de 6º para 2º lugar no concurso!",
-                rating: 5
-              },
-              {
-                name: "Ana Costa",
-                role: "Procuradora Federal",
-                text: "Finalmente entendi como funciona a lógica das bancas. Agora consigo eliminar alternativas com muito mais precisão.",
-                rating: 5
-              }
-            ].map((testimonial, index) => (
-              <Card key={index} className="glass-card hover-lift border-0 premium-shadow group">
+            {[{
+            name: "Marina Santos",
+            role: "Aprovada OAB - 1ª Fase",
+            text: "Aumentei minha pontuação em 40% depois de aplicar as técnicas. Consegui identificar as pegadinhas que antes me faziam errar.",
+            rating: 5
+          }, {
+            name: "Carlos Oliveira",
+            role: "Analista Judiciário - TRT",
+            text: "O método de chute inteligente me salvou em várias questões. Passei de 6º para 2º lugar no concurso!",
+            rating: 5
+          }, {
+            name: "Ana Costa",
+            role: "Procuradora Federal",
+            text: "Finalmente entendi como funciona a lógica das bancas. Agora consigo eliminar alternativas com muito mais precisão.",
+            rating: 5
+          }].map((testimonial, index) => <Card key={index} className="glass-card hover-lift border-0 premium-shadow group">
                 <CardContent className="p-8">
                   <div className="flex items-center gap-1 mb-6">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
-                    ))}
+                    {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />)}
                   </div>
                   <p className="text-gray-600 mb-8 leading-relaxed text-lg font-medium italic">"{testimonial.text}"</p>
                   <div className="flex items-center gap-4">
@@ -329,8 +256,7 @@ const Index = () => {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -351,10 +277,7 @@ const Index = () => {
             <div className="text-2xl text-gray-600 mb-8 font-semibold">
               <strong className="text-red-500">60% OFF</strong> - Válido apenas hoje
             </div>
-            <Button 
-              size="lg" 
-              className="bg-green-600 hover:bg-green-700 text-white px-16 py-8 text-2xl font-bold rounded-2xl soft-glow hover-lift border-0 group"
-            >
+            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-16 py-8 text-2xl font-bold rounded-2xl soft-glow hover-lift border-0 group">
               <span className="relative z-10">QUERO GARANTIR MINHA VAGA AGORA</span>
               <ArrowRight className="ml-4 w-7 h-7 group-hover:translate-x-1 transition-transform" />
             </Button>
@@ -381,8 +304,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
