@@ -3,55 +3,127 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Brain, Target, Trophy, CheckCircle, Star, Users, Clock, BookOpen, Zap } from 'lucide-react';
+import { ArrowRight, Brain, Target, Trophy, CheckCircle, Star, Users, Clock, BookOpen, Zap, Award, TrendingUp } from 'lucide-react';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 px-4">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50"></div>
+      <section className="relative overflow-hidden py-16 px-4">
+        {/* Background with subtle gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/70 via-white to-purple-50/70"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(99,102,241,0.05),transparent_50%)] bg-[radial-gradient(circle_at_70%_80%,rgba(6,182,212,0.05),transparent_50%)]"></div>
+        
         <div className="relative max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <Badge className="mb-6 bg-future-purple text-white px-6 py-2 text-sm font-medium animate-pulse-glow">
-              🚀 Lançamento Exclusivo
-            </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold font-space mb-8 text-gradient animate-fade-in">
-              Técnicas de Chute
-              <br />
-              <span className="text-future-blue">Inteligentes</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-up">
-              Domine as estratégias mais avançadas para maximizar suas chances de aprovação na 
-              <strong> OAB e Concursos Públicos</strong>
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
+          <div className="text-center mb-12">
+            {/* Authority Badge */}
+            <div className="flex items-center justify-center mb-6">
+              <Badge className="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-6 py-3 text-sm font-semibold rounded-full shadow-lg animate-pulse-glow border-0">
+                <Award className="w-4 h-4 mr-2" />
+                Metodologia #1 entre candidatos da OAB
+              </Badge>
+            </div>
+
+            {/* Main Headline */}
+            <div className="mb-6">
+              <h1 className="text-5xl md:text-7xl font-bold font-space mb-4 text-gradient animate-fade-in">
+                Técnicas de Chute
+                <br />
+                <span className="text-future-blue">Inteligentes</span>
+              </h1>
+              
+              {/* Authority Subtitle */}
+              <div className="flex items-center justify-center gap-3 mb-8">
+                <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent flex-1 max-w-20"></div>
+                <p className="text-lg md:text-xl font-semibold text-gray-700 px-4">
+                  Já ajudou mais de <span className="text-green-600 font-bold">12.847 alunos</span> a passarem chutando com técnica
+                </p>
+                <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent flex-1 max-w-20"></div>
+              </div>
+            </div>
+
+            {/* Emotional Subtitle */}
+            <div className="max-w-4xl mx-auto mb-10">
+              <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-medium animate-slide-up">
+                <span className="text-gray-800 font-semibold">Você estudou, mas ainda não se sente pronto?</span>
+                <br />
+                Descubra como usar técnicas comprovadas de chute para garantir sua aprovação na 
+                <strong className="text-future-blue"> OAB e Concursos Públicos</strong> — mesmo nas questões mais difíceis.
+              </p>
+            </div>
+
+            {/* CTA Section */}
+            <div className="flex flex-col items-center gap-4 animate-slide-up mb-8">
               <Button 
                 size="lg" 
-                className="bg-future-blue hover:bg-blue-600 text-white px-8 py-4 text-lg font-semibold rounded-xl neon-glow transform hover:scale-105 transition-all duration-300"
+                className="bg-future-blue hover:bg-blue-600 text-white px-10 py-6 text-xl font-bold rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 hover:shadow-blue-500/25"
               >
-                Garantir Minha Vaga
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <TrendingUp className="mr-3 w-6 h-6" />
+                GARANTIR MINHA VAGA AGORA
+                <ArrowRight className="ml-3 w-6 h-6" />
               </Button>
-              <div className="flex items-center gap-2 text-gray-600">
-                <Clock className="w-5 h-5" />
-                <span className="font-medium">Oferta por tempo limitado</span>
+              
+              {/* Microcopy */}
+              <div className="flex items-center gap-2 text-gray-600 bg-gray-50 px-4 py-2 rounded-full border border-gray-200">
+                <Clock className="w-4 h-4 text-orange-500" />
+                <span className="text-sm font-medium">⏳ Vagas limitadas — próxima turma em breve</span>
+              </div>
+            </div>
+
+            {/* Social Proof Seal */}
+            <div className="inline-flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-lg border border-gray-100 mb-12">
+              <div className="flex items-center gap-2">
+                <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center">
+                  <Users className="w-5 h-5 text-white" />
+                </div>
+                <div className="text-left">
+                  <div className="text-sm font-bold text-gray-900">+12.847</div>
+                  <div className="text-xs text-gray-600">Alunos Aprovados</div>
+                </div>
+              </div>
+              <div className="w-px h-8 bg-gray-200"></div>
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                ))}
+                <span className="ml-1 text-sm font-semibold text-gray-700">4.9/5</span>
               </div>
             </div>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+          {/* Enhanced Stats Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: Users, number: "12,847", label: "Alunos Aprovados" },
-              { icon: Trophy, number: "89%", label: "Taxa de Aprovação" },
-              { icon: Star, number: "4.9/5", label: "Avaliação Média" }
+              { 
+                icon: Users, 
+                number: "12,847", 
+                label: "Alunos Aprovados",
+                color: "from-green-500 to-emerald-600",
+                bgColor: "bg-green-50"
+              },
+              { 
+                icon: Trophy, 
+                number: "89%", 
+                label: "Taxa de Aprovação",
+                color: "from-yellow-500 to-orange-500",
+                bgColor: "bg-yellow-50"
+              },
+              { 
+                icon: Star, 
+                number: "4.9/5", 
+                label: "Avaliação Média",
+                color: "from-purple-500 to-pink-500",
+                bgColor: "bg-purple-50"
+              }
             ].map((stat, index) => (
-              <Card key={index} className="cyber-border p-6 text-center bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300 animate-float">
-                <CardContent className="p-0">
-                  <stat.icon className="w-10 h-10 mx-auto mb-4 text-future-blue" />
-                  <div className="text-3xl font-bold text-gray-900 mb-2">{stat.number}</div>
-                  <div className="text-gray-600 font-medium">{stat.label}</div>
+              <Card key={index} className="group relative overflow-hidden bg-white/90 backdrop-blur-sm border-2 border-gray-100 hover:border-gray-200 hover:shadow-2xl transition-all duration-300 animate-float rounded-2xl">
+                <div className={`absolute inset-0 bg-gradient-to-br ${stat.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
+                <CardContent className="p-8 text-center relative">
+                  <div className={`w-16 h-16 ${stat.bgColor} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    <stat.icon className={`w-8 h-8 bg-gradient-to-br ${stat.color} bg-clip-text text-transparent`} />
+                  </div>
+                  <div className="text-4xl font-bold text-gray-900 mb-3 group-hover:scale-105 transition-transform duration-300">{stat.number}</div>
+                  <div className="text-gray-600 font-semibold text-lg">{stat.label}</div>
                 </CardContent>
               </Card>
             ))}
