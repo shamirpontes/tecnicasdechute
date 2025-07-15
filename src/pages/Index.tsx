@@ -114,42 +114,66 @@ const Index = () => {
           </div>
 
           {/* Super Bônus Section */}
-          <div className="max-w-6xl mx-auto">
-            <h3 className="text-4xl md:text-5xl font-black font-poppins text-center mb-16 text-white">
+          <div className="max-w-6xl mx-auto px-4">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-black font-poppins text-center mb-12 sm:mb-16 text-white">
               <span className="text-gradient-premium">SUPER BÔNUS</span>
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="glass-card p-8 rounded-3xl cinematic-shadow hover-lift color-bleed border-2 border-yellow-500/30">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+              {/* Bônus 1 - Acesso por 1 ano */}
+              <div className="glass-card p-6 sm:p-8 rounded-3xl cinematic-shadow hover-lift color-bleed border-2 border-yellow-500/30 transform transition-all duration-300">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Timer className="w-8 h-8 text-white" />
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 animate-pulse">
+                    <Timer className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
                   </div>
-                  <div className="text-lg font-bold text-yellow-400 mb-4">Para os primeiros 200 alunos</div>
-                  <div className="text-2xl font-bold text-white mb-4">Acesso por 1 ano</div>
-                  <div className="text-lg line-through text-white/60 mb-2">Custaria mais R$ 100</div>
-                  <div className="text-2xl font-black text-green-400 mb-4">FICA POR R$ 0</div>
-                  <Badge className="bg-gradient-to-r from-yellow-500 to-orange-600 text-white px-4 py-2 rounded-full">
+                  <div className="text-base sm:text-lg font-bold text-yellow-400 mb-3 sm:mb-4">Para os primeiros 200 alunos</div>
+                  <div className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Acesso por 1 ano</div>
+                  <div className="text-base sm:text-lg line-through text-white/60 mb-2">Custaria mais R$ 100</div>
+                  <div className="text-xl sm:text-2xl font-black text-green-400 mb-4">FICA POR R$ 0</div>
+                  <Badge className="bg-gradient-to-r from-yellow-500 to-orange-600 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-sm sm:text-base">
                     LIMITADO
                   </Badge>
                 </div>
               </div>
 
-              <div className="glass-card p-8 rounded-3xl cinematic-shadow hover-lift color-bleed border-2 border-blue-500/30">
+              {/* Bônus 2 - Agente IA */}
+              <div className="glass-card p-6 sm:p-8 rounded-3xl cinematic-shadow hover-lift color-bleed border-2 border-blue-500/30 transform transition-all duration-300">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Brain className="w-8 h-8 text-white" />
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 animate-bounce">
+                    <Brain className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
                   </div>
-                  <div className="text-2xl font-bold text-white mb-4">Agente de Inteligência Artificial</div>
-                  <div className="text-lg line-through text-white/60 mb-2">Custaria no mínimo R$ 200</div>
-                  <div className="text-2xl font-black text-green-400 mb-4">VAI CUSTAR R$ 0</div>
-                  <p className="text-white/80 text-sm">
+                  <div className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Agente de Inteligência Artificial</div>
+                  <div className="text-base sm:text-lg line-through text-white/60 mb-2">Custaria no mínimo R$ 200</div>
+                  <div className="text-xl sm:text-2xl font-black text-green-400 mb-4">VAI CUSTAR R$ 0</div>
+                  <p className="text-white/80 text-sm sm:text-base leading-relaxed">
                     IA que analisa questões e sugere técnicas de chute específicas
                   </p>
                 </div>
               </div>
 
-              
+              {/* Bônus 3 - Livro Digital */}
+              <div className="glass-card p-6 sm:p-8 rounded-3xl cinematic-shadow hover-lift color-bleed border-2 border-green-500/30 transform transition-all duration-300">
+                <div className="text-center">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 animate-pulse">
+                    <BookOpen className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+                  </div>
+                  <div className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Livro Digital sobre Técnicas de Chute</div>
+                  <div className="text-base sm:text-lg line-through text-white/60 mb-2">Material que vale R$ 200</div>
+                  <div className="text-xl sm:text-2xl font-black text-green-400 mb-4">POR R$ 0</div>
+                  <p className="text-white/80 text-sm sm:text-base leading-relaxed">
+                    Guia completo em PDF com todas as estratégias detalhadas
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Total Value Display */}
+            <div className="mt-8 sm:mt-12 text-center">
+              <div className="glass-card p-6 sm:p-8 rounded-3xl cinematic-shadow border-2 border-green-500/30 max-w-md mx-auto">
+                <div className="text-lg sm:text-xl text-white/80 mb-2">Valor total dos bônus:</div>
+                <div className="text-2xl sm:text-3xl line-through text-white/60 mb-2">R$ 500</div>
+                <div className="text-3xl sm:text-4xl font-black text-green-400">HOJE: R$ 0</div>
+              </div>
             </div>
           </div>
         </div>
