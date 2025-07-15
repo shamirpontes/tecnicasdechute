@@ -684,9 +684,9 @@ const Index = () => {
                       <div className="text-6xl font-black text-gradient-premium mb-4">
                         R$ 97
                       </div>
-                      <Badge className="bg-gradient-to-r from-green-600 to-emerald-700 text-white px-4 py-2 text-sm font-bold rounded-full">
-                        84% DE DESCONTO
-                      </Badge>
+                       <Badge className="bg-gradient-to-r from-green-600 to-emerald-700 text-navy-primary px-4 py-2 text-sm font-bold rounded-full">
+                         84% DE DESCONTO
+                       </Badge>
                     </div>
 
                     <div className="space-y-4 mb-8 text-left">
