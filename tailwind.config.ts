@@ -68,18 +68,25 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Nova paleta: Azul Marinho, Branco e Verde
+				// Nova paleta: Preto/Cinza escuro, Branco, Azul-ciano neon
 				navy: {
-					primary: 'hsl(var(--navy-primary))',
-					secondary: 'hsl(var(--navy-secondary))',
-					accent: 'hsl(var(--navy-accent))',
+					primary: 'hsl(var(--navy-primary))',    // #0D0D0D - Preto
+					secondary: 'hsl(var(--navy-secondary))', // #1A1A1A - Cinza muito escuro
+					accent: 'hsl(var(--navy-accent))',      // Tom intermediário
 				},
 				crimson: {
-					primary: 'hsl(var(--red-primary))',    // Verde
-					secondary: 'hsl(var(--red-secondary))', // Verde mais claro
+					primary: 'hsl(var(--red-primary))',     // #00E6F6 - Azul-ciano neon
+					secondary: 'hsl(var(--red-secondary))',  // #00CFE6 - Azul-ciano mais escuro
 				},
 				rose: {
-					accent: 'hsl(var(--pink-accent))',     // Verde médio
+					accent: 'hsl(var(--pink-accent))',      // Azul-ciano vibrante
+				},
+				// Cores adicionais da paleta
+				text: {
+					primary: 'hsl(var(--text-primary))',      // Branco puro
+					secondary: 'hsl(var(--text-secondary))',    // Off-white
+					muted: 'hsl(var(--text-muted))',        // Cinza claro
+					accent: 'hsl(var(--text-accent))',       // Azul acinzentado
 				},
 				future: {
 					blue: '#1e3a8a',
@@ -166,7 +173,7 @@ export default {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 				'navy-gradient': 'linear-gradient(135deg, hsl(var(--navy-primary)) 0%, hsl(var(--navy-secondary)) 100%)',
-				'red-gradient': 'linear-gradient(90deg, hsl(var(--red-primary)) 0%, hsl(var(--pink-accent)) 100%)',
+				'cyan-gradient': 'linear-gradient(90deg, hsl(var(--red-primary)) 0%, hsl(var(--pink-accent)) 100%)',
 				'glass-gradient': 'linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.05) 100%)',
 				'atmospheric-gradient': 'linear-gradient(135deg, hsl(var(--navy-primary) / 0.8) 0%, hsl(var(--navy-secondary) / 0.6) 25%, hsl(var(--navy-accent) / 0.4) 50%, hsl(var(--red-primary) / 0.1) 75%, hsl(var(--pink-accent) / 0.1) 100%)'
 			},
@@ -177,12 +184,12 @@ export default {
 				'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.4)',
 				'premium': '0 20px 60px -20px rgba(0, 0, 0, 0.3)',
 				'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.2)',
-				'glow-red': '0 0 20px hsl(var(--red-primary) / 0.4)',
-				'glow-pink': '0 0 20px hsl(var(--pink-accent) / 0.4)',
+				'glow-cyan': '0 0 20px hsl(var(--red-primary) / 0.4)',
+				'glow-cyan-alt': '0 0 20px hsl(var(--pink-accent) / 0.4)',
 				'glow-navy': '0 0 20px hsl(var(--navy-accent) / 0.4)',
 				'cinematic': '0 4px 12px -2px rgba(0, 0, 0, 0.3), 0 8px 24px -4px rgba(0, 0, 0, 0.2), 0 16px 48px -8px rgba(0, 0, 0, 0.1)',
-				'colored-red': '0 8px 32px -8px hsl(var(--red-primary) / 0.4), 0 4px 16px -4px hsl(var(--red-primary) / 0.3)',
-				'colored-pink': '0 8px 32px -8px hsl(var(--pink-accent) / 0.4), 0 4px 16px -4px hsl(var(--pink-accent) / 0.3)',
+				'colored-cyan': '0 8px 32px -8px hsl(var(--red-primary) / 0.4), 0 4px 16px -4px hsl(var(--red-primary) / 0.3)',
+				'colored-cyan-alt': '0 8px 32px -8px hsl(var(--pink-accent) / 0.4), 0 4px 16px -4px hsl(var(--pink-accent) / 0.3)',
 				'colored-navy': '0 8px 32px -8px hsl(var(--navy-accent) / 0.4), 0 4px 16px -4px hsl(var(--navy-accent) / 0.3)'
 			}
 		}

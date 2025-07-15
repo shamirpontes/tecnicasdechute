@@ -46,13 +46,19 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Nova paleta: Azul Marinho, Branco e Verde */
-    --navy-primary: 220 100% 8%;
-    --navy-secondary: 220 90% 12%;
-    --navy-accent: 220 70% 20%;
-    --red-primary: 142 76% 36%;    /* Verde */
-    --red-secondary: 142 69% 58%;  /* Verde mais claro */
-    --pink-accent: 145 63% 49%;    /* Verde médio */
+    /* Nova paleta: Preto/Cinza escuro, Branco, Azul-ciano neon */
+    --navy-primary: 0 0% 5%;        /* #0D0D0D - Preto */
+    --navy-secondary: 0 0% 10%;     /* #1A1A1A - Cinza muito escuro */
+    --navy-accent: 0 0% 15%;        /* Tom intermediário */
+    --red-primary: 187 100% 48%;    /* #00E6F6 - Azul-ciano neon */
+    --red-secondary: 187 100% 45%;  /* #00CFE6 - Azul-ciano mais escuro */
+    --pink-accent: 187 100% 50%;    /* Azul-ciano vibrante */
+    
+    /* Cores de texto */
+    --text-primary: 0 0% 100%;      /* #FFFFFF - Branco puro */
+    --text-secondary: 0 0% 97%;     /* #F8F8F8 - Off-white */
+    --text-muted: 214 21% 86%;      /* #D6DDE5 - Cinza claro */
+    --text-accent: 220 24% 79%;     /* #BFC7D6 - Azul acinzentado */
   }
 
   .dark {
@@ -94,6 +100,7 @@
   body {
     @apply text-foreground font-inter;
     background: linear-gradient(135deg, hsl(var(--navy-primary)) 0%, hsl(var(--navy-secondary)) 100%);
+    color: #FFFFFF;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -136,13 +143,13 @@
       0 16px 48px -8px rgba(0, 0, 0, 0.1);
   }
 
-  .colored-shadow-red {
+  .colored-shadow-cyan {
     box-shadow: 
       0 8px 32px -8px hsla(var(--red-primary), 0.4),
       0 4px 16px -4px hsla(var(--red-primary), 0.3);
   }
 
-  .colored-shadow-pink {
+  .colored-shadow-cyan-alt {
     box-shadow: 
       0 8px 32px -8px hsla(var(--pink-accent), 0.4),
       0 4px 16px -4px hsla(var(--pink-accent), 0.3);
