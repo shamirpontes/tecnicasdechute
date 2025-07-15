@@ -113,41 +113,55 @@ const Index = () => {
               </Card>)}
           </div>
 
-          {/* Bônus Section */}
+          {/* Super Bônus Section */}
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-3xl md:text-4xl font-black font-poppins text-center mb-12 text-white">
-              E mais: você ainda recebe <span className="text-gradient-premium">5 bônus exclusivos</span>
+            <h3 className="text-4xl md:text-5xl font-black font-poppins text-center mb-16 text-white">
+              <span className="text-gradient-premium">SUPER BÔNUS</span>
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[{
-              title: "BÔNUS 1",
-              value: "R$ 100",
-              description: "Material complementar exclusivo"
-            }, {
-              title: "BÔNUS 2",
-              value: "R$ 100",
-              description: "Casos práticos resolvidos"
-            }, {
-              title: "BÔNUS 3",
-              value: "R$ 100",
-              description: "Simulados com técnicas aplicadas"
-            }, {
-              title: "BÔNUS 4",
-              value: "R$ 50",
-              description: "Checklist de revisão final"
-            }, {
-              title: "BÔNUS 5",
-              value: "R$ 100",
-              description: "Agente de I.A. prático e intuitivo"
-            }].map((bonus, index) => <div key={index} className="glass-card p-6 rounded-2xl cinematic-shadow hover-lift color-bleed">
-                  <div className="text-center">
-                    <div className="text-lg font-bold text-crimson-primary mb-2">{bonus.title}</div>
-                    <div className="text-2xl font-black text-white mb-2 line-through opacity-70">{bonus.value}</div>
-                    <div className="text-xl font-bold text-green-400 mb-4">POR R$ 0</div>
-                    <p className="text-white/80 text-sm">{bonus.description}</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="glass-card p-8 rounded-3xl cinematic-shadow hover-lift color-bleed border-2 border-yellow-500/30">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Timer className="w-8 h-8 text-white" />
                   </div>
-                </div>)}
+                  <div className="text-lg font-bold text-yellow-400 mb-4">Para os primeiros 200 alunos</div>
+                  <div className="text-2xl font-bold text-white mb-4">Acesso por 1 ano</div>
+                  <div className="text-lg line-through text-white/60 mb-2">Custaria mais R$ 100</div>
+                  <div className="text-2xl font-black text-green-400 mb-4">FICA POR R$ 0</div>
+                  <Badge className="bg-gradient-to-r from-yellow-500 to-orange-600 text-white px-4 py-2 rounded-full">
+                    LIMITADO
+                  </Badge>
+                </div>
+              </div>
+
+              <div className="glass-card p-8 rounded-3xl cinematic-shadow hover-lift color-bleed border-2 border-blue-500/30">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Brain className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="text-2xl font-bold text-white mb-4">Agente de Inteligência Artificial</div>
+                  <div className="text-lg line-through text-white/60 mb-2">Custaria no mínimo R$ 200</div>
+                  <div className="text-2xl font-black text-green-400 mb-4">VAI CUSTAR R$ 0</div>
+                  <p className="text-white/80 text-sm">
+                    IA que analisa questões e sugere técnicas de chute específicas
+                  </p>
+                </div>
+              </div>
+
+              <div className="glass-card p-8 rounded-3xl cinematic-shadow hover-lift color-bleed border-2 border-green-500/30">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <BookOpen className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="text-2xl font-bold text-white mb-4">Livro Digital sobre Técnicas de Chute</div>
+                  <div className="text-lg line-through text-white/60 mb-2">Material que vale R$ 200</div>
+                  <div className="text-2xl font-black text-green-400 mb-4">POR R$ 0</div>
+                  <p className="text-white/80 text-sm">
+                    Guia completo com todas as estratégias detalhadas
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
