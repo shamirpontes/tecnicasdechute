@@ -71,62 +71,27 @@ const Index = () => {
               <div className="relative group animate-scale-in" style={{animationDelay: '0.3s'}}>
                 {/* Background Effects */}
                 <div className="absolute -inset-4 bg-gradient-to-br from-crimson-primary/30 to-rose-accent/30 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
-                <div className="absolute -inset-2 bg-gradient-to-br from-navy-accent/40 to-crimson-primary/20 rounded-2xl blur-xl"></div>
                 
-                {/* Mockup Container */}
+                {/* Mockup Container - Limpo apenas para a foto da capa */}
                 <div className="relative bg-gradient-to-br from-white to-gray-100 rounded-2xl p-1 shadow-2xl group-hover:scale-105 transition-transform duration-500">
-                  {/* Inner Container */}
+                  {/* Inner Container - Apenas a foto da capa */}
                   <div className="bg-white rounded-xl overflow-hidden shadow-inner">
-                    {/* Header da Capa */}
-                    <div className="bg-gradient-to-r from-navy-primary to-navy-secondary p-6 text-center">
-                      <div className="text-white text-sm font-semibold mb-2 uppercase tracking-wide">
-                        Material Exclusivo
-                      </div>
-                      <h3 className="text-white text-xl font-black leading-tight">
-                        Técnicas de Chute Inteligente para a OAB
-                      </h3>
-                    </div>
-                    
-                    {/* Área da Imagem/Conteúdo */}
-                    <div className="h-64 sm:h-80 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6">
+                    {/* Área da Imagem/Foto da Capa */}
+                    <div className="h-96 sm:h-[500px] bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6">
                       <div className="text-center">
-                        <div className="w-20 h-20 bg-gradient-to-br from-crimson-primary to-rose-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                          <Target className="w-10 h-10 text-white" />
+                        <div className="w-32 h-32 bg-gradient-to-br from-crimson-primary to-rose-accent rounded-2xl flex items-center justify-center mx-auto mb-4">
+                          <Target className="w-16 h-16 text-white" />
                         </div>
-                        <div className="text-navy-primary font-bold text-lg mb-2">
-                          15 Técnicas Científicas
+                        <div className="text-navy-primary font-bold text-xl mb-2">
+                          Técnicas de Chute Inteligente para a OAB
                         </div>
                         <div className="text-gray-600 text-sm">
-                          Acerte Mesmo Sem Saber
+                          Material Exclusivo
                         </div>
                       </div>
-                    </div>
-                    
-                    {/* Footer da Capa */}
-                    <div className="bg-gradient-to-r from-crimson-primary to-rose-accent p-4 text-center">
-                      <div className="text-white text-sm font-semibold">
-                        + Bônus Exclusivos no Valor de R$ 800
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Floating Elements */}
-                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-400 rounded-full flex items-center justify-center animate-pulse">
-                    <CheckCircle className="w-4 h-4 text-white" />
-                  </div>
-                  
-                  {/* Stats Floating */}
-                  <div className="absolute -bottom-4 -left-4 glass-card px-4 py-2 rounded-full border border-white/20">
-                    <div className="text-white text-sm font-semibold">
-                      +20 pontos garantidos
                     </div>
                   </div>
                 </div>
-                
-                {/* Orbiting Elements */}
-                <div className="absolute top-1/4 -left-8 w-3 h-3 bg-crimson-primary rounded-full animate-ping"></div>
-                <div className="absolute bottom-1/4 -right-8 w-2 h-2 bg-rose-accent rounded-full animate-pulse"></div>
-                <div className="absolute top-3/4 -left-4 w-1 h-1 bg-white rounded-full animate-bounce"></div>
               </div>
             </div>
           </div>
