@@ -154,7 +154,7 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <BookOpen className="w-8 h-8 text-white" />
                   </div>
-                  <div className="text-2xl font-bold text-white mb-4">Livro Digital sobre Técnicas de Chute</div>
+                  <div className="text-2xl font-bold text-white mb-4">Liberação do Livro Digital Técnicas de Chute por 1 ano</div>
                   <div className="text-lg line-through text-white/60 mb-2">Material que vale R$ 200</div>
                   <div className="text-2xl font-black text-green-400 mb-4">POR R$ 0</div>
                   <p className="text-white/80 text-sm">
