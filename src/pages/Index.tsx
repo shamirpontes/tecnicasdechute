@@ -237,11 +237,7 @@ const Index = () => {
             <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
               <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 sm:p-12">
                 <div className="relative overflow-hidden rounded-2xl border border-white/20">
-                  <img 
-                    src="/lovable-uploads/433c288f-8b00-4d82-afe8-90590e7511de.png" 
-                    alt="Depoimento WhatsApp - Aprovada OAB"
-                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
+                  <img src="/lovable-uploads/433c288f-8b00-4d82-afe8-90590e7511de.png" alt="Depoimento WhatsApp - Aprovada OAB" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>
               </div>
@@ -251,11 +247,7 @@ const Index = () => {
             <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
               <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 sm:p-12">
                 <div className="relative overflow-hidden rounded-2xl border border-white/20">
-                  <img 
-                    src="/lovable-uploads/b59c0d42-5f4a-48d5-b90e-9cae2154024a.png" 
-                    alt="Depoimento WhatsApp - Aprovação com 46/80"
-                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
+                  <img src="/lovable-uploads/b59c0d42-5f4a-48d5-b90e-9cae2154024a.png" alt="Depoimento WhatsApp - Aprovação com 46/80" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>
               </div>
@@ -265,11 +257,7 @@ const Index = () => {
             <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
               <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 sm:p-12">
                 <div className="relative overflow-hidden rounded-2xl border border-white/20">
-                  <img 
-                    src="/lovable-uploads/9a4ad55a-4b7e-4ebb-86c8-6ccba0d24299.png" 
-                    alt="Depoimento WhatsApp - Aprovação com 43/80"
-                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
+                  <img src="/lovable-uploads/9a4ad55a-4b7e-4ebb-86c8-6ccba0d24299.png" alt="Depoimento WhatsApp - Aprovação com 43/80" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>
               </div>
@@ -279,11 +267,7 @@ const Index = () => {
             <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
               <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 sm:p-12">
                 <div className="relative overflow-hidden rounded-2xl border border-white/20">
-                  <img 
-                    src="/lovable-uploads/385e1010-f6a5-41b4-aa45-d577af7a6641.png" 
-                    alt="Depoimento WhatsApp - Melissa acertei 46 questões"
-                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
+                  <img src="/lovable-uploads/385e1010-f6a5-41b4-aa45-d577af7a6641.png" alt="Depoimento WhatsApp - Melissa acertei 46 questões" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>
               </div>
@@ -293,25 +277,17 @@ const Index = () => {
             <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
               <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 sm:p-12">
                 <div className="relative overflow-hidden rounded-2xl border border-white/20">
-                  <img 
-                    src="/lovable-uploads/469c77ed-4a81-49a5-8f34-fa2df8650454.png" 
-                    alt="Depoimento WhatsApp - Melissa milagre aconteceu"
-                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
+                  <img src="/lovable-uploads/469c77ed-4a81-49a5-8f34-fa2df8650454.png" alt="Depoimento WhatsApp - Melissa milagre aconteceu" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>
               </div>
             </div>
 
             {/* Print WhatsApp 6 */}
-            <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
+            <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group py-[200px]">
               <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 sm:p-12">
                 <div className="relative overflow-hidden rounded-2xl border border-white/20">
-                  <img 
-                    src="/lovable-uploads/c236ffc8-2278-4186-9519-0e3f01967165.png" 
-                    alt="Depoimento WhatsApp - Aprovação 47/80"
-                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
+                  <img src="/lovable-uploads/c236ffc8-2278-4186-9519-0e3f01967165.png" alt="Depoimento WhatsApp - Aprovação 47/80" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>
               </div>
@@ -321,11 +297,7 @@ const Index = () => {
             <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
               <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 sm:p-12">
                 <div className="relative overflow-hidden rounded-2xl border border-white/20">
-                  <img 
-                    src="/lovable-uploads/75019e25-3dff-4e15-9c98-e2bb4699b5a8.png" 
-                    alt="Depoimento WhatsApp - 44 pontos em duas semanas"
-                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
+                  <img src="/lovable-uploads/75019e25-3dff-4e15-9c98-e2bb4699b5a8.png" alt="Depoimento WhatsApp - 44 pontos em duas semanas" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>
               </div>
