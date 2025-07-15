@@ -53,16 +53,16 @@ const Index = () => {
         <div className="absolute inset-0 pattern-dots opacity-10"></div>
         <div className="max-w-5xl mx-auto text-center relative">
           <h2 className="text-4xl md:text-5xl font-black font-poppins mb-8 text-white">
-            Você já está se preparando com estratégia, <span className="text-crimson-primary">mas...</span>
+            Você estuda muito, mas ainda <span className="text-crimson-primary">perde pontos bobos</span>
           </h2>
           
           <div className="glass-card p-8 rounded-3xl cinematic-shadow hover-glow mb-8">
             <p className="text-xl md:text-2xl text-white leading-relaxed font-medium mb-6">
-              <strong className="text-crimson-primary">A verdade é:</strong> você ainda vai errar questões na prova.
+              <strong className="text-crimson-primary">A realidade cruel:</strong> Não importa quanto você estude, sempre vão existir questões que você simplesmente não consegue resolver.
             </p>
             <p className="text-lg text-white/90 leading-relaxed">
-              Questões que não dá tempo de revisar... ou que simplesmente vão parecer grego.
-              E são justamente essas questões que podem custar a sua aprovação.
+              E é justamente nessas questões "impossíveis" que a maioria dos candidatos perde pontos preciosos... 
+              <strong className="text-crimson-primary">pontos que poderiam garantir a aprovação.</strong>
             </p>
           </div>
         </div>
@@ -74,12 +74,11 @@ const Index = () => {
         <div className="max-w-7xl mx-auto relative">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-6xl font-black font-poppins mb-8 text-white">
-              Técnicas de 
-              <span className="text-gradient-premium block mt-2 animate-gradient-shift">Chute Inteligente</span>
+              O método que <span className="text-gradient-premium block mt-2 animate-gradient-shift">transforma chutes em estratégia</span>
             </h2>
             <div className="max-w-4xl mx-auto">
               <p className="text-xl text-white/90 font-medium leading-relaxed mb-8">
-                Com o material "Técnicas de Chute Inteligente para a OAB", você vai aprender:
+                Pare de depender da sorte. Aprenda as <strong className="text-crimson-primary">15 técnicas científicas</strong> que os aprovados usam para acertar questões que nunca viram antes:
               </p>
             </div>
           </div>
@@ -87,18 +86,18 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {[{
             icon: Brain,
-            title: "15 Técnicas Práticas",
-            description: "Técnicas testadas para identificar padrões da FGV, eliminar alternativas e chutar com lógica (não no escuro).",
+            title: "Método Anti-Erro",
+            description: "15 técnicas comprovadas que identificam padrões da FGV, eliminam pegadinhas e transformam chutes em acertos estratégicos.",
             gradient: "from-navy-accent to-crimson-primary"
           }, {
             icon: Target,
-            title: "Aplicação Sob Pressão",
-            description: "Como aplicar essas técnicas mesmo sob pressão, nos minutos finais da prova.",
+            title: "Zero Ansiedade",
+            description: "Domine técnicas de aplicação rápida para usar mesmo sob pressão extrema, nos últimos minutos da prova.",
             gradient: "from-crimson-primary to-rose-accent"
           }, {
             icon: Zap,
-            title: "Estratégias Baseadas em Dados",
-            description: "Estratégias baseadas em estatística, probabilidade e leitura de padrão.",
+            title: "Ciência dos Dados",
+            description: "Estratégias baseadas em análise estatística real das provas anteriores da OAB - não é achismo, é ciência.",
             gradient: "from-rose-accent to-crimson-secondary"
           }].map((feature, index) => <Card key={index} className="group glass-card hover-lift border-0 cinematic-shadow animate-scale-in color-bleed colored-shadow-navy" style={{
             animationDelay: `${index * 0.2}s`
@@ -224,10 +223,10 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black font-poppins mb-6 text-white">
-              Veja o que nossos alunos estão dizendo
+              A prova está nos <span className="text-gradient-premium">resultados reais</span>
             </h2>
             <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto">
-              Resultados reais de quem aplicou as técnicas de chute inteligente
+              Centenas de alunos já foram aprovados usando essas técnicas. <strong className="text-green-400">Veja as mensagens que recebemos:</strong>
             </p>
           </div>
           
