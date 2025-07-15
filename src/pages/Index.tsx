@@ -690,19 +690,19 @@ const Index = () => {
                     </div>
 
                     <div className="space-y-4 mb-8 text-left">
-                      <div className="flex items-center gap-3 text-white/90">
+                      <div className="flex items-center gap-3 text-navy-primary">
                         <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
                         <span>15 Técnicas de Chute Escaneadas</span>
                       </div>
-                      <div className="flex items-center gap-3 text-white/90">
+                      <div className="flex items-center gap-3 text-navy-primary">
                         <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
                         <span>Agente de I.A. personalizado</span>
                       </div>
-                      <div className="flex items-center gap-3 text-white/90">
+                      <div className="flex items-center gap-3 text-navy-primary">
                         <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
                         <span>Acesso imediato e vitalício</span>
                       </div>
-                      <div className="flex items-center gap-3 text-white/90">
+                      <div className="flex items-center gap-3 text-navy-primary">
                         <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
                         <span>Garantia de resultados</span>
                       </div>
