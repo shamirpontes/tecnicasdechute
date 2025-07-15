@@ -220,36 +220,77 @@ const Index = () => {
       </section>
 
       {/* Seção Depoimentos */}
-      <section className="py-24 px-4 relative z-10">
+      <section className="py-16 sm:py-24 px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-black font-poppins text-center mb-16 text-white">
-            Veja os <span className="text-gradient-premium animate-gradient-shift">resultados</span>
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[{
-            name: "Camila R.",
-            text: "Chutei com estratégia em umas 12 questões… acertei 9. Isso me colocou acima da linha de corte!",
-            rating: 5
-          }, {
-            name: "Lucas P.",
-            text: "Esse material me fez enxergar a prova com outros olhos. Não foi sorte, foi método.",
-            rating: 5
-          }].map((testimonial, index) => <Card key={index} className="glass-card hover-lift border-0 cinematic-shadow group color-bleed">
-                <CardContent className="p-8 bg-slate-950">
-                  <div className="flex items-center gap-1 mb-6">
-                    {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="w-6 h-6 fill-yellow-500 text-yellow-500" />)}
-                  </div>
-                  <p className="text-white/90 mb-8 leading-relaxed text-lg font-medium italic">"{testimonial.text}"</p>
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-crimson-primary to-rose-accent rounded-full flex items-center justify-center soft-glow">
-                      <span className="text-white font-bold text-lg">{testimonial.name.charAt(0)}</span>
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black font-poppins mb-6 text-white">
+              Veja o que nossos alunos estão dizendo
+            </h2>
+            <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto">
+              Resultados reais de quem aplicou as técnicas de chute inteligente
+            </p>
+          </div>
+          
+          {/* Grid responsivo para os prints de WhatsApp */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {/* Placeholder para Print 1 */}
+            <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
+              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8">
+                <div className="aspect-[9/16] bg-whatsapp-bg rounded-2xl border border-white/10 flex items-center justify-center relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-emerald-600/10"></div>
+                  <div className="text-center p-4">
+                    <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Users className="w-8 h-8 text-green-400" />
                     </div>
-                    <div>
-                      <div className="font-bold text-white text-lg">{testimonial.name}</div>
-                    </div>
+                    <p className="text-white/60 text-sm">Print WhatsApp #1</p>
+                    <p className="text-white/40 text-xs mt-2">Depoimento em breve</p>
                   </div>
-                </CardContent>
-              </Card>)}
+                </div>
+              </div>
+            </div>
+
+            {/* Placeholder para Print 2 */}
+            <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
+              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8">
+                <div className="aspect-[9/16] bg-whatsapp-bg rounded-2xl border border-white/10 flex items-center justify-center relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-emerald-600/10"></div>
+                  <div className="text-center p-4">
+                    <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Trophy className="w-8 h-8 text-green-400" />
+                    </div>
+                    <p className="text-white/60 text-sm">Print WhatsApp #2</p>
+                    <p className="text-white/40 text-xs mt-2">Depoimento em breve</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Placeholder para Print 3 */}
+            <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group md:col-span-2 lg:col-span-1">
+              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8">
+                <div className="aspect-[9/16] bg-whatsapp-bg rounded-2xl border border-white/10 flex items-center justify-center relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-emerald-600/10"></div>
+                  <div className="text-center p-4">
+                    <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Heart className="w-8 h-8 text-green-400" />
+                    </div>
+                    <p className="text-white/60 text-sm">Print WhatsApp #3</p>
+                    <p className="text-white/40 text-xs mt-2">Depoimento em breve</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to action adicional */}
+          <div className="text-center mt-12 sm:mt-16">
+            <div className="glass-card p-6 sm:p-8 rounded-3xl cinematic-shadow max-w-4xl mx-auto">
+              <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
+                <span className="text-green-400 font-bold">Estes são apenas alguns</span> dos resultados que nossos alunos 
+                conquistaram aplicando as técnicas de chute inteligente. 
+                <span className="text-gradient-premium font-semibold"> E você pode ser o próximo!</span>
+              </p>
+            </div>
           </div>
         </div>
       </section>
