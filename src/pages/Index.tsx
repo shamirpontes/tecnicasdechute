@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ArrowRight, Brain, Target, Trophy, CheckCircle, Star, Users, Clock, BookOpen, Zap, Award, TrendingUp, Shield, Sparkles, Timer, AlertCircle, Heart, X } from 'lucide-react';
 const Index = () => {
   return <div className="min-h-screen bg-navy-primary overflow-hidden relative">
@@ -230,77 +231,105 @@ const Index = () => {
             </p>
           </div>
           
-          {/* Grid responsivo para os prints de WhatsApp */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
-            {/* Print WhatsApp 1 */}
-            <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
-              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 sm:p-12">
-                <div className="relative overflow-hidden rounded-2xl border border-white/20">
-                  <img src="/lovable-uploads/433c288f-8b00-4d82-afe8-90590e7511de.png" alt="Depoimento WhatsApp - Aprovada OAB" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
-                </div>
-              </div>
-            </div>
+          
+          {/* Carrossel de depoimentos */}
+          <div className="max-w-6xl mx-auto relative">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-4">
+                {/* Print WhatsApp 1 */}
+                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
+                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8 h-full">
+                      <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                        <img src="/lovable-uploads/433c288f-8b00-4d82-afe8-90590e7511de.png" alt="Depoimento WhatsApp - Aprovada OAB" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
 
-            {/* Print WhatsApp 2 */}
-            <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
-              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 sm:p-12">
-                <div className="relative overflow-hidden rounded-2xl border border-white/20">
-                  <img src="/lovable-uploads/b59c0d42-5f4a-48d5-b90e-9cae2154024a.png" alt="Depoimento WhatsApp - Aprovação com 46/80" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
-                </div>
-              </div>
-            </div>
+                {/* Print WhatsApp 2 */}
+                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
+                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8 h-full">
+                      <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                        <img src="/lovable-uploads/b59c0d42-5f4a-48d5-b90e-9cae2154024a.png" alt="Depoimento WhatsApp - Aprovação com 46/80" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
 
-            {/* Print WhatsApp 3 */}
-            <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
-              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 sm:p-12">
-                <div className="relative overflow-hidden rounded-2xl border border-white/20">
-                  <img src="/lovable-uploads/9a4ad55a-4b7e-4ebb-86c8-6ccba0d24299.png" alt="Depoimento WhatsApp - Aprovação com 43/80" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
-                </div>
-              </div>
-            </div>
+                {/* Print WhatsApp 3 */}
+                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
+                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8 h-full">
+                      <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                        <img src="/lovable-uploads/9a4ad55a-4b7e-4ebb-86c8-6ccba0d24299.png" alt="Depoimento WhatsApp - Aprovação com 43/80" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
 
-            {/* Print WhatsApp 4 */}
-            <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
-              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 sm:p-12">
-                <div className="relative overflow-hidden rounded-2xl border border-white/20">
-                  <img src="/lovable-uploads/385e1010-f6a5-41b4-aa45-d577af7a6641.png" alt="Depoimento WhatsApp - Melissa acertei 46 questões" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
-                </div>
-              </div>
-            </div>
+                {/* Print WhatsApp 4 */}
+                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
+                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8 h-full">
+                      <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                        <img src="/lovable-uploads/385e1010-f6a5-41b4-aa45-d577af7a6641.png" alt="Depoimento WhatsApp - Melissa acertei 46 questões" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
 
-            {/* Print WhatsApp 5 */}
-            <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
-              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 sm:p-12">
-                <div className="relative overflow-hidden rounded-2xl border border-white/20">
-                  <img src="/lovable-uploads/469c77ed-4a81-49a5-8f34-fa2df8650454.png" alt="Depoimento WhatsApp - Melissa milagre aconteceu" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
-                </div>
-              </div>
-            </div>
+                {/* Print WhatsApp 5 */}
+                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
+                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8 h-full">
+                      <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                        <img src="/lovable-uploads/469c77ed-4a81-49a5-8f34-fa2df8650454.png" alt="Depoimento WhatsApp - Melissa milagre aconteceu" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
 
-            {/* Print WhatsApp 6 */}
-            <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group py-[200px]">
-              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 sm:p-12">
-                <div className="relative overflow-hidden rounded-2xl border border-white/20">
-                  <img src="/lovable-uploads/c236ffc8-2278-4186-9519-0e3f01967165.png" alt="Depoimento WhatsApp - Aprovação 47/80" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
-                </div>
-              </div>
-            </div>
+                {/* Print WhatsApp 6 */}
+                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
+                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8 h-full">
+                      <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                        <img src="/lovable-uploads/c236ffc8-2278-4186-9519-0e3f01967165.png" alt="Depoimento WhatsApp - Aprovação 47/80" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
 
-            {/* Print WhatsApp 7 */}
-            <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
-              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 sm:p-12">
-                <div className="relative overflow-hidden rounded-2xl border border-white/20">
-                  <img src="/lovable-uploads/75019e25-3dff-4e15-9c98-e2bb4699b5a8.png" alt="Depoimento WhatsApp - 44 pontos em duas semanas" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
-                </div>
-              </div>
-            </div>
+                {/* Print WhatsApp 7 */}
+                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
+                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8 h-full">
+                      <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                        <img src="/lovable-uploads/75019e25-3dff-4e15-9c98-e2bb4699b5a8.png" alt="Depoimento WhatsApp - 44 pontos em duas semanas" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              
+              <CarouselPrevious className="hidden md:flex glass-card border-white/20 bg-white/10 hover:bg-white/20 text-white -left-12" />
+              <CarouselNext className="hidden md:flex glass-card border-white/20 bg-white/10 hover:bg-white/20 text-white -right-12" />
+            </Carousel>
           </div>
 
           {/* Call to action adicional */}
