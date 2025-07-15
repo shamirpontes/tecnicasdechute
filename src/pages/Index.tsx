@@ -808,7 +808,7 @@ const Index = () => {
                       {/* Botão principal */}
                       <Button size="lg" className="w-full bg-gradient-to-r from-green-600 to-emerald-700 hover:from-green-700 hover:to-emerald-800 text-white py-8 text-xl font-bold rounded-2xl cinematic-shadow hover-lift border-0 group relative overflow-hidden transform hover:scale-105 transition-all duration-300">
                         <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <span className="relative z-10">GARANTIR MINHA VAGA</span>
+                        <span className="relative z-10">QUERO SER APROVADO</span>
                         <ArrowRight className="ml-3 w-6 h-6 relative z-10 group-hover:translate-x-2 transition-transform" />
                       </Button>
                       
