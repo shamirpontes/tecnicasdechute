@@ -53,7 +53,7 @@ const Index = () => {
               <div className="animate-fade-in" style={{animationDelay: '0.8s'}}>
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-crimson-primary to-rose-accent hover:from-crimson-primary/90 hover:to-rose-accent/90 text-white font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 hover:scale-105 shadow-colored-red"
+                  className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50"
                 >
                   Quero Garantir Minha Aprovação
                   <ArrowRight className="ml-2 w-5 h-5" />
