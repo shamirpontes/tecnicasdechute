@@ -15,34 +15,118 @@ const Index = () => {
         <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-gradient-to-r from-navy-accent/20 to-crimson-primary/10 rounded-full blur-3xl animate-rim-light"></div>
       </div>
 
-      {/* Hero Section - HEADLINE + URGÊNCIA */}
+      {/* Hero Section - Layout com Mockup */}
       <section className="relative py-24 px-4 lg:py-32 z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <div className="mb-10">
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-black font-poppins mb-6 leading-none">
-                <span className="block text-white animate-fade-in">Descubra as 15 Técnicas</span>
-                <span className="block text-crimson-primary animate-slide-up font-bold" style={{
-                animationDelay: '0.2s'
-              }}>que garantem +20 pontos</span>
-              </h1>
-              
-              <div className="flex items-center justify-center gap-4 mb-8 animate-scale-in" style={{
-              animationDelay: '0.4s'
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Conteúdo Principal - Esquerda */}
+            <div className="order-2 lg:order-1">
+              <div className="mb-8">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-black font-poppins mb-6 leading-tight">
+                  <span className="block text-white animate-fade-in">Descubra as 15 Técnicas</span>
+                  <span className="block text-gradient-premium animate-slide-up font-bold" style={{
+                  animationDelay: '0.2s'
+                }}>que garantem +20 pontos</span>
+                </h1>
+                
+                <div className="flex items-center gap-4 mb-8 animate-scale-in" style={{
+                animationDelay: '0.4s'
+              }}>
+                  <div className="h-px bg-gradient-to-r from-crimson-primary/50 to-transparent flex-1 max-w-16"></div>
+                  <div className="w-2 h-2 bg-crimson-primary rounded-full"></div>
+                  <div className="h-px bg-gradient-to-l from-crimson-primary/50 to-transparent flex-1 max-w-16"></div>
+                </div>
+              </div>
+
+              <div className="mb-10 animate-fade-in" style={{
+              animationDelay: '0.6s'
             }}>
-                <div className="h-px bg-gradient-to-r from-transparent via-white/30 to-transparent flex-1 max-w-24"></div>
-                <div className="h-px bg-gradient-to-r from-transparent via-white/30 to-transparent flex-1 max-w-24"></div>
+                <div className="glass-card p-6 sm:p-8 rounded-3xl cinematic-shadow hover-glow border border-white/10">
+                  <p className="text-xl md:text-2xl text-white leading-relaxed font-medium">
+                    <strong className="text-gradient-premium">Técnicas científicas e testadas</strong> que te ensinam como 
+                    <strong className="text-gradient-premium"> acertar questões mesmo SEM SABER a resposta</strong> e garantir até +20 pontos na sua nota final.
+                  </p>
+                </div>
+              </div>
+
+              {/* Call to Action */}
+              <div className="animate-fade-in" style={{animationDelay: '0.8s'}}>
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-to-r from-crimson-primary to-rose-accent hover:from-crimson-primary/90 hover:to-rose-accent/90 text-white font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 hover:scale-105 shadow-colored-red"
+                >
+                  Quero Garantir Minha Aprovação
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+                
+                <div className="mt-4 flex items-center gap-2 text-white/70 text-sm">
+                  <Shield className="w-4 h-4 text-green-400" />
+                  <span>Garantia de 7 dias ou seu dinheiro de volta</span>
+                </div>
               </div>
             </div>
 
-            <div className="max-w-5xl mx-auto mb-12 animate-fade-in" style={{
-            animationDelay: '0.6s'
-          }}>
-              <div className="glass-card p-8 rounded-3xl cinematic-shadow hover-glow">
-                <p className="text-2xl md:text-3xl text-white leading-relaxed font-medium">
-                  <strong className="text-gradient-premium">Técnicas científicas e testadas</strong> que te ensinam como 
-                  <strong className="text-gradient-premium"> acertar questões mesmo SEM SABER a resposta</strong> e garantir até +20 pontos na sua nota final.
-                </p>
+            {/* Mockup do Material - Direita */}
+            <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+              <div className="relative group animate-scale-in" style={{animationDelay: '0.3s'}}>
+                {/* Background Effects */}
+                <div className="absolute -inset-4 bg-gradient-to-br from-crimson-primary/30 to-rose-accent/30 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
+                <div className="absolute -inset-2 bg-gradient-to-br from-navy-accent/40 to-crimson-primary/20 rounded-2xl blur-xl"></div>
+                
+                {/* Mockup Container */}
+                <div className="relative bg-gradient-to-br from-white to-gray-100 rounded-2xl p-1 shadow-2xl group-hover:scale-105 transition-transform duration-500">
+                  {/* Inner Container */}
+                  <div className="bg-white rounded-xl overflow-hidden shadow-inner">
+                    {/* Header da Capa */}
+                    <div className="bg-gradient-to-r from-navy-primary to-navy-secondary p-6 text-center">
+                      <div className="text-white text-sm font-semibold mb-2 uppercase tracking-wide">
+                        Material Exclusivo
+                      </div>
+                      <h3 className="text-white text-xl font-black leading-tight">
+                        Técnicas de Chute Inteligente para a OAB
+                      </h3>
+                    </div>
+                    
+                    {/* Área da Imagem/Conteúdo */}
+                    <div className="h-64 sm:h-80 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6">
+                      <div className="text-center">
+                        <div className="w-20 h-20 bg-gradient-to-br from-crimson-primary to-rose-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                          <Target className="w-10 h-10 text-white" />
+                        </div>
+                        <div className="text-navy-primary font-bold text-lg mb-2">
+                          15 Técnicas Científicas
+                        </div>
+                        <div className="text-gray-600 text-sm">
+                          Acerte Mesmo Sem Saber
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Footer da Capa */}
+                    <div className="bg-gradient-to-r from-crimson-primary to-rose-accent p-4 text-center">
+                      <div className="text-white text-sm font-semibold">
+                        + Bônus Exclusivos no Valor de R$ 800
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Floating Elements */}
+                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-400 rounded-full flex items-center justify-center animate-pulse">
+                    <CheckCircle className="w-4 h-4 text-white" />
+                  </div>
+                  
+                  {/* Stats Floating */}
+                  <div className="absolute -bottom-4 -left-4 glass-card px-4 py-2 rounded-full border border-white/20">
+                    <div className="text-white text-sm font-semibold">
+                      +20 pontos garantidos
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Orbiting Elements */}
+                <div className="absolute top-1/4 -left-8 w-3 h-3 bg-crimson-primary rounded-full animate-ping"></div>
+                <div className="absolute bottom-1/4 -right-8 w-2 h-2 bg-rose-accent rounded-full animate-pulse"></div>
+                <div className="absolute top-3/4 -left-4 w-1 h-1 bg-white rounded-full animate-bounce"></div>
               </div>
             </div>
           </div>
