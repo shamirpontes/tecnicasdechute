@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { ArrowRight, Brain, Target, Trophy, CheckCircle, Star, Users, Clock, BookOpen, Zap, Award, TrendingUp, Shield, Sparkles, Timer, AlertCircle, Heart, X } from 'lucide-react';
+import { ArrowRight, Brain, Target, Trophy, CheckCircle, Star, Users, Clock, BookOpen, Zap, Award, TrendingUp, Shield, Sparkles, Timer, AlertCircle, Heart, X, Check } from 'lucide-react';
 const Index = () => {
   return <div className="min-h-screen bg-navy-primary overflow-hidden relative">
       {/* Fundo Atmosférico Navy */}
@@ -597,74 +597,130 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Seção Oferta Exclusiva */}
-      <section className="py-32 px-4 bg-gradient-to-br from-crimson-primary/30 via-navy-secondary/60 to-rose-accent/20 relative overflow-hidden z-10">
+      {/* Seção de Decisão Final */}
+      <section className="py-32 px-4 bg-gradient-to-br from-navy-primary via-slate-900 to-navy-secondary relative overflow-hidden z-10">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-crimson-primary/20 via-navy-accent/40 to-rose-accent/10"></div>
-          <div className="absolute inset-0 pattern-mesh opacity-15"></div>
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-r from-crimson-primary/30 to-rose-accent/20 rounded-full blur-3xl animate-ambient-pulse"></div>
-          <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-to-r from-rose-accent/25 to-crimson-secondary/15 rounded-full blur-3xl animate-breathing" style={{
-          animationDelay: '1s'
-        }}></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-crimson-primary/10 via-navy-accent/20 to-rose-accent/5"></div>
+          <div className="absolute inset-0 pattern-circuit opacity-10"></div>
+          <div className="absolute top-10 left-10 w-2 h-2 bg-crimson-primary rounded-full animate-pulse"></div>
+          <div className="absolute top-32 right-20 w-1 h-1 bg-rose-accent rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+          <div className="absolute bottom-20 left-1/3 w-1.5 h-1.5 bg-navy-accent rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+          <div className="absolute bottom-40 right-1/4 w-1 h-1 bg-crimson-secondary rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
         </div>
 
-        <div className="max-w-6xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-black font-poppins mb-8 text-white leading-tight">
-            <span className="block text-crimson-primary">Oferta Exclusiva</span>
-            <span className="block text-gradient-premium mt-2 animate-gradient-shift"></span>
-          </h2>
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Lado Esquerdo - Conteúdo */}
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <h2 className="text-5xl md:text-7xl font-black font-poppins text-white leading-tight">
+                  <span className="block">Esta é a</span>
+                  <span className="block text-gradient-premium">sua decisão</span>
+                </h2>
+                
+                <div className="w-24 h-1 bg-gradient-to-r from-crimson-primary to-rose-accent"></div>
+                
+                <p className="text-xl text-white/90 leading-relaxed max-w-lg">
+                  Você tem duas opções na sua frente. Escolha sabiamente.
+                </p>
+              </div>
 
-          <div className="max-w-4xl mx-auto">
-            <Card className="glass-card border-0 cinematic-shadow hover-lift overflow-hidden relative color-bleed">
-              <CardContent className="relative z-10 p-12 text-center bg-slate-950">
-                <div className="mb-12">
-                  <p className="text-xl text-white mb-6">
-                    Esse material + bônus normalmente custa <span className="text-crimson-primary font-bold">R$ 600</span>
-                  </p>
+              {/* Opções de Decisão */}
+              <div className="space-y-6">
+                {/* Opção 1 - Rejeitar */}
+                <div className="p-8 bg-slate-900/50 border-l-4 border-red-500/50 rounded-r-2xl backdrop-blur-sm">
+                  <h3 className="text-2xl font-bold text-red-400 mb-4">Opção 1: Continuar sem as técnicas</h3>
+                  <ul className="space-y-3 text-white/80">
+                    <li className="flex items-start gap-3">
+                      <X className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                      <span>Perder pontos preciosos por não saber as técnicas de chute</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <X className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                      <span>Estudar por meses sem direcionamento estratégico</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <X className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                      <span>Reprovar por poucos pontos que poderiam ter sido ganhos</span>
+                    </li>
+                  </ul>
+                  <p className="text-lg font-semibold text-red-400 mt-6">Custo: R$ 0 (mas pode custar sua aprovação)</p>
+                </div>
+
+                {/* Opção 2 - Aceitar */}
+                <div className="p-8 bg-gradient-to-br from-green-900/30 via-emerald-900/20 to-green-800/30 border-l-4 border-green-500 rounded-r-2xl backdrop-blur-sm">
+                  <h3 className="text-2xl font-bold text-green-400 mb-4">Opção 2: Dominar as técnicas de chute</h3>
+                  <ul className="space-y-3 text-white/90">
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span>Ganhar até 20 pontos extras aplicando as técnicas</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span>Estudar com estratégia e direcionamento</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span>Aumentar drasticamente suas chances de aprovação</span>
+                    </li>
+                  </ul>
+                  <p className="text-lg font-semibold text-green-400 mt-6">Investimento: Apenas R$ 97</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Lado Direito - Card de Preço */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="max-w-md w-full">
+                <Card className="glass-card border border-crimson-primary/20 cinematic-shadow hover-lift overflow-hidden relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-crimson-primary/5 via-navy-accent/10 to-rose-accent/5"></div>
                   
-                  <div className="mb-4">
-                    <span className="text-4xl md:text-5xl font-black text-crimson-primary line-through opacity-70">
-                      R$ 600
-                    </span>
-                  </div>
-
-                  <div className="mb-6">
-                    <div className="text-8xl md:text-9xl font-black text-transparent bg-gradient-to-r from-green-500 to-emerald-600 bg-clip-text mb-4 animate-pulse">
-                      R$ 97
-                    </div>
-                    <div className="flex items-center justify-center gap-4 mb-4">
-                      <Badge className="bg-gradient-to-r from-crimson-primary to-rose-accent text-white px-6 py-3 text-xl font-bold rounded-full cinematic-shadow">
+                  <CardContent className="relative z-10 p-10 text-center">
+                    <div className="mb-8">
+                      <div className="text-sm text-white/60 uppercase tracking-wide mb-2">Oferta Limitada</div>
+                      <div className="text-2xl text-crimson-primary font-bold line-through opacity-70 mb-2">
+                        De R$ 600
+                      </div>
+                      <div className="text-6xl font-black text-gradient-premium mb-4">
+                        R$ 97
+                      </div>
+                      <Badge className="bg-gradient-to-r from-green-600 to-emerald-700 text-white px-4 py-2 text-sm font-bold rounded-full">
                         84% DE DESCONTO
                       </Badge>
-                      <Badge className="bg-gradient-to-r from-rose-accent to-crimson-secondary text-white px-6 py-3 text-xl font-bold rounded-full cinematic-shadow animate-pulse">
-                        SÓ HOJE
-                      </Badge>
                     </div>
-                  </div>
 
-                  <p className="text-2xl text-white font-semibold mb-8">
-                    💸 <strong className="text-green-400">Só R$97 para aumentar suas chances reais de aprovação!</strong>
-                  </p>
-                </div>
+                    <div className="space-y-4 mb-8 text-left">
+                      <div className="flex items-center gap-3 text-white/90">
+                        <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+                        <span>15 Técnicas de Chute Escaneadas</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-white/90">
+                        <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+                        <span>Agente de I.A. personalizado</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-white/90">
+                        <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+                        <span>Acesso imediato e vitalício</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-white/90">
+                        <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+                        <span>Garantia de resultados</span>
+                      </div>
+                    </div>
 
-                <div className="space-y-4">
-                  <Button size="lg" className="w-full bg-gradient-to-r from-green-600 to-emerald-700 hover:from-green-700 hover:to-emerald-800 text-white px-16 py-8 text-2xl md:text-3xl font-black rounded-2xl cinematic-shadow hover-lift border-0 group relative overflow-hidden animate-pulse colored-shadow-navy">
-                    <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <Heart className="mr-4 w-8 h-8 relative z-10 animate-bounce" />
-                    <span className="relative z-10">SIM! QUERO O CHUTE INTELIGENTE POR SÓ R$97!</span>
-                    <ArrowRight className="ml-4 w-8 h-8 relative z-10 group-hover:translate-x-2 transition-transform" />
-                  </Button>
-                  
-                  <p className="text-lg text-white font-medium">
-                    ⚡ <strong className="text-green-400">Acesso imediato</strong> • 🤖 <strong className="text-blue-300">Agente de I.A. incluído</strong>
-                  </p>
-                  
-                  <p className="text-sm text-white/60 mt-8 hover:text-white/80 transition-colors cursor-pointer">
-                    Não, obrigado. Prefiro seguir sem essas técnicas e correr o risco de perder pontos.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+                    <Button size="lg" className="w-full bg-gradient-to-r from-green-600 to-emerald-700 hover:from-green-700 hover:to-emerald-800 text-white py-6 text-xl font-bold rounded-xl cinematic-shadow hover-lift border-0 group relative overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <span className="relative z-10">GARANTIR MINHA VAGA</span>
+                      <ArrowRight className="ml-3 w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                    
+                    <p className="text-sm text-white/60 mt-6">
+                      Acesso imediato após o pagamento
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
