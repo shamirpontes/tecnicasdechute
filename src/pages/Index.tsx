@@ -20,10 +20,10 @@ const Index = () => {
           <div className="text-center">
             <div className="mb-10">
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-black font-poppins mb-6 leading-none">
-                <span className="block text-white animate-fade-in">Você acabou de dar</span>
+                <span className="block text-white animate-fade-in">Descubra as 15 Técnicas</span>
                 <span className="block text-crimson-primary animate-slide-up font-bold" style={{
                 animationDelay: '0.2s'
-              }}>um passo importante.</span>
+              }}>que garantem +20 pontos</span>
               </h1>
               
               <div className="flex items-center justify-center gap-4 mb-8 animate-scale-in" style={{
@@ -39,8 +39,8 @@ const Index = () => {
           }}>
               <div className="glass-card p-8 rounded-3xl cinematic-shadow hover-glow">
                 <p className="text-2xl md:text-3xl text-white leading-relaxed font-medium">
-                  Agora, quer garantir até <strong className="text-gradient-premium">+20 pontos extras</strong> com técnicas testadas para 
-                  <strong className="text-gradient-premium"> acertar mesmo nas questões que você NÃO SABE?</strong>
+                  <strong className="text-gradient-premium">Técnicas científicas e testadas</strong> que te ensinam como 
+                  <strong className="text-gradient-premium"> acertar questões mesmo SEM SABER a resposta</strong> e garantir até +20 pontos na sua nota final.
                 </p>
               </div>
             </div>
