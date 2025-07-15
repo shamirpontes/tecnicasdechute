@@ -233,50 +233,44 @@ const Index = () => {
           
           {/* Grid responsivo para os prints de WhatsApp */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {/* Placeholder para Print 1 */}
+            {/* Print WhatsApp 1 */}
             <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
-              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8">
-                <div className="aspect-[9/16] bg-whatsapp-bg rounded-2xl border border-white/10 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-emerald-600/10"></div>
-                  <div className="text-center p-4">
-                    <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Users className="w-8 h-8 text-green-400" />
-                    </div>
-                    <p className="text-white/60 text-sm">Print WhatsApp #1</p>
-                    <p className="text-white/40 text-xs mt-2">Depoimento em breve</p>
-                  </div>
+              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-4 sm:p-6">
+                <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                  <img 
+                    src="/lovable-uploads/433c288f-8b00-4d82-afe8-90590e7511de.png" 
+                    alt="Depoimento WhatsApp - Aprovada OAB"
+                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>
               </div>
             </div>
 
-            {/* Placeholder para Print 2 */}
+            {/* Print WhatsApp 2 */}
             <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group">
-              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8">
-                <div className="aspect-[9/16] bg-whatsapp-bg rounded-2xl border border-white/10 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-emerald-600/10"></div>
-                  <div className="text-center p-4">
-                    <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Trophy className="w-8 h-8 text-green-400" />
-                    </div>
-                    <p className="text-white/60 text-sm">Print WhatsApp #2</p>
-                    <p className="text-white/40 text-xs mt-2">Depoimento em breve</p>
-                  </div>
+              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-4 sm:p-6">
+                <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                  <img 
+                    src="/lovable-uploads/b59c0d42-5f4a-48d5-b90e-9cae2154024a.png" 
+                    alt="Depoimento WhatsApp - Aprovação com 46/80"
+                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>
               </div>
             </div>
 
-            {/* Placeholder para Print 3 */}
+            {/* Print WhatsApp 3 */}
             <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group md:col-span-2 lg:col-span-1">
-              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8">
-                <div className="aspect-[9/16] bg-whatsapp-bg rounded-2xl border border-white/10 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-emerald-600/10"></div>
-                  <div className="text-center p-4">
-                    <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Heart className="w-8 h-8 text-green-400" />
-                    </div>
-                    <p className="text-white/60 text-sm">Print WhatsApp #3</p>
-                    <p className="text-white/40 text-xs mt-2">Depoimento em breve</p>
-                  </div>
+              <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-4 sm:p-6">
+                <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                  <img 
+                    src="/lovable-uploads/9a4ad55a-4b7e-4ebb-86c8-6ccba0d24299.png" 
+                    alt="Depoimento WhatsApp - Aprovação com 43/80"
+                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                 </div>
               </div>
             </div>
