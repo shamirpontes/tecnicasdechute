@@ -220,7 +220,39 @@ const Index = () => {
       </section>
 
       {/* Seção Depoimentos */}
-      
+      <section className="py-24 px-4 relative z-10">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-black font-poppins text-center mb-16 text-white">
+            Veja os <span className="text-gradient-premium animate-gradient-shift">resultados</span>
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {[{
+            name: "Camila R.",
+            text: "Chutei com estratégia em umas 12 questões… acertei 9. Isso me colocou acima da linha de corte!",
+            rating: 5
+          }, {
+            name: "Lucas P.",
+            text: "Esse material me fez enxergar a prova com outros olhos. Não foi sorte, foi método.",
+            rating: 5
+          }].map((testimonial, index) => <Card key={index} className="glass-card hover-lift border-0 cinematic-shadow group color-bleed">
+                <CardContent className="p-8 bg-slate-950">
+                  <div className="flex items-center gap-1 mb-6">
+                    {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="w-6 h-6 fill-yellow-500 text-yellow-500" />)}
+                  </div>
+                  <p className="text-white/90 mb-8 leading-relaxed text-lg font-medium italic">"{testimonial.text}"</p>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-crimson-primary to-rose-accent rounded-full flex items-center justify-center soft-glow">
+                      <span className="text-white font-bold text-lg">{testimonial.name.charAt(0)}</span>
+                    </div>
+                    <div>
+                      <div className="font-bold text-white text-lg">{testimonial.name}</div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>)}
+          </div>
+        </div>
+      </section>
 
       {/* Seção Oferta Exclusiva */}
       <section className="py-32 px-4 bg-gradient-to-br from-crimson-primary/30 via-navy-secondary/60 to-rose-accent/20 relative overflow-hidden z-10">
