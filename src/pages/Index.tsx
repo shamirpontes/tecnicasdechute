@@ -417,56 +417,129 @@ const Index = () => {
       </section>
 
       {/* Seção Promessa e Prova */}
-      <section className="py-24 px-4 bg-gradient-to-br from-navy-secondary/40 to-navy-accent/30 relative z-10">
-        <div className="absolute inset-0 pattern-dots opacity-10"></div>
-        <div className="max-w-5xl mx-auto relative">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-black font-poppins mb-8 text-white">
-              Vamos encarar o que <span className="text-crimson-primary">ninguém tem coragem</span> de te dizer:
+      <section className="py-32 px-4 bg-gradient-to-br from-navy-primary via-slate-900 to-navy-secondary relative overflow-hidden z-10">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-crimson-primary/10 via-navy-accent/20 to-rose-accent/5"></div>
+          <div className="absolute inset-0 pattern-circuit opacity-10"></div>
+          <div className="absolute top-20 left-10 w-3 h-3 bg-crimson-primary rounded-full animate-pulse"></div>
+          <div className="absolute top-40 right-20 w-2 h-2 bg-rose-accent rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+          <div className="absolute bottom-32 left-1/4 w-2.5 h-2.5 bg-navy-accent rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+          <div className="absolute bottom-60 right-1/3 w-1.5 h-1.5 bg-crimson-secondary rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
+        </div>
+        
+        <div className="max-w-6xl mx-auto relative">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-crimson-primary/20 to-rose-accent/20 rounded-full border border-crimson-primary/30 mb-8">
+              <AlertCircle className="w-5 h-5 text-crimson-primary mr-2" />
+              <span className="text-crimson-primary font-bold uppercase tracking-wide text-sm">A Verdade Que Ninguém Conta</span>
+            </div>
+            
+            <h2 className="text-4xl md:text-6xl font-black font-poppins mb-8 text-white leading-tight">
+              Vamos encarar o que <br />
+              <span className="text-gradient-premium">ninguém tem coragem</span> de te dizer:
             </h2>
             
-            <div className="glass-card p-8 rounded-3xl cinematic-shadow hover-glow mb-8">
-              <p className="text-2xl font-bold text-white mb-6">
-                <span className="text-crimson-primary">Você vai chutar na prova da OAB.</span>
-              </p>
-              <p className="text-lg text-white/90 leading-relaxed mb-6">
-                Não importa o quanto você estude — vão existir questões que você simplesmente não sabe.
-              </p>
-              <p className="text-xl text-white font-semibold">
-                E aí, você tem dois caminhos:
-              </p>
+            <div className="max-w-4xl mx-auto">
+              <div className="relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-crimson-primary/30 via-rose-accent/20 to-crimson-secondary/30 rounded-3xl blur-sm opacity-60"></div>
+                <div className="relative glass-card p-10 rounded-3xl cinematic-shadow border border-crimson-primary/20">
+                  <p className="text-3xl font-bold text-white mb-6">
+                    <span className="text-crimson-primary">Você vai chutar na prova da OAB.</span>
+                  </p>
+                  <p className="text-xl text-white/90 leading-relaxed mb-6">
+                    Não importa o quanto você estude — vão existir questões que você simplesmente não sabe.
+                  </p>
+                  <p className="text-2xl text-white font-semibold">
+                    E aí, você tem dois caminhos:
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="glass-card p-8 rounded-2xl cinematic-shadow border-2 border-red-500/30 color-bleed">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <X className="w-8 h-8 text-red-400" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            {/* Caminho Errado */}
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-red-500/20 to-red-600/20 rounded-3xl blur-sm opacity-60 group-hover:opacity-80 transition-opacity"></div>
+              <div className="relative glass-card p-10 rounded-3xl cinematic-shadow border-2 border-red-500/30 h-full flex flex-col items-center text-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-full flex items-center justify-center mb-8 border border-red-500/30">
+                  <X className="w-10 h-10 text-red-400" />
                 </div>
-                <h3 className="text-xl font-bold text-red-400 mb-4">Chute no Escuro</h3>
-                <p className="text-white/80">Torcer para a sorte te salvar e perder pontos valiosos</p>
+                <h3 className="text-2xl font-bold text-red-400 mb-6">Chute no Escuro</h3>
+                <div className="space-y-4 text-white/90 flex-grow">
+                  <p className="flex items-start gap-3">
+                    <X className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                    <span>Torcer para a sorte te salvar</span>
+                  </p>
+                  <p className="flex items-start gap-3">
+                    <X className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                    <span>Perder pontos valiosos</span>
+                  </p>
+                  <p className="flex items-start gap-3">
+                    <X className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                    <span>Reprovar por poucos pontos</span>
+                  </p>
+                </div>
+                <div className="mt-8 w-full">
+                  <div className="text-3xl font-black text-red-400">0%</div>
+                  <div className="text-sm text-red-400/80">chance de acerto</div>
+                </div>
               </div>
             </div>
             
-            <div className="glass-card p-8 rounded-2xl cinematic-shadow border-2 border-green-500/30 color-bleed">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <CheckCircle className="w-8 h-8 text-green-400" />
+            {/* Caminho Certo */}
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-3xl blur-sm opacity-60 group-hover:opacity-80 transition-opacity"></div>
+              <div className="relative glass-card p-10 rounded-3xl cinematic-shadow border-2 border-green-500/30 h-full flex flex-col items-center text-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-full flex items-center justify-center mb-8 border border-green-500/30">
+                  <CheckCircle className="w-10 h-10 text-green-400" />
                 </div>
-                <h3 className="text-xl font-bold text-green-400 mb-4">Chute Inteligente</h3>
-                <p className="text-white/80">Chutar com estratégia, técnica e inteligência</p>
+                <h3 className="text-2xl font-bold text-green-400 mb-6">Chute Inteligente</h3>
+                <div className="space-y-4 text-white/90 flex-grow">
+                  <p className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Chutar com estratégia e técnica</span>
+                  </p>
+                  <p className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Aumentar até 20 pontos na nota</span>
+                  </p>
+                  <p className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Transformar chute em aprovação</span>
+                  </p>
+                </div>
+                <div className="mt-8 w-full">
+                  <div className="text-3xl font-black text-green-400">85%</div>
+                  <div className="text-sm text-green-400/80">chance de acerto</div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="glass-card p-8 rounded-3xl cinematic-shadow hover-glow">
-            <p className="text-xl text-white leading-relaxed text-center">
-              <strong className="text-gradient-premium">Quem passa, chuta com método. Quem reprova, chuta com medo e sem estratégia.</strong>
-              <br /><br />
-              Tem aluno que, só com essas técnicas, aumentou 20 pontos na nota final. E passou. 
-              Porque o chute deixou de ser sorte — <strong className="text-green-400">e virou estratégia.</strong>
-            </p>
+          <div className="max-w-5xl mx-auto">
+            <div className="relative">
+              <div className="absolute -inset-1 bg-gradient-to-r from-green-500/20 via-emerald-500/20 to-green-600/20 rounded-3xl blur-sm opacity-60"></div>
+              <div className="relative glass-card p-12 rounded-3xl cinematic-shadow border border-green-500/20">
+                <div className="text-center">
+                  <p className="text-2xl text-white leading-relaxed mb-6">
+                    <strong className="text-gradient-premium text-3xl">Quem passa, chuta com método.</strong>
+                    <br />
+                    <strong className="text-red-400">Quem reprova, chuta com medo e sem estratégia.</strong>
+                  </p>
+                  <div className="flex items-center justify-center gap-4 mb-6">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  </div>
+                  <p className="text-xl text-white/90 leading-relaxed">
+                    Tem aluno que, só com essas técnicas, <strong className="text-green-400">aumentou 20 pontos na nota final. E passou.</strong>
+                    <br />
+                    Porque o chute deixou de ser sorte — <strong className="text-gradient-premium">e virou estratégia.</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
