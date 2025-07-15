@@ -16,20 +16,20 @@ const Index = () => {
       </div>
 
       {/* Hero Section - Layout com Mockup */}
-      <section className="relative py-24 px-4 lg:py-32 z-10">
+      <section className="relative py-16 px-4 sm:py-20 md:py-24 lg:py-32 z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             {/* Conteúdo Principal - Esquerda */}
             <div className="order-2 lg:order-1">
-              <div className="mb-8">
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-black font-poppins mb-6 leading-tight">
+              <div className="mb-6 sm:mb-8">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black font-poppins mb-4 sm:mb-6 leading-tight">
                   <span className="block text-white animate-fade-in">Descubra as 15 Técnicas</span>
                   <span className="block text-gradient-premium animate-slide-up font-bold" style={{
                   animationDelay: '0.2s'
                 }}>que garantes até 20 pontos</span>
                 </h1>
                 
-                <div className="flex items-center gap-4 mb-8 animate-scale-in" style={{
+                <div className="flex items-center gap-4 mb-6 sm:mb-8 animate-scale-in" style={{
                 animationDelay: '0.4s'
               }}>
                   <div className="h-px bg-gradient-to-r from-crimson-primary/50 to-transparent flex-1 max-w-16"></div>
@@ -38,11 +38,11 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className="mb-10 animate-fade-in" style={{
+              <div className="mb-8 sm:mb-10 animate-fade-in" style={{
               animationDelay: '0.6s'
             }}>
-                <div className="glass-card p-6 sm:p-8 rounded-3xl cinematic-shadow hover-glow border border-white/10">
-                  <p className="text-xl md:text-2xl text-white leading-relaxed font-medium">
+                <div className="glass-card p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl cinematic-shadow hover-glow border border-white/10">
+                  <p className="text-lg sm:text-xl md:text-2xl text-white leading-relaxed font-medium">
                     <strong className="text-gradient-premium">Técnicas científicas e testadas</strong> que te ensinam como 
                     <strong className="text-gradient-premium"> acertar questões mesmo SEM SABER a resposta</strong> e garantir até +20 pontos na sua nota final.
                   </p>
@@ -53,10 +53,10 @@ const Index = () => {
               <div className="animate-fade-in" style={{animationDelay: '0.8s'}}>
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50"
+                  className="w-full sm:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-xl sm:rounded-2xl text-base sm:text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50"
                 >
                   Quero Garantir Minha Aprovação
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                  <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
                 </Button>
                 
                 <div className="mt-4 flex items-center gap-2 text-white/70 text-sm">
@@ -651,14 +651,14 @@ const Index = () => {
             {/* Lado Esquerdo - Conteúdo */}
             <div className="space-y-8">
               <div className="space-y-6">
-                <h2 className="text-5xl md:text-7xl font-black font-poppins text-white leading-tight">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black font-poppins text-white leading-tight">
                   <span className="block">Esta é a</span>
                   <span className="block text-gradient-premium">sua decisão</span>
                 </h2>
                 
                 <div className="w-24 h-1 bg-gradient-to-r from-crimson-primary to-rose-accent"></div>
                 
-                <p className="text-xl text-white/90 leading-relaxed max-w-lg">
+                <p className="text-lg sm:text-xl text-white/90 leading-relaxed max-w-lg">
                   Você tem duas opções na sua frente. Escolha sabiamente.
                 </p>
               </div>
@@ -666,49 +666,49 @@ const Index = () => {
               {/* Opções de Decisão */}
               <div className="space-y-6">
                 {/* Opção 1 - Rejeitar */}
-                <div className="p-8 bg-slate-900/50 border-l-4 border-red-500/50 rounded-r-2xl backdrop-blur-sm">
-                  <h3 className="text-2xl font-bold text-red-400 mb-4">Opção 1: Continuar sem as técnicas</h3>
+                <div className="p-4 sm:p-6 md:p-8 bg-slate-900/50 border-l-4 border-red-500/50 rounded-r-2xl backdrop-blur-sm">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-red-400 mb-4">Opção 1: Continuar sem as técnicas</h3>
                   <ul className="space-y-3 text-white/80">
                     <li className="flex items-start gap-3">
                       <X className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                      <span>Perder pontos preciosos por não saber as técnicas de chute</span>
+                      <span className="text-sm sm:text-base">Perder pontos preciosos por não saber as técnicas de chute</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <X className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                      <span>Estudar por meses sem direcionamento estratégico</span>
+                      <span className="text-sm sm:text-base">Estudar por meses sem direcionamento estratégico</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <X className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                      <span>Reprovar por poucos pontos que poderiam ter sido ganhos</span>
+                      <span className="text-sm sm:text-base">Reprovar por poucos pontos que poderiam ter sido ganhos</span>
                     </li>
                   </ul>
-                  <p className="text-lg font-semibold text-red-400 mt-6">Custo: R$ 0 (mas pode custar sua aprovação)</p>
+                  <p className="text-base sm:text-lg font-semibold text-red-400 mt-6">Custo: R$ 0 (mas pode custar sua aprovação)</p>
                 </div>
 
                 {/* Opção 2 - Aceitar */}
-                <div className="p-8 bg-gradient-to-br from-green-900/30 via-emerald-900/20 to-green-800/30 border-l-4 border-green-500 rounded-r-2xl backdrop-blur-sm">
-                  <h3 className="text-2xl font-bold text-green-400 mb-4">Opção 2: Dominar as técnicas de chute</h3>
+                <div className="p-4 sm:p-6 md:p-8 bg-gradient-to-br from-green-900/30 via-emerald-900/20 to-green-800/30 border-l-4 border-green-500 rounded-r-2xl backdrop-blur-sm">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-green-400 mb-4">Opção 2: Dominar as técnicas de chute</h3>
                   <ul className="space-y-3 text-white/90">
                     <li className="flex items-start gap-3">
                       <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <span>Ganhar até 20 pontos extras aplicando as técnicas</span>
+                      <span className="text-sm sm:text-base">Ganhar até 20 pontos extras aplicando as técnicas</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <span>Estudar com estratégia e direcionamento</span>
+                      <span className="text-sm sm:text-base">Estudar com estratégia e direcionamento</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <span>Aumentar drasticamente suas chances de aprovação</span>
+                      <span className="text-sm sm:text-base">Aumentar drasticamente suas chances de aprovação</span>
                     </li>
                   </ul>
-                  <p className="text-lg font-semibold text-green-400 mt-6">Investimento: Apenas R$ 97</p>
+                  <p className="text-base sm:text-lg font-semibold text-green-400 mt-6">Investimento: Apenas R$ 97</p>
                 </div>
               </div>
             </div>
 
             {/* Lado Direito - Card de Preço */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
               <div className="max-w-lg w-full">
                 <div className="relative">
                   {/* Borda externa brilhante */}
@@ -721,23 +721,23 @@ const Index = () => {
                     <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-crimson-primary/10 to-transparent rounded-bl-full"></div>
                     <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-rose-accent/10 to-transparent rounded-tr-full"></div>
                     
-                    <CardContent className="relative z-10 p-12 text-center">
+                    <CardContent className="relative z-10 p-6 sm:p-8 md:p-10 lg:p-12 text-center">
                       {/* Header do card */}
-                      <div className="mb-10">
-                        <div className="inline-flex items-center justify-center px-4 py-2 bg-gradient-to-r from-crimson-primary/10 to-rose-accent/10 rounded-full border border-crimson-primary/20 mb-4">
-                          <div className="text-sm text-navy-primary uppercase tracking-wide font-bold">Oferta Limitada</div>
+                      <div className="mb-8 sm:mb-10">
+                        <div className="inline-flex items-center justify-center px-3 sm:px-4 py-2 bg-gradient-to-r from-crimson-primary/10 to-rose-accent/10 rounded-full border border-crimson-primary/20 mb-4">
+                          <div className="text-xs sm:text-sm text-navy-primary uppercase tracking-wide font-bold">Oferta Limitada</div>
                         </div>
                         
                         <div className="space-y-2 mb-6">
-                          <div className="text-2xl text-crimson-primary font-bold line-through opacity-70">
+                          <div className="text-lg sm:text-xl md:text-2xl text-crimson-primary font-bold line-through opacity-70">
                             De R$ 600
                           </div>
-                          <div className="text-7xl font-black text-gradient-premium leading-none">
+                          <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-gradient-premium leading-none">
                             R$ 97
                           </div>
                         </div>
                         
-                        <Badge className="bg-gradient-to-r from-green-600 to-emerald-700 text-white px-6 py-3 text-base font-bold rounded-full shadow-lg animate-bounce">
+                        <Badge className="bg-gradient-to-r from-green-600 to-emerald-700 text-white px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-bold rounded-full shadow-lg animate-bounce">
                           84% DE DESCONTO
                         </Badge>
                       </div>
@@ -771,13 +771,13 @@ const Index = () => {
                       </div>
 
                       {/* Botão principal */}
-                      <Button size="lg" className="w-full bg-gradient-to-r from-green-600 to-emerald-700 hover:from-green-700 hover:to-emerald-800 text-white py-8 text-xl font-bold rounded-2xl cinematic-shadow hover-lift border-0 group relative overflow-hidden transform hover:scale-105 transition-all duration-300">
+                      <Button size="lg" className="w-full bg-gradient-to-r from-green-600 to-emerald-700 hover:from-green-700 hover:to-emerald-800 text-white py-6 sm:py-8 text-lg sm:text-xl font-bold rounded-xl sm:rounded-2xl cinematic-shadow hover-lift border-0 group relative overflow-hidden transform hover:scale-105 transition-all duration-300">
                         <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <span className="relative z-10">QUERO SER APROVADO</span>
-                        <ArrowRight className="ml-3 w-6 h-6 relative z-10 group-hover:translate-x-2 transition-transform" />
+                        <ArrowRight className="ml-2 sm:ml-3 w-5 h-5 sm:w-6 sm:h-6 relative z-10 group-hover:translate-x-2 transition-transform" />
                       </Button>
                       
-                      <p className="text-sm text-navy-primary/70 mt-6 font-medium">
+                      <p className="text-xs sm:text-sm text-navy-primary/70 mt-4 sm:mt-6 font-medium">
                         Acesso imediato após o pagamento
                       </p>
                     </CardContent>
@@ -790,15 +790,15 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-16 px-4 bg-navy-primary text-white relative overflow-hidden z-10">
+      <footer className="py-12 sm:py-16 px-4 bg-navy-primary text-white relative overflow-hidden z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-primary to-navy-secondary"></div>
         <div className="absolute inset-0 pattern-dots opacity-5"></div>
         <div className="max-w-5xl mx-auto text-center relative">
-          <h3 className="text-3xl font-bold mb-6 font-poppins text-gradient">Técnicas de Chute Inteligente</h3>
-          <p className="text-white/80 mb-8 text-xl">
+          <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 font-poppins text-gradient">Técnicas de Chute Inteligente</h3>
+          <p className="text-white/80 mb-6 sm:mb-8 text-lg sm:text-xl">
             O método que vai transformar seus chutes em estratégia
           </p>
-          <div className="flex justify-center gap-12 text-white/60 font-medium">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-12 text-white/60 font-medium">
             <span className="hover:text-white transition-colors cursor-pointer hover-lift">Política de Privacidade</span>
             <span className="hover:text-white transition-colors cursor-pointer hover-lift">Termos de Uso</span>
             <span className="hover:text-white transition-colors cursor-pointer hover-lift">Suporte</span>
