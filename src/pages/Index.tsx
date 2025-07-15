@@ -26,7 +26,7 @@ const Index = () => {
                   <span className="block text-white animate-fade-in">Descubra as 15 Técnicas</span>
                   <span className="block text-gradient-premium animate-slide-up font-bold" style={{
                   animationDelay: '0.2s'
-                }}>que garantem +20 pontos</span>
+                }}>que garantes até 20 pontos</span>
                 </h1>
                 
                 <div className="flex items-center gap-4 mb-8 animate-scale-in" style={{
