@@ -68,18 +68,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Navy palette inspired by the reference image
+				// Nova paleta: Azul Marinho, Branco e Verde
 				navy: {
 					primary: 'hsl(var(--navy-primary))',
 					secondary: 'hsl(var(--navy-secondary))',
 					accent: 'hsl(var(--navy-accent))',
 				},
 				crimson: {
-					primary: 'hsl(var(--red-primary))',
-					secondary: 'hsl(var(--red-secondary))',
+					primary: 'hsl(var(--red-primary))',    // Verde
+					secondary: 'hsl(var(--red-secondary))', // Verde mais claro
 				},
 				rose: {
-					accent: 'hsl(var(--pink-accent))',
+					accent: 'hsl(var(--pink-accent))',     // Verde médio
 				},
 				future: {
 					blue: '#1e3a8a',
