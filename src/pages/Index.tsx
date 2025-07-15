@@ -677,7 +677,7 @@ const Index = () => {
                   
                   <CardContent className="relative z-10 p-10 text-center">
                     <div className="mb-8">
-                      <div className="text-sm text-white/60 uppercase tracking-wide mb-2">Oferta Limitada</div>
+                      <div className="text-sm text-navy-primary uppercase tracking-wide mb-2">Oferta Limitada</div>
                       <div className="text-2xl text-crimson-primary font-bold line-through opacity-70 mb-2">
                         De R$ 600
                       </div>
