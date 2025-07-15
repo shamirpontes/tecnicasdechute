@@ -671,54 +671,80 @@ const Index = () => {
 
             {/* Lado Direito - Card de Preço */}
             <div className="flex justify-center lg:justify-end">
-              <div className="max-w-md w-full">
-                <Card className="glass-card border border-crimson-primary/20 cinematic-shadow hover-lift overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-crimson-primary/5 via-navy-accent/10 to-rose-accent/5"></div>
+              <div className="max-w-lg w-full">
+                <div className="relative">
+                  {/* Borda externa brilhante */}
+                  <div className="absolute -inset-1 bg-gradient-to-r from-crimson-primary via-rose-accent to-crimson-secondary rounded-3xl blur-sm opacity-75 animate-pulse"></div>
                   
-                  <CardContent className="relative z-10 p-10 text-center">
-                    <div className="mb-8">
-                      <div className="text-sm text-navy-primary uppercase tracking-wide mb-2">Oferta Limitada</div>
-                      <div className="text-2xl text-crimson-primary font-bold line-through opacity-70 mb-2">
-                        De R$ 600
-                      </div>
-                      <div className="text-6xl font-black text-gradient-premium mb-4">
-                        R$ 97
-                      </div>
-                       <Badge className="bg-gradient-to-r from-green-600 to-emerald-700 text-navy-primary px-4 py-2 text-sm font-bold rounded-full">
-                         84% DE DESCONTO
-                       </Badge>
-                    </div>
-
-                    <div className="space-y-4 mb-8 text-left">
-                      <div className="flex items-center gap-3 text-navy-primary">
-                        <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
-                        <span>15 Técnicas de Chute Escaneadas</span>
-                      </div>
-                      <div className="flex items-center gap-3 text-navy-primary">
-                        <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
-                        <span>Agente de I.A. personalizado</span>
-                      </div>
-                      <div className="flex items-center gap-3 text-navy-primary">
-                        <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
-                        <span>Acesso imediato e vitalício</span>
-                      </div>
-                      <div className="flex items-center gap-3 text-navy-primary">
-                        <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
-                        <span>Garantia de resultados</span>
-                      </div>
-                    </div>
-
-                    <Button size="lg" className="w-full bg-gradient-to-r from-green-600 to-emerald-700 hover:from-green-700 hover:to-emerald-800 text-white py-6 text-xl font-bold rounded-xl cinematic-shadow hover-lift border-0 group relative overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <span className="relative z-10">GARANTIR MINHA VAGA</span>
-                      <ArrowRight className="ml-3 w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
-                    </Button>
+                  {/* Card principal */}
+                  <Card className="relative glass-card border-2 border-crimson-primary/40 cinematic-shadow hover-lift overflow-hidden bg-gradient-to-br from-white/95 via-white/90 to-white/95 backdrop-blur-xl">
+                    {/* Background decorativo */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-crimson-primary/5 via-navy-accent/10 to-rose-accent/5"></div>
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-crimson-primary/10 to-transparent rounded-bl-full"></div>
+                    <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-rose-accent/10 to-transparent rounded-tr-full"></div>
                     
-                    <p className="text-sm text-white/60 mt-6">
-                      Acesso imediato após o pagamento
-                    </p>
-                  </CardContent>
-                </Card>
+                    <CardContent className="relative z-10 p-12 text-center">
+                      {/* Header do card */}
+                      <div className="mb-10">
+                        <div className="inline-flex items-center justify-center px-4 py-2 bg-gradient-to-r from-crimson-primary/10 to-rose-accent/10 rounded-full border border-crimson-primary/20 mb-4">
+                          <div className="text-sm text-navy-primary uppercase tracking-wide font-bold">Oferta Limitada</div>
+                        </div>
+                        
+                        <div className="space-y-2 mb-6">
+                          <div className="text-2xl text-crimson-primary font-bold line-through opacity-70">
+                            De R$ 600
+                          </div>
+                          <div className="text-7xl font-black text-gradient-premium leading-none">
+                            R$ 97
+                          </div>
+                        </div>
+                        
+                        <Badge className="bg-gradient-to-r from-green-600 to-emerald-700 text-white px-6 py-3 text-base font-bold rounded-full shadow-lg animate-bounce">
+                          84% DE DESCONTO
+                        </Badge>
+                      </div>
+
+                      {/* Lista de benefícios */}
+                      <div className="space-y-5 mb-10 text-left bg-gradient-to-r from-slate-50/50 to-blue-50/50 rounded-2xl p-6 border border-navy-primary/10">
+                        <div className="flex items-center gap-4 text-navy-primary">
+                          <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <Check className="w-5 h-5 text-white" />
+                          </div>
+                          <span className="font-medium">15 Técnicas de Chute Escaneadas</span>
+                        </div>
+                        <div className="flex items-center gap-4 text-navy-primary">
+                          <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <Check className="w-5 h-5 text-white" />
+                          </div>
+                          <span className="font-medium">Agente de I.A. personalizado</span>
+                        </div>
+                        <div className="flex items-center gap-4 text-navy-primary">
+                          <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <Check className="w-5 h-5 text-white" />
+                          </div>
+                          <span className="font-medium">Acesso imediato e vitalício</span>
+                        </div>
+                        <div className="flex items-center gap-4 text-navy-primary">
+                          <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <Check className="w-5 h-5 text-white" />
+                          </div>
+                          <span className="font-medium">Garantia de resultados</span>
+                        </div>
+                      </div>
+
+                      {/* Botão principal */}
+                      <Button size="lg" className="w-full bg-gradient-to-r from-green-600 to-emerald-700 hover:from-green-700 hover:to-emerald-800 text-white py-8 text-xl font-bold rounded-2xl cinematic-shadow hover-lift border-0 group relative overflow-hidden transform hover:scale-105 transition-all duration-300">
+                        <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <span className="relative z-10">GARANTIR MINHA VAGA</span>
+                        <ArrowRight className="ml-3 w-6 h-6 relative z-10 group-hover:translate-x-2 transition-transform" />
+                      </Button>
+                      
+                      <p className="text-sm text-navy-primary/70 mt-6 font-medium">
+                        Acesso imediato após o pagamento
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
               </div>
             </div>
           </div>
