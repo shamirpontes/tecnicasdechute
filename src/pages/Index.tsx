@@ -70,94 +70,240 @@ const Index = () => {
       </section>
 
       {/* Seção Apresentação do Produto */}
-      <section className="py-24 px-4 relative z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-primary/80 to-navy-accent/40"></div>
+      <section className="py-24 px-4 relative z-10 overflow-hidden">
+        {/* Background Atmosférico Avançado */}
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-navy-primary/90 via-navy-secondary/70 to-navy-accent/50"></div>
+          <div className="absolute inset-0 pattern-mesh opacity-15"></div>
+          <div className="absolute top-1/4 left-1/6 w-96 h-96 bg-gradient-to-br from-crimson-primary/30 to-rose-accent/20 rounded-full blur-3xl animate-ambient-pulse"></div>
+          <div className="absolute bottom-1/3 right-1/5 w-80 h-80 bg-gradient-to-tl from-rose-accent/25 to-crimson-secondary/15 rounded-full blur-3xl animate-breathing"></div>
+        </div>
+
         <div className="max-w-7xl mx-auto relative">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-6xl font-black font-poppins mb-8 text-white">
-              O método que <span className="text-gradient-premium block mt-2 animate-gradient-shift">transforma chutes em estratégia</span>
-            </h2>
-            <div className="max-w-4xl mx-auto">
-              <p className="text-xl text-white/90 font-medium leading-relaxed mb-8">
-                Pare de depender da sorte. Aprenda as <strong className="text-crimson-primary">15 técnicas científicas</strong> que os aprovados usam para acertar questões que nunca viram antes:
-              </p>
+          {/* Título com efeito holográfico */}
+          <div className="text-center mb-20 relative">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-3/4 h-px bg-gradient-to-r from-transparent via-crimson-primary/50 to-transparent"></div>
+            </div>
+            
+            <div className="relative bg-navy-primary/50 backdrop-blur-md px-8 py-4 inline-block rounded-2xl border border-white/10">
+              <h2 className="text-4xl md:text-6xl font-black font-poppins mb-8 text-white relative">
+                O método que 
+                <span className="text-gradient-premium block mt-2 animate-gradient-shift relative">
+                  transforma chutes em estratégia
+                  <div className="absolute -inset-1 bg-gradient-to-r from-crimson-primary/20 to-rose-accent/20 blur-lg -z-10 animate-pulse-glow"></div>
+                </span>
+              </h2>
+            </div>
+            
+            <div className="max-w-4xl mx-auto mt-8">
+              <div className="glass-card p-6 rounded-2xl border-2 border-crimson-primary/30 relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-crimson-primary/5 via-transparent to-rose-accent/5"></div>
+                <p className="text-xl text-white/90 font-medium leading-relaxed relative z-10">
+                  Pare de depender da sorte. Aprenda as <strong className="text-gradient-premium">15 técnicas científicas</strong> que os aprovados usam para acertar questões que nunca viram antes:
+                </p>
+              </div>
             </div>
           </div>
 
+          {/* Cards com Design Hexagonal e Efeitos Holográficos */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {[{
             icon: Brain,
             title: "Método Anti-Erro",
             description: "15 técnicas comprovadas que identificam padrões da FGV, eliminam pegadinhas e transformam chutes em acertos estratégicos.",
-            gradient: "from-navy-accent to-crimson-primary"
+            gradient: "from-navy-accent to-crimson-primary",
+            accent: "crimson-primary"
           }, {
             icon: Target,
             title: "Zero Ansiedade",
             description: "Domine técnicas de aplicação rápida para usar mesmo sob pressão extrema, nos últimos minutos da prova.",
-            gradient: "from-crimson-primary to-rose-accent"
+            gradient: "from-crimson-primary to-rose-accent",
+            accent: "rose-accent"
           }, {
             icon: Zap,
             title: "Ciência dos Dados",
             description: "Estratégias baseadas em análise estatística real das provas anteriores da OAB - não é achismo, é ciência.",
-            gradient: "from-rose-accent to-crimson-secondary"
-          }].map((feature, index) => <Card key={index} className="group glass-card hover-lift border-0 cinematic-shadow animate-scale-in color-bleed colored-shadow-navy" style={{
-            animationDelay: `${index * 0.2}s`
-          }}>
-                <CardContent className="p-8 text-center bg-slate-950">
-                  <div className={`w-20 h-20 bg-gradient-to-br ${feature.gradient} rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300 soft-glow animate-float`}>
+            gradient: "from-rose-accent to-crimson-secondary",
+            accent: "navy-accent"
+          }].map((feature, index) => 
+            <Card key={index} className="group relative overflow-hidden border-0 bg-transparent animate-scale-in" style={{
+              animationDelay: `${index * 0.2}s`
+            }}>
+              {/* Bordas holográficas */}
+              <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-white/10 rounded-3xl p-[2px]">
+                <div className="h-full w-full bg-gradient-to-br from-navy-secondary/80 to-navy-primary/90 rounded-3xl"></div>
+              </div>
+              
+              {/* Efeito de luz ambiente */}
+              <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-10 rounded-3xl blur-xl group-hover:opacity-20 transition-opacity duration-500`}></div>
+              
+              <CardContent className="relative p-8 text-center h-full flex flex-col justify-between">
+                {/* Ícone com efeito orbital */}
+                <div className="relative mb-8">
+                  <div className={`w-20 h-20 bg-gradient-to-br ${feature.gradient} rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-all duration-300 relative z-10`}>
                     <feature.icon className="w-10 h-10 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-6 text-white font-poppins">{feature.title}</h3>
+                  
+                  {/* Anéis orbitais */}
+                  <div className="absolute inset-0 rounded-full border border-white/20 animate-spin" style={{animationDuration: '8s'}}></div>
+                  <div className="absolute inset-2 rounded-full border border-crimson-primary/30 animate-spin" style={{animationDuration: '6s', animationDirection: 'reverse'}}></div>
+                </div>
+                
+                <div>
+                  <h3 className="text-2xl font-bold mb-6 text-white font-poppins group-hover:text-gradient-premium transition-all duration-300">{feature.title}</h3>
                   <p className="text-white/80 leading-relaxed text-lg font-medium">{feature.description}</p>
-                </CardContent>
-              </Card>)}
+                </div>
+                
+                {/* Efeito de scanline */}
+                <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-crimson-primary/50 to-transparent transform -translate-y-1 group-hover:animate-bounce-soft"></div>
+              </CardContent>
+            </Card>
+          )}
           </div>
 
-          {/* Super Bônus Section */}
-          <div className="max-w-5xl mx-auto px-4">
-            <h3 className="text-3xl sm:text-4xl md:text-5xl font-black font-poppins text-center mb-12 sm:mb-16 text-white">
-              <span className="text-gradient-premium">SUPER BÔNUS</span>
-            </h3>
+          {/* Super Bônus Section - Design Premium */}
+          <div className="relative mt-20">
+            {/* Background especial para destacar o bônus */}
+            <div className="absolute inset-0 bg-gradient-to-br from-crimson-primary/20 via-rose-accent/15 to-navy-accent/30 rounded-3xl blur-xl"></div>
+            <div className="absolute inset-0 border border-crimson-primary/30 rounded-3xl"></div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
-              {/* Bônus 1 - Acesso por 1 ano */}
-              <div className="glass-card p-6 sm:p-8 rounded-3xl cinematic-shadow hover-lift color-bleed border-2 border-yellow-500/30 transform transition-all duration-300 hover:scale-105">
-                <div className="text-center">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse">
-                    <Timer className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
-                  </div>
-                  <div className="text-lg sm:text-xl font-bold text-yellow-400 mb-4">Para os primeiros 200 alunos</div>
-                  <div className="text-2xl sm:text-3xl font-bold text-white mb-4">Acesso por 1 ano</div>
-                  <div className="text-lg sm:text-xl line-through text-white/60 mb-3">Custaria mais R$ 100</div>
-                  <div className="text-2xl sm:text-3xl font-black text-green-400 mb-6">FICA POR R$ 0</div>
-                  <Badge className="bg-gradient-to-r from-yellow-500 to-orange-600 text-white px-4 py-2 rounded-full text-base font-semibold">
-                    LIMITADO
-                  </Badge>
+            <div className="relative z-10 p-8 sm:p-12">
+              {/* Título com efeito especial */}
+              <div className="text-center mb-16 relative">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-full h-px bg-gradient-to-r from-transparent via-crimson-primary/60 to-transparent"></div>
                 </div>
-              </div>
-
-              {/* Bônus 2 - Agente IA */}
-              <div className="glass-card p-6 sm:p-8 rounded-3xl cinematic-shadow hover-lift color-bleed border-2 border-blue-500/30 transform transition-all duration-300 hover:scale-105">
-                <div className="text-center">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce">
-                    <Brain className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
-                  </div>
-                  <div className="text-2xl sm:text-3xl font-bold text-white mb-4">Agente de Inteligência Artificial</div>
-                  <div className="text-lg sm:text-xl line-through text-white/60 mb-3">Custaria no mínimo R$ 200</div>
-                  <div className="text-2xl sm:text-3xl font-black text-green-400 mb-6">VAI CUSTAR R$ 0</div>
-                  <p className="text-white/80 text-base sm:text-lg leading-relaxed">
-                    IA que analisa questões e sugere técnicas de chute específicas
+                
+                <div className="relative bg-gradient-to-r from-crimson-primary/20 to-rose-accent/20 backdrop-blur-lg px-8 py-6 rounded-3xl border-2 border-crimson-primary/50 mx-auto inline-block">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-crimson-primary/30 to-rose-accent/30 rounded-3xl blur-lg animate-pulse-glow"></div>
+                  <h3 className="relative text-4xl sm:text-5xl md:text-6xl font-black font-poppins text-white">
+                    🎁 <span className="text-gradient-premium animate-gradient-shift">SUPER BÔNUS</span> 🎁
+                  </h3>
+                  <p className="text-lg sm:text-xl text-white/90 mt-2 font-semibold">
+                    O que <span className="text-crimson-primary">REALMENTE</span> dá valor ao material principal
                   </p>
                 </div>
               </div>
-            </div>
+              
+              {/* Cards de bônus com design premium */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                {/* Bônus 1 - Design Futurístico */}
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/30 to-orange-600/30 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                  <div className="relative glass-card rounded-3xl overflow-hidden border-2 border-yellow-500/50 group-hover:border-yellow-400/70 transition-all duration-500">
+                    <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-orange-600/10"></div>
+                    
+                    <div className="relative p-8 sm:p-10 text-center">
+                      {/* Badge limitado flutuante */}
+                      <div className="absolute -top-4 -right-4 bg-gradient-to-r from-red-500 to-red-600 text-white px-4 py-2 rounded-full text-sm font-bold animate-bounce shadow-lg">
+                        LIMITADO!
+                      </div>
+                      
+                      {/* Ícone com efeito holográfico */}
+                      <div className="relative mb-8">
+                        <div className="w-24 h-24 sm:w-28 sm:h-28 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-full flex items-center justify-center mx-auto relative z-10 group-hover:scale-110 transition-transform duration-300">
+                          <Timer className="w-12 h-12 sm:w-14 sm:h-14 text-white animate-pulse" />
+                        </div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/50 to-orange-600/50 rounded-full blur-lg animate-pulse"></div>
+                      </div>
+                      
+                      <div className="text-xl sm:text-2xl font-bold text-yellow-400 mb-4 animate-pulse">
+                        🚨 APENAS OS PRIMEIROS 200 ALUNOS 🚨
+                      </div>
+                      <div className="text-3xl sm:text-4xl font-black text-white mb-6">
+                        🔓 Acesso por <span className="text-gradient-premium">1 ANO COMPLETO</span>
+                      </div>
+                      
+                      {/* Preço com efeito especial */}
+                      <div className="space-y-4 mb-8">
+                        <div className="text-xl sm:text-2xl line-through text-white/60">
+                          Valor normal: R$ 300
+                        </div>
+                        <div className="text-4xl sm:text-5xl font-black text-green-400 animate-bounce">
+                          🎯 HOJE: R$ 0 🎯
+                        </div>
+                      </div>
+                      
+                      <div className="bg-gradient-to-r from-yellow-500/20 to-orange-600/20 rounded-2xl p-4 border border-yellow-500/30">
+                        <p className="text-white/90 text-lg font-medium">
+                          ⚡ Acesso vitalício às atualizações<br/>
+                          📚 Novas técnicas incluídas automaticamente<br/>
+                          🎓 Suporte prioritário por 1 ano
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-            {/* Total Value Display */}
-            <div className="mt-8 sm:mt-12 text-center">
-              <div className="glass-card p-6 sm:p-8 rounded-3xl cinematic-shadow border-2 border-green-500/30 max-w-sm mx-auto hover:scale-105 transition-transform duration-300">
-                <div className="text-lg sm:text-xl text-white/80 mb-2">Valor total dos bônus:</div>
-                <div className="text-2xl sm:text-3xl line-through text-white/60 mb-2">R$ 300</div>
-                <div className="text-3xl sm:text-4xl font-black text-green-400">HOJE: R$ 0</div>
+                {/* Bônus 2 - IA Premium */}
+                <div className="relative group">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-600/30 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                  <div className="relative glass-card rounded-3xl overflow-hidden border-2 border-blue-500/50 group-hover:border-purple-500/70 transition-all duration-500">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-600/10"></div>
+                    
+                    <div className="relative p-8 sm:p-10 text-center">
+                      {/* Badge AI flutuante */}
+                      <div className="absolute -top-4 -left-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-bold animate-pulse shadow-lg">
+                        🤖 I.A.
+                      </div>
+                      
+                      {/* Ícone com efeito neural */}
+                      <div className="relative mb-8">
+                        <div className="w-24 h-24 sm:w-28 sm:h-28 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto relative z-10 group-hover:scale-110 transition-transform duration-300">
+                          <Brain className="w-12 h-12 sm:w-14 sm:h-14 text-white" />
+                        </div>
+                        {/* Anéis neurais */}
+                        <div className="absolute inset-0 rounded-full border border-blue-400/50 animate-ping"></div>
+                        <div className="absolute inset-2 rounded-full border border-purple-400/50 animate-ping" style={{animationDelay: '0.5s'}}></div>
+                      </div>
+                      
+                      <div className="text-3xl sm:text-4xl font-black text-white mb-6">
+                        🧠 <span className="text-gradient-premium">Agente de I.A. Exclusivo</span>
+                      </div>
+                      
+                      {/* Preço com efeito especial */}
+                      <div className="space-y-4 mb-8">
+                        <div className="text-xl sm:text-2xl line-through text-white/60">
+                          Valor de mercado: R$ 500
+                        </div>
+                        <div className="text-4xl sm:text-5xl font-black text-green-400 animate-bounce">
+                          🚀 GRÁTIS HOJE 🚀
+                        </div>
+                      </div>
+                      
+                      <div className="bg-gradient-to-r from-blue-500/20 to-purple-600/20 rounded-2xl p-4 border border-blue-500/30">
+                        <p className="text-white/90 text-lg font-medium">
+                          🎯 Analisa cada questão individualmente<br/>
+                          ⚡ Sugere a técnica ideal em tempo real<br/>
+                          📈 Aprende com seus padrões de erro<br/>
+                          🎓 Disponível 24/7 no seu celular
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Total Value com destaque especial */}
+              <div className="mt-12 text-center">
+                <div className="relative mx-auto max-w-md">
+                  <div className="absolute inset-0 bg-gradient-to-r from-green-500/30 to-emerald-600/30 rounded-3xl blur-xl animate-pulse"></div>
+                  <div className="relative glass-card p-8 rounded-3xl border-3 border-green-500/60 bg-gradient-to-br from-green-500/10 to-emerald-600/10">
+                    <div className="text-2xl sm:text-3xl text-white/90 mb-3 font-bold">
+                      💰 Valor total dos bônus:
+                    </div>
+                    <div className="text-3xl sm:text-4xl line-through text-white/60 mb-3">
+                      R$ 800
+                    </div>
+                    <div className="text-5xl sm:text-6xl font-black text-green-400 animate-pulse">
+                      🎁 HOJE: R$ 0 🎁
+                    </div>
+                    <div className="text-lg sm:text-xl text-white/80 mt-4 font-semibold">
+                      <span className="text-green-400">Economia de R$ 800</span> apenas hoje!
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
