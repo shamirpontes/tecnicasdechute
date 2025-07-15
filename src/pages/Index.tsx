@@ -162,145 +162,167 @@ const Index = () => {
           )}
           </div>
 
-          {/* Super Bônus Section - Design Premium */}
+          {/* Super Bônus Section - Design Clean e Premium */}
           <div className="relative mt-20">
-            {/* Background especial para destacar o bônus */}
-            <div className="absolute inset-0 bg-gradient-to-br from-crimson-primary/20 via-rose-accent/15 to-navy-accent/30 rounded-3xl blur-xl"></div>
-            <div className="absolute inset-0 border border-crimson-primary/30 rounded-3xl"></div>
+            {/* Background sutil para destacar */}
+            <div className="absolute inset-0 bg-gradient-to-br from-crimson-primary/10 via-rose-accent/5 to-navy-accent/15 rounded-3xl"></div>
+            <div className="absolute inset-0 border border-crimson-primary/20 rounded-3xl"></div>
             
             <div className="relative z-10 p-8 sm:p-12">
-              {/* Título com efeito especial */}
-              <div className="text-center mb-16 relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-full h-px bg-gradient-to-r from-transparent via-crimson-primary/60 to-transparent"></div>
-                </div>
-                
-                <div className="relative bg-gradient-to-r from-crimson-primary/20 to-rose-accent/20 backdrop-blur-lg px-8 py-6 rounded-3xl border-2 border-crimson-primary/50 mx-auto inline-block">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-crimson-primary/30 to-rose-accent/30 rounded-3xl blur-lg animate-pulse-glow"></div>
-                  <h3 className="relative text-4xl sm:text-5xl md:text-6xl font-black font-poppins text-white">
-                    🎁 <span className="text-gradient-premium animate-gradient-shift">SUPER BÔNUS</span> 🎁
+              {/* Título Clean */}
+              <div className="text-center mb-16">
+                <div className="max-w-2xl mx-auto">
+                  <h3 className="text-4xl sm:text-5xl md:text-6xl font-black font-poppins text-white mb-4">
+                    <span className="text-gradient-premium">SUPER BÔNUS</span>
                   </h3>
-                  <p className="text-lg sm:text-xl text-white/90 mt-2 font-semibold">
-                    O que <span className="text-crimson-primary">REALMENTE</span> dá valor ao material principal
+                  <p className="text-lg sm:text-xl text-white/80 font-medium">
+                    O que realmente multiplica o valor do seu investimento
                   </p>
                 </div>
               </div>
               
-              {/* Cards de bônus com design premium */}
+              {/* Cards de bônus com design minimalista */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                {/* Bônus 1 - Design Futurístico */}
-                <div className="relative group">
-                  <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/30 to-orange-600/30 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                  <div className="relative glass-card rounded-3xl overflow-hidden border-2 border-yellow-500/50 group-hover:border-yellow-400/70 transition-all duration-500">
-                    <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-orange-600/10"></div>
+                {/* Bônus 1 - Acesso Vitalício */}
+                <div className="glass-card rounded-3xl border border-white/10 overflow-hidden group hover-lift">
+                  <div className="p-8 sm:p-10">
+                    {/* Header do card */}
+                    <div className="flex items-center justify-between mb-8">
+                      <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-2xl flex items-center justify-center">
+                        <Timer className="w-8 h-8 text-white" />
+                      </div>
+                      <Badge className="bg-crimson-primary/20 text-crimson-primary border border-crimson-primary/30 px-3 py-1 rounded-full text-sm font-semibold">
+                        LIMITADO
+                      </Badge>
+                    </div>
                     
-                    <div className="relative p-8 sm:p-10 text-center">
-                      {/* Badge limitado flutuante */}
-                      <div className="absolute -top-4 -right-4 bg-gradient-to-r from-red-500 to-red-600 text-white px-4 py-2 rounded-full text-sm font-bold animate-bounce shadow-lg">
-                        LIMITADO!
-                      </div>
+                    {/* Conteúdo */}
+                    <div className="mb-8">
+                      <h4 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+                        Acesso por 1 Ano Completo
+                      </h4>
+                      <p className="text-white/70 text-lg leading-relaxed mb-6">
+                        Acesso total às técnicas, atualizações automáticas e suporte prioritário por 12 meses.
+                      </p>
                       
-                      {/* Ícone com efeito holográfico */}
-                      <div className="relative mb-8">
-                        <div className="w-24 h-24 sm:w-28 sm:h-28 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-full flex items-center justify-center mx-auto relative z-10 group-hover:scale-110 transition-transform duration-300">
-                          <Timer className="w-12 h-12 sm:w-14 sm:h-14 text-white animate-pulse" />
+                      {/* Features lista */}
+                      <div className="space-y-3">
+                        <div className="flex items-center text-white/80">
+                          <CheckCircle className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
+                          <span>Atualizações automáticas incluídas</span>
                         </div>
-                        <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/50 to-orange-600/50 rounded-full blur-lg animate-pulse"></div>
-                      </div>
-                      
-                      <div className="text-xl sm:text-2xl font-bold text-yellow-400 mb-4 animate-pulse">
-                        🚨 APENAS OS PRIMEIROS 200 ALUNOS 🚨
-                      </div>
-                      <div className="text-3xl sm:text-4xl font-black text-white mb-6">
-                        🔓 Acesso por <span className="text-gradient-premium">1 ANO COMPLETO</span>
-                      </div>
-                      
-                      {/* Preço com efeito especial */}
-                      <div className="space-y-4 mb-8">
-                        <div className="text-xl sm:text-2xl line-through text-white/60">
-                          Valor normal: R$ 300
+                        <div className="flex items-center text-white/80">
+                          <CheckCircle className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
+                          <span>Suporte prioritário por 365 dias</span>
                         </div>
-                        <div className="text-4xl sm:text-5xl font-black text-green-400 animate-bounce">
-                          🎯 HOJE: R$ 0 🎯
+                        <div className="flex items-center text-white/80">
+                          <CheckCircle className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
+                          <span>Novas técnicas adicionadas automaticamente</span>
                         </div>
                       </div>
-                      
-                      <div className="bg-gradient-to-r from-yellow-500/20 to-orange-600/20 rounded-2xl p-4 border border-yellow-500/30">
-                        <p className="text-white/90 text-lg font-medium">
-                          ⚡ Acesso vitalício às atualizações<br/>
-                          📚 Novas técnicas incluídas automaticamente<br/>
-                          🎓 Suporte prioritário por 1 ano
-                        </p>
+                    </div>
+                    
+                    {/* Card de Preço */}
+                    <div className="bg-gradient-to-br from-yellow-500/10 to-orange-600/10 rounded-2xl p-6 border border-yellow-500/20">
+                      <div className="text-center">
+                        <div className="text-sm text-yellow-400 font-semibold mb-2 uppercase tracking-wide">
+                          Apenas primeiros 200 alunos
+                        </div>
+                        <div className="flex items-center justify-center gap-4 mb-3">
+                          <span className="text-xl text-white/60 line-through">R$ 300</span>
+                          <span className="text-3xl font-black text-green-400">R$ 0</span>
+                        </div>
+                        <div className="text-sm text-white/70">
+                          Economia de R$ 300 hoje
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Bônus 2 - IA Premium */}
-                <div className="relative group">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-600/30 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                  <div className="relative glass-card rounded-3xl overflow-hidden border-2 border-blue-500/50 group-hover:border-purple-500/70 transition-all duration-500">
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-600/10"></div>
+                {/* Bônus 2 - IA Exclusiva */}
+                <div className="glass-card rounded-3xl border border-white/10 overflow-hidden group hover-lift">
+                  <div className="p-8 sm:p-10">
+                    {/* Header do card */}
+                    <div className="flex items-center justify-between mb-8">
+                      <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center">
+                        <Brain className="w-8 h-8 text-white" />
+                      </div>
+                      <Badge className="bg-blue-500/20 text-blue-400 border border-blue-500/30 px-3 py-1 rounded-full text-sm font-semibold">
+                        EXCLUSIVO
+                      </Badge>
+                    </div>
                     
-                    <div className="relative p-8 sm:p-10 text-center">
-                      {/* Badge AI flutuante */}
-                      <div className="absolute -top-4 -left-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-bold animate-pulse shadow-lg">
-                        🤖 I.A.
-                      </div>
+                    {/* Conteúdo */}
+                    <div className="mb-8">
+                      <h4 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+                        Agente de Inteligência Artificial
+                      </h4>
+                      <p className="text-white/70 text-lg leading-relaxed mb-6">
+                        IA personalizada que analisa questões e sugere as técnicas ideais em tempo real.
+                      </p>
                       
-                      {/* Ícone com efeito neural */}
-                      <div className="relative mb-8">
-                        <div className="w-24 h-24 sm:w-28 sm:h-28 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto relative z-10 group-hover:scale-110 transition-transform duration-300">
-                          <Brain className="w-12 h-12 sm:w-14 sm:h-14 text-white" />
+                      {/* Features lista */}
+                      <div className="space-y-3">
+                        <div className="flex items-center text-white/80">
+                          <CheckCircle className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
+                          <span>Análise instantânea de questões</span>
                         </div>
-                        {/* Anéis neurais */}
-                        <div className="absolute inset-0 rounded-full border border-blue-400/50 animate-ping"></div>
-                        <div className="absolute inset-2 rounded-full border border-purple-400/50 animate-ping" style={{animationDelay: '0.5s'}}></div>
-                      </div>
-                      
-                      <div className="text-3xl sm:text-4xl font-black text-white mb-6">
-                        🧠 <span className="text-gradient-premium">Agente de I.A. Exclusivo</span>
-                      </div>
-                      
-                      {/* Preço com efeito especial */}
-                      <div className="space-y-4 mb-8">
-                        <div className="text-xl sm:text-2xl line-through text-white/60">
-                          Valor de mercado: R$ 500
+                        <div className="flex items-center text-white/80">
+                          <CheckCircle className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
+                          <span>Sugestões de técnicas personalizadas</span>
                         </div>
-                        <div className="text-4xl sm:text-5xl font-black text-green-400 animate-bounce">
-                          🚀 GRÁTIS HOJE 🚀
+                        <div className="flex items-center text-white/80">
+                          <CheckCircle className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
+                          <span>Disponível 24/7 no seu dispositivo</span>
+                        </div>
+                        <div className="flex items-center text-white/80">
+                          <CheckCircle className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
+                          <span>Aprende com seus padrões de estudo</span>
                         </div>
                       </div>
-                      
-                      <div className="bg-gradient-to-r from-blue-500/20 to-purple-600/20 rounded-2xl p-4 border border-blue-500/30">
-                        <p className="text-white/90 text-lg font-medium">
-                          🎯 Analisa cada questão individualmente<br/>
-                          ⚡ Sugere a técnica ideal em tempo real<br/>
-                          📈 Aprende com seus padrões de erro<br/>
-                          🎓 Disponível 24/7 no seu celular
-                        </p>
+                    </div>
+                    
+                    {/* Card de Preço */}
+                    <div className="bg-gradient-to-br from-blue-500/10 to-purple-600/10 rounded-2xl p-6 border border-blue-500/20">
+                      <div className="text-center">
+                        <div className="text-sm text-blue-400 font-semibold mb-2 uppercase tracking-wide">
+                          Valor de mercado
+                        </div>
+                        <div className="flex items-center justify-center gap-4 mb-3">
+                          <span className="text-xl text-white/60 line-through">R$ 500</span>
+                          <span className="text-3xl font-black text-green-400">R$ 0</span>
+                        </div>
+                        <div className="text-sm text-white/70">
+                          Incluído gratuitamente hoje
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Total Value com destaque especial */}
-              <div className="mt-12 text-center">
-                <div className="relative mx-auto max-w-md">
-                  <div className="absolute inset-0 bg-gradient-to-r from-green-500/30 to-emerald-600/30 rounded-3xl blur-xl animate-pulse"></div>
-                  <div className="relative glass-card p-8 rounded-3xl border-3 border-green-500/60 bg-gradient-to-br from-green-500/10 to-emerald-600/10">
-                    <div className="text-2xl sm:text-3xl text-white/90 mb-3 font-bold">
-                      💰 Valor total dos bônus:
+              {/* Total Value Card - Design Clean */}
+              <div className="mt-16 max-w-md mx-auto">
+                <div className="glass-card rounded-3xl border-2 border-green-500/30 overflow-hidden">
+                  <div className="bg-gradient-to-br from-green-500/10 to-emerald-600/10 p-8 text-center">
+                    <div className="mb-4">
+                      <div className="text-lg text-white/80 font-medium mb-2">
+                        Valor total dos bônus
+                      </div>
+                      <div className="flex items-center justify-center gap-6 mb-4">
+                        <span className="text-2xl text-white/60 line-through">R$ 800</span>
+                        <span className="text-4xl font-black text-green-400">R$ 0</span>
+                      </div>
+                      <div className="text-sm text-green-400/80 font-semibold">
+                        Economia total de R$ 800 apenas hoje
+                      </div>
                     </div>
-                    <div className="text-3xl sm:text-4xl line-through text-white/60 mb-3">
-                      R$ 800
-                    </div>
-                    <div className="text-5xl sm:text-6xl font-black text-green-400 animate-pulse">
-                      🎁 HOJE: R$ 0 🎁
-                    </div>
-                    <div className="text-lg sm:text-xl text-white/80 mt-4 font-semibold">
-                      <span className="text-green-400">Economia de R$ 800</span> apenas hoje!
+                    
+                    <div className="pt-4 border-t border-white/10">
+                      <div className="text-white/70 text-sm">
+                        Bônus aplicados automaticamente na compra
+                      </div>
                     </div>
                   </div>
                 </div>
