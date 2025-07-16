@@ -46,10 +46,10 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Nova paleta: Preto/Cinza escuro, Branco, Azul-ciano neon */
-    --navy-primary: 0 0% 5%;        /* #0D0D0D - Preto */
-    --navy-secondary: 0 0% 10%;     /* #1A1A1A - Cinza muito escuro */
-    --navy-accent: 0 0% 15%;        /* Tom intermediário */
+    /* Nova paleta: Azul marinho escuro */
+    --navy-primary: 214 50% 8%;     /* Azul marinho muito escuro */
+    --navy-secondary: 214 45% 12%;  /* Azul marinho escuro */
+    --navy-accent: 214 40% 16%;     /* Azul marinho intermediário */
     --red-primary: 187 100% 48%;    /* #00E6F6 - Azul-ciano neon */
     --red-secondary: 187 100% 45%;  /* #00CFE6 - Azul-ciano mais escuro */
     --pink-accent: 187 100% 50%;    /* Azul-ciano vibrante */
