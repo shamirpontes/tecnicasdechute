@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { ArrowRight, Brain, Target, Trophy, CheckCircle, Star, Users, Clock, BookOpen, Zap, Award, TrendingUp, Shield, Sparkles, Timer, AlertCircle, Heart, X, Check } from 'lucide-react';
+import { ArrowRight, Brain, Target, Trophy, CheckCircle, Star, Users, Clock, BookOpen, Zap, Award, TrendingUp, Shield, Sparkles, Timer, AlertCircle, Heart, X, Check, ChevronDown } from 'lucide-react';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 const Index = () => {
   return <div className="min-h-screen bg-navy-primary overflow-x-hidden relative w-full">
       {/* Fundo Atmosférico Navy */}
@@ -791,6 +792,79 @@ const Index = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Seção Dúvidas Frequentes */}
+      <section className="py-16 sm:py-24 px-4 bg-gradient-to-br from-navy-secondary/60 to-navy-primary/80 relative z-10">
+        <div className="absolute inset-0 pattern-dots opacity-10"></div>
+        <div className="max-w-4xl mx-auto relative">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black font-poppins mb-6 text-white leading-tight">
+              <span className="text-gradient-premium">Dúvidas Frequentes</span>
+            </h2>
+            <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto">
+              Confira as principais dúvidas sobre o material e tire todas as suas questões
+            </p>
+          </div>
+
+          <div className="glass-card rounded-3xl p-6 sm:p-8 border border-white/10">
+            <Accordion type="single" collapsible className="space-y-4">
+              <AccordionItem value="item-1" className="border-b border-white/10">
+                <AccordionTrigger className="text-left hover:no-underline py-4 sm:py-6 text-white hover:text-gradient-premium transition-colors duration-300 text-base sm:text-lg font-semibold">
+                  Como recebo o material depois da compra?
+                </AccordionTrigger>
+                <AccordionContent className="text-white/90 pb-4 sm:pb-6 text-sm sm:text-base leading-relaxed">
+                  Assim que o pagamento for aprovado, você recebe o link no e-mail cadastrado na compra para acessar o material na plataforma da EDUZZ. É rápido, prático e seguro.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2" className="border-b border-white/10">
+                <AccordionTrigger className="text-left hover:no-underline py-4 sm:py-6 text-white hover:text-gradient-premium transition-colors duration-300 text-base sm:text-lg font-semibold">
+                  Terei acesso imediato ao material?
+                </AccordionTrigger>
+                <AccordionContent className="text-white/90 pb-4 sm:pb-6 text-sm sm:text-base leading-relaxed">
+                  Sim. Você terá acesso imediato à parte 1 do material. A parte 2 e o BÔNUS (agente de I.A) serão liberados 7 dias após a compra.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3" className="border-b border-white/10">
+                <AccordionTrigger className="text-left hover:no-underline py-4 sm:py-6 text-white hover:text-gradient-premium transition-colors duration-300 text-base sm:text-lg font-semibold">
+                  Até quando terei acesso ao material?
+                </AccordionTrigger>
+                <AccordionContent className="text-white/90 pb-4 sm:pb-6 text-sm sm:text-base leading-relaxed">
+                  O material é seu para sempre! Depois de baixar, você pode acessar, reler, imprimir e estudar quantas vezes quiser. Durante 1 ano você terá acesso às atualizações dele pela plataforma da EDUZZ.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-4" className="border-b border-white/10">
+                <AccordionTrigger className="text-left hover:no-underline py-4 sm:py-6 text-white hover:text-gradient-premium transition-colors duration-300 text-base sm:text-lg font-semibold">
+                  É garantido que vou passar com esse material?
+                </AccordionTrigger>
+                <AccordionContent className="text-white/90 pb-4 sm:pb-6 text-sm sm:text-base leading-relaxed">
+                  O material não substitui o estudo do conteúdo da prova, mas pode ser a diferença entre passar ou bater na trave. As técnicas ajudam você a acertar questões que normalmente erraria por dúvida ou insegurança.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-5" className="border-b border-white/10">
+                <AccordionTrigger className="text-left hover:no-underline py-4 sm:py-6 text-white hover:text-gradient-premium transition-colors duration-300 text-base sm:text-lg font-semibold">
+                  O conteúdo é em vídeo ou em texto?
+                </AccordionTrigger>
+                <AccordionContent className="text-white/90 pb-4 sm:pb-6 text-sm sm:text-base leading-relaxed">
+                  É um livro digital (PDF), que você pode ler no celular, computador ou imprimir se preferir. Tudo organizado, com linguagem simples, didática e estratégica. O BÔNUS (agente de I.A) será disponibilizado na plataforma em um link.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-6" className="border-0">
+                <AccordionTrigger className="text-left hover:no-underline py-4 sm:py-6 text-white hover:text-gradient-premium transition-colors duration-300 text-base sm:text-lg font-semibold">
+                  Esse material serve para qual fase da OAB?
+                </AccordionTrigger>
+                <AccordionContent className="text-white/90 pb-4 sm:pb-6 text-sm sm:text-base leading-relaxed">
+                  Foi feito para a 1ª fase da OAB, onde você responde questões objetivas de múltipla escolha. As técnicas funcionam especialmente bem com o estilo da banca FGV.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
