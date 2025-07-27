@@ -23,6 +23,9 @@ const Index = () => {
             {/* Conteúdo Principal - Esquerda */}
             <div className="order-2 lg:order-1 text-center lg:text-left">
               <div className="mb-4 sm:mb-6 lg:mb-8">
+                <p className="text-white/80 text-sm sm:text-base lg:text-lg mb-3 sm:mb-4 font-medium">
+                  Agora que você já tem as 197 questões...
+                </p>
                 <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black font-poppins mb-3 sm:mb-4 lg:mb-6 leading-[1.1] sm:leading-tight">
                   <span className="block text-white animate-fade-in">Descubra as 15 Técnicas</span>
                   <span className="block text-gradient-premium animate-slide-up font-bold mt-1 sm:mt-2" style={{
