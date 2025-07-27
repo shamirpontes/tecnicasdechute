@@ -355,18 +355,18 @@ const Index = () => {
                 <div className="glass-card rounded-3xl border-2 border-green-500/30 overflow-hidden">
                   <div className="bg-gradient-to-br from-green-500/10 to-emerald-600/10 p-8 text-center">
                     <div className="mb-4">
-                      <div className="text-lg text-white/80 font-medium mb-2">
-                        Valor total dos bônus
-                      </div>
-                      <div className="flex items-center justify-center gap-6 mb-4">
-                        <span className="text-2xl text-white/60 line-through">R$ 800</span>
-                        <span className="text-4xl font-black text-green-400">R$ 0</span>
-                      </div>
-                      <div className="text-sm text-green-400/80 font-semibold">Economia total de R$ 500</div>
-                    </div>
-                    
-                    <div className="pt-4 border-t border-white/10">
-                      <div className="text-white/70 text-sm">Economia total de R$ 800</div>
+                       <div className="text-lg text-white/80 font-medium mb-2">
+                         Material de técnicas de chute
+                       </div>
+                       <div className="flex items-center justify-center gap-6 mb-4">
+                         <span className="text-2xl text-white/60 line-through">R$ 200</span>
+                         <span className="text-4xl font-black text-green-400">R$ 97</span>
+                       </div>
+                       <div className="text-sm text-green-400/80 font-semibold">+ Todos os bônus incluídos</div>
+                     </div>
+                     
+                     <div className="pt-4 border-t border-white/10">
+                       <div className="text-white/70 text-sm">Economia de R$ 103 + bônus gratuitos</div>
                     </div>
                   </div>
                 </div>
