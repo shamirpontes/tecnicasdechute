@@ -66,30 +66,27 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Mockup do Material - Direita */}
+            {/* Mockup do Tablet - Direita */}
             <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
               <div className="relative group animate-scale-in" style={{animationDelay: '0.3s'}}>
                 {/* Background Effects */}
                 <div className="absolute -inset-4 bg-gradient-to-br from-crimson-primary/30 to-rose-accent/30 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
                 
-                {/* Mockup Container - Limpo apenas para a foto da capa */}
-                <div className="relative bg-gradient-to-br from-white to-gray-100 rounded-2xl p-1 shadow-2xl group-hover:scale-105 transition-transform duration-500">
-                  {/* Inner Container - Apenas a foto da capa */}
-                  <div className="bg-white rounded-xl overflow-hidden shadow-inner">
-                    {/* Área da Imagem/Foto da Capa */}
-                    <div className="h-96 sm:h-[500px] bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6">
-                      <div className="text-center">
-                        <div className="w-32 h-32 bg-gradient-to-br from-crimson-primary to-rose-accent rounded-2xl flex items-center justify-center mx-auto mb-4">
-                          <Target className="w-16 h-16 text-white" />
-                        </div>
-                        <div className="text-navy-primary font-bold text-xl mb-2">
-                          Técnicas de Chute Inteligente para a OAB
-                        </div>
-                        <div className="text-gray-600 text-sm">
-                          Material Exclusivo
-                        </div>
-                      </div>
+                {/* Mockup do Tablet */}
+                <div className="relative">
+                  {/* Tablet Frame */}
+                  <div className="bg-gray-900 rounded-3xl p-4 shadow-2xl group-hover:scale-105 transition-transform duration-500">
+                    {/* Screen */}
+                    <div className="bg-white rounded-2xl overflow-hidden shadow-inner aspect-[4/3] w-80 sm:w-96 md:w-[450px]">
+                      {/* Capa do Livro */}
+                      <img 
+                        src="/lovable-uploads/bac8de03-e236-4b02-9112-0599c4d65cbe.png"
+                        alt="Técnicas de Chute Escaneadas para a OAB"
+                        className="w-full h-full object-contain bg-white"
+                      />
                     </div>
+                    {/* Home Button */}
+                    <div className="w-12 h-1 bg-gray-600 rounded-full mx-auto mt-3"></div>
                   </div>
                 </div>
               </div>
