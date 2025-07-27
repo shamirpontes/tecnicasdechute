@@ -362,9 +362,7 @@ const Index = () => {
                         <span className="text-2xl text-white/60 line-through">R$ 800</span>
                         <span className="text-4xl font-black text-green-400">R$ 0</span>
                       </div>
-                      <div className="text-sm text-green-400/80 font-semibold">
-                        Economia total de R$ 800 apenas hoje
-                      </div>
+                      <div className="text-sm text-green-400/80 font-semibold">Economia total de R$ 500</div>
                     </div>
                     
                     <div className="pt-4 border-t border-white/10">
