@@ -3,8 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { ArrowRight, Brain, Target, Trophy, CheckCircle, Star, Users, Clock, BookOpen, Zap, Award, TrendingUp, Shield, Sparkles, Timer, AlertCircle, Heart, X, Check, ChevronDown } from 'lucide-react';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { ArrowRight, Brain, Target, Trophy, CheckCircle, Star, Users, Clock, BookOpen, Zap, Award, TrendingUp, Shield, Sparkles, Timer, AlertCircle, Heart, X, Check } from 'lucide-react';
 const Index = () => {
   return <div className="min-h-screen bg-navy-primary overflow-x-hidden relative w-full">
       {/* Fundo Atmosférico Navy */}
@@ -23,21 +22,18 @@ const Index = () => {
             {/* Conteúdo Principal - Esquerda */}
             <div className="order-2 lg:order-1 text-center lg:text-left">
               <div className="mb-4 sm:mb-6 lg:mb-8">
-                <p className="text-white/80 text-sm sm:text-base lg:text-lg mb-3 sm:mb-4 font-medium">
-                  Agora que você já tem as 197 questões...
-                </p>
                 <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black font-poppins mb-3 sm:mb-4 lg:mb-6 leading-[1.1] sm:leading-tight">
                   <span className="block text-white animate-fade-in">Descubra as 15 Técnicas</span>
                   <span className="block text-gradient-premium animate-slide-up font-bold mt-1 sm:mt-2" style={{
                   animationDelay: '0.2s'
-                }}>que garantem até 20 pontos extras</span>
+                }}>que garantem até 20 pontos</span>
                 </h1>
                 
                 <div className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-4 sm:mb-6 lg:mb-8 animate-scale-in" style={{
                 animationDelay: '0.4s'
               }}>
                   <div className="h-px bg-gradient-to-r from-crimson-primary/50 to-transparent flex-1 max-w-12 sm:max-w-16"></div>
-                  <div className="w-2 h-2 bg-crimson-primary rounded-full"></div>
+                  
                   <div className="h-px bg-gradient-to-l from-crimson-primary/50 to-transparent flex-1 max-w-12 sm:max-w-16"></div>
                 </div>
               </div>
@@ -359,18 +355,18 @@ const Index = () => {
                 <div className="glass-card rounded-3xl border-2 border-green-500/30 overflow-hidden">
                   <div className="bg-gradient-to-br from-green-500/10 to-emerald-600/10 p-8 text-center">
                     <div className="mb-4">
-                       <div className="text-lg text-white/80 font-medium mb-2">
-                         Material de técnicas de chute
-                       </div>
-                       <div className="flex items-center justify-center gap-6 mb-4">
-                         <span className="text-2xl text-white/60 line-through">R$ 200</span>
-                         <span className="text-4xl font-black text-green-400">R$ 97</span>
-                       </div>
-                       <div className="text-sm text-green-400/80 font-semibold">+ Todos os bônus incluídos</div>
-                     </div>
-                     
-                     <div className="pt-4 border-t border-white/10">
-                       <div className="text-white/70 text-sm">Economia de R$ 103 + bônus gratuitos</div>
+                      <div className="text-lg text-white/80 font-medium mb-2">
+                        Valor total dos bônus
+                      </div>
+                      <div className="flex items-center justify-center gap-6 mb-4">
+                        <span className="text-2xl text-white/60 line-through">R$ 800</span>
+                        <span className="text-4xl font-black text-green-400">R$ 0</span>
+                      </div>
+                      <div className="text-sm text-green-400/80 font-semibold">Economia total de R$ 500</div>
+                    </div>
+                    
+                    <div className="pt-4 border-t border-white/10">
+                      <div className="text-white/70 text-sm">Economia total de R$ 800</div>
                     </div>
                   </div>
                 </div>
@@ -503,9 +499,9 @@ const Index = () => {
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                   </div>
                   <p className="text-xl text-white/90 leading-relaxed">
-                    Apenas com essas técnicas é possível <strong className="text-green-400">aumentar até 20 pontos na reta final.</strong>
+                    Tem aluno que, só com essas técnicas, <strong className="text-green-400">aumentou 20 pontos na nota final. E passou.</strong>
                     <br />
-                    Porque o chute deixa de ser sorte — <strong className="text-gradient-premium">e vira estratégia.</strong>
+                    Porque o chute deixou de ser sorte — <strong className="text-gradient-premium">e virou estratégia.</strong>
                   </p>
                 </div>
               </div>
@@ -522,7 +518,7 @@ const Index = () => {
               A prova está nos <span className="text-gradient-premium">resultados reais</span>
             </h2>
             <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto">
-              Milhares de alunos já foram aprovados com o método Escaneando OAB da professora Melissa Justi. <strong className="text-green-400">Veja as mensagens que recebemos:</strong>
+              Centenas de alunos já foram aprovados usando essas técnicas. <strong className="text-green-400">Veja as mensagens que recebemos:</strong>
             </p>
           </div>
           
@@ -628,8 +624,9 @@ const Index = () => {
           <div className="text-center mt-12 sm:mt-16">
             <div className="glass-card p-6 sm:p-8 rounded-3xl cinematic-shadow max-w-4xl mx-auto">
               <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
-                <span className="text-green-400 font-bold">Eles conseguiram e você pode conseguir também!</span> 
-                <span className="text-gradient-premium font-semibold"> Agora a decisão é SUA!</span>
+                <span className="text-green-400 font-bold">Estes são apenas alguns</span> dos resultados que nossos alunos 
+                conquistaram aplicando as técnicas de chute inteligente. 
+                <span className="text-gradient-premium font-semibold"> E você pode ser o próximo!</span>
               </p>
             </div>
           </div>
@@ -737,13 +734,10 @@ const Index = () => {
                         
                         <div className="space-y-2 mb-6">
                           <div className="text-lg sm:text-xl md:text-2xl text-crimson-primary font-bold line-through opacity-70">
-                            De R$ 700
+                            De R$ 600
                           </div>
                           <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-gradient-premium leading-none">
-                            12x de R$ 9,70
-                          </div>
-                          <div className="text-lg sm:text-xl text-navy-primary/70 font-medium">
-                            ou R$ 97 à vista
+                            R$ 97
                           </div>
                         </div>
                         
@@ -776,7 +770,7 @@ const Index = () => {
                           <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                             <Check className="w-5 h-5 text-white" />
                           </div>
-                          <span className="font-medium">Conteúdo Atualizado e Organizado</span>
+                          <span className="font-medium">Garantia de resultados</span>
                         </div>
                       </div>
 
@@ -795,79 +789,6 @@ const Index = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Seção Dúvidas Frequentes */}
-      <section className="py-16 sm:py-24 px-4 bg-gradient-to-br from-navy-secondary/60 to-navy-primary/80 relative z-10">
-        <div className="absolute inset-0 pattern-dots opacity-10"></div>
-        <div className="max-w-4xl mx-auto relative">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black font-poppins mb-6 text-white leading-tight">
-              <span className="text-gradient-premium">Dúvidas Frequentes</span>
-            </h2>
-            <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto">
-              Confira as principais dúvidas sobre o material e tire todas as suas questões
-            </p>
-          </div>
-
-          <div className="glass-card rounded-3xl p-6 sm:p-8 border border-white/10">
-            <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="item-1" className="border-b border-white/10">
-                <AccordionTrigger className="text-left hover:no-underline py-4 sm:py-6 text-white hover:text-gradient-premium transition-colors duration-300 text-base sm:text-lg font-semibold">
-                  Como recebo o material depois da compra?
-                </AccordionTrigger>
-                <AccordionContent className="text-white/90 pb-4 sm:pb-6 text-sm sm:text-base leading-relaxed">
-                  Assim que o pagamento for aprovado, você recebe o link no e-mail cadastrado na compra para acessar o material na plataforma da EDUZZ. É rápido, prático e seguro.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-2" className="border-b border-white/10">
-                <AccordionTrigger className="text-left hover:no-underline py-4 sm:py-6 text-white hover:text-gradient-premium transition-colors duration-300 text-base sm:text-lg font-semibold">
-                  Terei acesso imediato ao material?
-                </AccordionTrigger>
-                <AccordionContent className="text-white/90 pb-4 sm:pb-6 text-sm sm:text-base leading-relaxed">
-                  Sim. Você terá acesso imediato à parte 1 do material. A parte 2 e o BÔNUS (agente de I.A) serão liberados 7 dias após a compra.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-3" className="border-b border-white/10">
-                <AccordionTrigger className="text-left hover:no-underline py-4 sm:py-6 text-white hover:text-gradient-premium transition-colors duration-300 text-base sm:text-lg font-semibold">
-                  Até quando terei acesso ao material?
-                </AccordionTrigger>
-                <AccordionContent className="text-white/90 pb-4 sm:pb-6 text-sm sm:text-base leading-relaxed">
-                  O material é seu para sempre! Depois de baixar, você pode acessar, reler, imprimir e estudar quantas vezes quiser. Durante 1 ano você terá acesso às atualizações dele pela plataforma da EDUZZ.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-4" className="border-b border-white/10">
-                <AccordionTrigger className="text-left hover:no-underline py-4 sm:py-6 text-white hover:text-gradient-premium transition-colors duration-300 text-base sm:text-lg font-semibold">
-                  É garantido que vou passar com esse material?
-                </AccordionTrigger>
-                <AccordionContent className="text-white/90 pb-4 sm:pb-6 text-sm sm:text-base leading-relaxed">
-                  O material não substitui o estudo do conteúdo da prova, mas pode ser a diferença entre passar ou bater na trave. As técnicas ajudam você a acertar questões que normalmente erraria por dúvida ou insegurança.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-5" className="border-b border-white/10">
-                <AccordionTrigger className="text-left hover:no-underline py-4 sm:py-6 text-white hover:text-gradient-premium transition-colors duration-300 text-base sm:text-lg font-semibold">
-                  O conteúdo é em vídeo ou em texto?
-                </AccordionTrigger>
-                <AccordionContent className="text-white/90 pb-4 sm:pb-6 text-sm sm:text-base leading-relaxed">
-                  É um livro digital (PDF), que você pode ler no celular, computador ou imprimir se preferir. Tudo organizado, com linguagem simples, didática e estratégica. O BÔNUS (agente de I.A) será disponibilizado na plataforma em um link.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-6" className="border-0">
-                <AccordionTrigger className="text-left hover:no-underline py-4 sm:py-6 text-white hover:text-gradient-premium transition-colors duration-300 text-base sm:text-lg font-semibold">
-                  Esse material serve para qual fase da OAB?
-                </AccordionTrigger>
-                <AccordionContent className="text-white/90 pb-4 sm:pb-6 text-sm sm:text-base leading-relaxed">
-                  Foi feito para a 1ª fase da OAB, onde você responde questões objetivas de múltipla escolha. As técnicas funcionam especialmente bem com o estilo da banca FGV.
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
           </div>
         </div>
       </section>
