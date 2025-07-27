@@ -518,7 +518,7 @@ const Index = () => {
               A prova está nos <span className="text-gradient-premium">resultados reais</span>
             </h2>
             <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto">
-              Centenas de alunos já foram aprovados usando essas técnicas. <strong className="text-green-400">Veja as mensagens que recebemos:</strong>
+              Milhares de alunos já foram aprovados com o método Escaneando OAB da professora Melissa Justi. <strong className="text-green-400">Veja as mensagens que recebemos:</strong>
             </p>
           </div>
           
