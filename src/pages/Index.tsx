@@ -769,7 +769,7 @@ const Index = () => {
                           <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                             <Check className="w-5 h-5 text-white" />
                           </div>
-                          <span className="font-medium">Garantia de resultados</span>
+                          <span className="font-medium">Conteúdo Atualizado e Organizado</span>
                         </div>
                       </div>
 
