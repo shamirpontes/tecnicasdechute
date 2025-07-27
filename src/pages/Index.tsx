@@ -72,21 +72,26 @@ const Index = () => {
                 {/* Background Effects */}
                 <div className="absolute -inset-4 bg-gradient-to-br from-crimson-primary/30 to-rose-accent/30 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
                 
-                {/* Mockup do Tablet */}
+                {/* Mockup do iPad */}
                 <div className="relative">
-                  {/* Tablet Frame */}
-                  <div className="bg-gray-900 rounded-3xl p-4 shadow-2xl group-hover:scale-105 transition-transform duration-500">
-                    {/* Screen */}
-                    <div className="bg-white rounded-2xl overflow-hidden shadow-inner aspect-[4/3] w-80 sm:w-96 md:w-[450px]">
-                      {/* Capa do Livro */}
-                      <img 
-                        src="/lovable-uploads/bac8de03-e236-4b02-9112-0599c4d65cbe.png"
-                        alt="Técnicas de Chute Escaneadas para a OAB"
-                        className="w-full h-full object-contain bg-white"
-                      />
+                  {/* iPad Frame */}
+                  <div className="bg-gradient-to-br from-gray-200 via-white to-gray-100 rounded-[2.5rem] p-6 shadow-2xl group-hover:scale-105 transition-transform duration-500 border border-gray-300/50">
+                    {/* Screen Bezel */}
+                    <div className="bg-black rounded-[1.8rem] p-1">
+                      {/* Screen */}
+                      <div className="bg-white rounded-[1.6rem] overflow-hidden shadow-inner aspect-[4/3] w-80 sm:w-96 md:w-[450px]">
+                        {/* Capa do Livro */}
+                        <img 
+                          src="/lovable-uploads/bac8de03-e236-4b02-9112-0599c4d65cbe.png"
+                          alt="Técnicas de Chute Escaneadas para a OAB"
+                          className="w-full h-full object-contain bg-white"
+                        />
+                      </div>
                     </div>
-                    {/* Home Button */}
-                    <div className="w-12 h-1 bg-gray-600 rounded-full mx-auto mt-3"></div>
+                    {/* Home Button (iPad style) */}
+                    <div className="w-14 h-14 bg-gradient-to-br from-gray-800 to-gray-900 rounded-full mx-auto mt-4 shadow-inner border-2 border-gray-700 flex items-center justify-center">
+                      <div className="w-6 h-6 border-2 border-gray-400 rounded-sm"></div>
+                    </div>
                   </div>
                 </div>
               </div>
