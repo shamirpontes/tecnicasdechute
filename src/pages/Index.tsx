@@ -43,7 +43,7 @@ const Index = () => {
             }}>
                 <div className="glass-card p-3 sm:p-4 md:p-6 lg:p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl cinematic-shadow hover-glow border border-white/10">
                   <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white leading-relaxed font-medium">
-                    <strong className="text-gradient-premium">Técnicas científicas e testadas</strong> que te ensinam como 
+                    <strong className="text-gradient-premium">Técnicas validadas</strong> que te ensinam como 
                     <strong className="text-gradient-premium"> acertar questões mesmo SEM SABER a resposta</strong> e garantir até +20 pontos na sua nota final.
                   </p>
                 </div>
