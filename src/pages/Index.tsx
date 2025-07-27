@@ -788,6 +788,99 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Seção FAQ - Esta é sua decisão */}
+      <section className="py-16 sm:py-24 px-4 bg-gradient-to-br from-slate-900 via-navy-secondary to-slate-800 relative overflow-hidden z-10">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-crimson-primary/5 via-navy-accent/10 to-rose-accent/5"></div>
+          <div className="absolute inset-0 pattern-dots opacity-10"></div>
+        </div>
+
+        <div className="max-w-4xl mx-auto relative">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black font-poppins mb-6 text-white leading-tight">
+              Esta é <span className="text-gradient-premium">sua decisão</span>
+            </h2>
+            <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto">
+              Tire suas dúvidas sobre o material e garante sua aprovação
+            </p>
+          </div>
+
+          <div className="space-y-4 sm:space-y-6">
+            {/* FAQ Item 1 */}
+            <div className="glass-card rounded-2xl sm:rounded-3xl border border-white/10 overflow-hidden">
+              <div className="p-6 sm:p-8">
+                <h3 className="text-lg sm:text-xl font-bold text-crimson-primary mb-4">
+                  Como recebo o material depois da compra?
+                </h3>
+                <p className="text-white/90 leading-relaxed">
+                  Assim que o pagamento for aprovado, você recebe o link no e-mail cadastrado na compra para acessar o material na plataforma da EDUZZ. É rápido, prático e seguro.
+                </p>
+              </div>
+            </div>
+
+            {/* FAQ Item 2 */}
+            <div className="glass-card rounded-2xl sm:rounded-3xl border border-white/10 overflow-hidden">
+              <div className="p-6 sm:p-8">
+                <h3 className="text-lg sm:text-xl font-bold text-crimson-primary mb-4">
+                  Terei acesso imediato ao material?
+                </h3>
+                <p className="text-white/90 leading-relaxed">
+                  Sim. Você terá acesso imediato à parte 1 do material. A parte 2 e o BÔNUS (agente de I.A) serão liberados 7 dias após a compra.
+                </p>
+              </div>
+            </div>
+
+            {/* FAQ Item 3 */}
+            <div className="glass-card rounded-2xl sm:rounded-3xl border border-white/10 overflow-hidden">
+              <div className="p-6 sm:p-8">
+                <h3 className="text-lg sm:text-xl font-bold text-crimson-primary mb-4">
+                  Até quando terei acesso ao material?
+                </h3>
+                <p className="text-white/90 leading-relaxed">
+                  O material é seu para sempre! Depois de baixar, você pode acessar, reler, imprimir e estudar quantas vezes quiser. Durante 1 ano você terá acesso às atualizações dele pela plataforma da EDUZZ.
+                </p>
+              </div>
+            </div>
+
+            {/* FAQ Item 4 */}
+            <div className="glass-card rounded-2xl sm:rounded-3xl border border-white/10 overflow-hidden">
+              <div className="p-6 sm:p-8">
+                <h3 className="text-lg sm:text-xl font-bold text-crimson-primary mb-4">
+                  É garantido que vou passar com esse material?
+                </h3>
+                <p className="text-white/90 leading-relaxed">
+                  O material não substitui o estudo do conteúdo da prova, mas pode ser a diferença entre passar ou bater na trave. As técnicas ajudam você a acertar questões que normalmente erraria por dúvida ou insegurança.
+                </p>
+              </div>
+            </div>
+
+            {/* FAQ Item 5 */}
+            <div className="glass-card rounded-2xl sm:rounded-3xl border border-white/10 overflow-hidden">
+              <div className="p-6 sm:p-8">
+                <h3 className="text-lg sm:text-xl font-bold text-crimson-primary mb-4">
+                  O conteúdo é em vídeo ou em texto?
+                </h3>
+                <p className="text-white/90 leading-relaxed">
+                  É um livro digital (PDF), que você pode ler no celular, computador ou imprimir se preferir. Tudo organizado, com linguagem simples, didática e estratégica. O BÔNUS (agente de I.A) será disponibilizado na plataforma em um link.
+                </p>
+              </div>
+            </div>
+
+            {/* FAQ Item 6 */}
+            <div className="glass-card rounded-2xl sm:rounded-3xl border border-white/10 overflow-hidden">
+              <div className="p-6 sm:p-8">
+                <h3 className="text-lg sm:text-xl font-bold text-crimson-primary mb-4">
+                  Esse material serve para qual fase da OAB?
+                </h3>
+                <p className="text-white/90 leading-relaxed">
+                  Foi feito para a 1ª fase da OAB, onde você responde questões objetivas de múltipla escolha. As técnicas funcionam especialmente bem com o estilo da banca FGV.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-12 sm:py-16 px-4 bg-navy-primary text-white relative overflow-hidden z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-primary to-navy-secondary"></div>
