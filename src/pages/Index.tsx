@@ -30,7 +30,7 @@ const Index = () => {
                   <span className="block text-white animate-fade-in">Descubra as 15 Técnicas</span>
                   <span className="block text-gradient-premium animate-slide-up font-bold mt-1 sm:mt-2" style={{
                   animationDelay: '0.2s'
-                }}>que garantem até 20 pontos</span>
+                }}>que garantem até 20 pontos extras</span>
                 </h1>
                 
                 <div className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-4 sm:mb-6 lg:mb-8 animate-scale-in" style={{
