@@ -283,7 +283,7 @@ const Index = () => {
                           Apenas primeiros 200 alunos
                         </div>
                         <div className="flex items-center justify-center gap-2 sm:gap-4 mb-2 sm:mb-3">
-                          <span className="text-lg sm:text-xl text-white/60 line-through">R$ 300</span>
+                          <span className="text-lg sm:text-xl text-white/60 line-through">R$ 200</span>
                           <span className="text-2xl sm:text-3xl font-black text-green-400">R$ 0</span>
                         </div>
                         <div className="text-xs sm:text-sm text-white/70">
