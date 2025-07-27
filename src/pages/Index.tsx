@@ -145,7 +145,7 @@ const Index = () => {
               <div className="glass-card p-6 rounded-2xl border-2 border-crimson-primary/30 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-crimson-primary/5 via-transparent to-rose-accent/5"></div>
                 <p className="text-xl text-white/90 font-medium leading-relaxed relative z-10">
-                  Pare de depender da sorte. Aprenda as <strong className="text-gradient-premium">15 técnicas validadas</strong> para acertar questões que nunca viu antes:
+                  Pare de depender da sorte. Aprenda as <strong className="text-gradient-premium">15 técnicas científicas</strong> que os aprovados usam para acertar questões que nunca viram antes:
                 </p>
               </div>
             </div>
@@ -277,7 +277,7 @@ const Index = () => {
                           Apenas primeiros 200 alunos
                         </div>
                         <div className="flex items-center justify-center gap-2 sm:gap-4 mb-2 sm:mb-3">
-                          <span className="text-lg sm:text-xl text-white/60 line-through">R$ 300</span>
+                          <span className="text-lg sm:text-xl text-white/60 line-through">R$ 200</span>
                           <span className="text-2xl sm:text-3xl font-black text-green-400">R$ 0</span>
                         </div>
                         <div className="text-xs sm:text-sm text-white/70">
@@ -338,7 +338,7 @@ const Index = () => {
                           Valor de mercado
                         </div>
                         <div className="flex items-center justify-center gap-4 mb-3">
-                          <span className="text-xl text-white/60 line-through">R$ 500</span>
+                          <span className="text-xl text-white/60 line-through">R$ 300</span>
                           <span className="text-3xl font-black text-green-400">R$ 0</span>
                         </div>
                         <div className="text-sm text-white/70">
