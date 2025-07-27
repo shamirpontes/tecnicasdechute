@@ -736,7 +736,10 @@ const Index = () => {
                             De R$ 700
                           </div>
                           <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-gradient-premium leading-none">
-                            R$ 97
+                            12x de R$ 9,70
+                          </div>
+                          <div className="text-lg sm:text-xl text-navy-primary/70 font-medium">
+                            ou R$ 97 à vista
                           </div>
                         </div>
                         
