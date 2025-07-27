@@ -344,7 +344,7 @@ const Index = () => {
                           Valor de mercado
                         </div>
                         <div className="flex items-center justify-center gap-4 mb-3">
-                          <span className="text-xl text-white/60 line-through">R$ 500</span>
+                          <span className="text-xl text-white/60 line-through">R$ 300</span>
                           <span className="text-3xl font-black text-green-400">R$ 0</span>
                         </div>
                         <div className="text-sm text-white/70">
