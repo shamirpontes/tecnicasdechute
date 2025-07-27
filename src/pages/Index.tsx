@@ -23,9 +23,11 @@ const Index = () => {
             {/* Conteúdo Principal - Esquerda */}
             <div className="order-2 lg:order-1 text-center lg:text-left">
               <div className="mb-4 sm:mb-6 lg:mb-8">
-                <p className="text-lg sm:text-xl text-white/80 mb-4 sm:mb-6 animate-fade-in">
-                  Agora que você já tem as 197 questões mais cobradas...
-                </p>
+                <div className="inline-block bg-white/90 backdrop-blur-sm px-4 sm:px-6 py-2 sm:py-3 rounded-full border border-white/20 mb-4 sm:mb-6 animate-fade-in">
+                  <p className="text-base sm:text-lg text-navy-primary font-semibold">
+                    Agora que você já tem as 197 questões mais cobradas...
+                  </p>
+                </div>
                 <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black font-poppins mb-3 sm:mb-4 lg:mb-6 leading-[1.1] sm:leading-tight">
                   <span className="block text-white animate-fade-in">Descubra as 15 Técnicas</span>
                  <span className="block text-gradient-premium animate-slide-up font-bold mt-1 sm:mt-2" style={{
