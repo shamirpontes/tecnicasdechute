@@ -631,9 +631,8 @@ const Index = () => {
           <div className="text-center mt-12 sm:mt-16">
             <div className="glass-card p-6 sm:p-8 rounded-3xl cinematic-shadow max-w-4xl mx-auto">
               <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
-                <span className="text-green-400 font-bold">Estes são apenas alguns</span> dos resultados que nossos alunos 
-                conquistaram aplicando as técnicas de chute inteligente. 
-                <span className="text-gradient-premium font-semibold"> E você pode ser o próximo!</span>
+                <span className="text-green-400 font-bold">Eles conseguiram e você pode conseguir também:</span> 
+                <span className="text-gradient-premium font-semibold"> A DECISÃO ESTÁ EM SUAS MÃOS AGORA!</span>
               </p>
             </div>
           </div>
