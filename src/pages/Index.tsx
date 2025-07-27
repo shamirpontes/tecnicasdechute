@@ -734,7 +734,7 @@ const Index = () => {
                         
                         <div className="space-y-2 mb-6">
                           <div className="text-lg sm:text-xl md:text-2xl text-crimson-primary font-bold line-through opacity-70">
-                            De R$ 600
+                            De R$ 700
                           </div>
                           <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-gradient-premium leading-none">
                             R$ 97
