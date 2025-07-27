@@ -3,8 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { ArrowRight, Brain, Target, Trophy, CheckCircle, Star, Users, Clock, BookOpen, Zap, Award, TrendingUp, Shield, Sparkles, Timer, AlertCircle, Heart, X, Check, ChevronDown } from 'lucide-react';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { ArrowRight, Brain, Target, Trophy, CheckCircle, Star, Users, Clock, BookOpen, Zap, Award, TrendingUp, Shield, Sparkles, Timer, AlertCircle, Heart, X, Check } from 'lucide-react';
 const Index = () => {
   return <div className="min-h-screen bg-navy-primary overflow-x-hidden relative w-full">
       {/* Fundo Atmosférico Navy */}
@@ -23,16 +22,11 @@ const Index = () => {
             {/* Conteúdo Principal - Esquerda */}
             <div className="order-2 lg:order-1 text-center lg:text-left">
               <div className="mb-4 sm:mb-6 lg:mb-8">
-                <div className="inline-block bg-white/90 backdrop-blur-sm px-4 sm:px-6 py-2 sm:py-3 rounded-full border border-white/20 mb-4 sm:mb-6 animate-fade-in">
-                  <p className="text-base sm:text-lg text-navy-primary font-semibold">
-                    Agora que você já tem as 197 questões mais cobradas...
-                  </p>
-                </div>
                 <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black font-poppins mb-3 sm:mb-4 lg:mb-6 leading-[1.1] sm:leading-tight">
                   <span className="block text-white animate-fade-in">Descubra as 15 Técnicas</span>
-                 <span className="block text-gradient-premium animate-slide-up font-bold mt-1 sm:mt-2" style={{
+                  <span className="block text-gradient-premium animate-slide-up font-bold mt-1 sm:mt-2" style={{
                   animationDelay: '0.2s'
-                }}>que garantem até 20 pontos extras</span>
+                }}>que garantem até 20 pontos</span>
                 </h1>
                 
                 <div className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-4 sm:mb-6 lg:mb-8 animate-scale-in" style={{
@@ -49,18 +43,17 @@ const Index = () => {
             }}>
                 <div className="glass-card p-3 sm:p-4 md:p-6 lg:p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl cinematic-shadow hover-glow border border-white/10">
                   <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white leading-relaxed font-medium">
-                    <strong className="text-gradient-premium">Técnicas validadas</strong> que te ensinam como 
+                    <strong className="text-gradient-premium">Técnicas científicas e testadas</strong> que te ensinam como 
                     <strong className="text-gradient-premium"> acertar questões mesmo SEM SABER a resposta</strong> e garantir até +20 pontos na sua nota final.
                   </p>
                 </div>
               </div>
 
               {/* Call to Action */}
-              <div className="animate-fade-in" style={{animationDelay: '0.8s'}}>
-                <Button 
-                  size="lg" 
-                  className="w-full sm:w-full lg:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 lg:px-8 rounded-xl sm:rounded-2xl text-sm sm:text-base lg:text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50 min-h-[48px] sm:min-h-[56px]"
-                >
+              <div className="animate-fade-in" style={{
+              animationDelay: '0.8s'
+            }}>
+                <Button size="lg" className="w-full sm:w-full lg:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 lg:px-8 rounded-xl sm:rounded-2xl text-sm sm:text-base lg:text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50 min-h-[48px] sm:min-h-[56px]">
                   <span className="flex items-center justify-center gap-2">
                     Quero Garantir Minha Aprovação
                     <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -76,7 +69,9 @@ const Index = () => {
 
             {/* Mockup do Tablet - Direita */}
             <div className="order-1 lg:order-2 flex justify-center">
-              <div className="relative group animate-scale-in w-full max-w-[280px] xs:max-w-[320px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-[400px] xl:max-w-[450px]" style={{animationDelay: '0.3s'}}>
+              <div className="relative group animate-scale-in w-full max-w-[280px] xs:max-w-[320px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-[400px] xl:max-w-[450px]" style={{
+              animationDelay: '0.3s'
+            }}>
                 {/* Background Effects */}
                 <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-br from-crimson-primary/30 to-rose-accent/30 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl group-hover:blur-2xl sm:group-hover:blur-3xl transition-all duration-500"></div>
                 
@@ -87,11 +82,7 @@ const Index = () => {
                     {/* Screen */}
                     <div className="bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-inner aspect-[4/3] w-full">
                       {/* Capa do Livro */}
-                      <img 
-                        src="/lovable-uploads/bac8de03-e236-4b02-9112-0599c4d65cbe.png"
-                        alt="Técnicas de Chute Escaneadas para a OAB"
-                        className="w-full h-full object-contain bg-white"
-                      />
+                      <img src="/lovable-uploads/bac8de03-e236-4b02-9112-0599c4d65cbe.png" alt="Técnicas de Chute Escaneadas para a OAB" className="w-full h-full object-contain bg-white" />
                     </div>
                     {/* Home Button */}
                     <div className="w-8 sm:w-10 lg:w-12 h-0.5 sm:h-1 bg-gray-600 rounded-full mx-auto mt-2 sm:mt-3"></div>
@@ -154,7 +145,7 @@ const Index = () => {
               <div className="glass-card p-6 rounded-2xl border-2 border-crimson-primary/30 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-crimson-primary/5 via-transparent to-rose-accent/5"></div>
                 <p className="text-xl text-white/90 font-medium leading-relaxed relative z-10">
-                  Pare de depender da sorte. Aprenda as <strong className="text-gradient-premium">15 técnicas validadas</strong> que os aprovados usam para acertar questões que nunca viram antes:
+                  Pare de depender da sorte. Aprenda as <strong className="text-gradient-premium">15 técnicas científicas</strong> que os aprovados usam para acertar questões que nunca viram antes:
                 </p>
               </div>
             </div>
@@ -180,10 +171,9 @@ const Index = () => {
             description: "Estratégias baseadas em análise estatística real das provas anteriores da OAB - não é achismo, é ciência.",
             gradient: "from-rose-accent to-crimson-secondary",
             accent: "navy-accent"
-          }].map((feature, index) => 
-            <Card key={index} className="group relative overflow-hidden border-0 bg-transparent animate-scale-in" style={{
-              animationDelay: `${index * 0.2}s`
-            }}>
+          }].map((feature, index) => <Card key={index} className="group relative overflow-hidden border-0 bg-transparent animate-scale-in" style={{
+            animationDelay: `${index * 0.2}s`
+          }}>
               {/* Bordas holográficas */}
               <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-white/10 rounded-3xl p-[2px]">
                 <div className="h-full w-full bg-gradient-to-br from-navy-secondary/80 to-navy-primary/90 rounded-3xl"></div>
@@ -200,8 +190,13 @@ const Index = () => {
                   </div>
                   
                   {/* Anéis orbitais */}
-                  <div className="absolute inset-0 rounded-full border border-white/20 animate-spin" style={{animationDuration: '8s'}}></div>
-                  <div className="absolute inset-1 sm:inset-2 rounded-full border border-crimson-primary/30 animate-spin" style={{animationDuration: '6s', animationDirection: 'reverse'}}></div>
+                  <div className="absolute inset-0 rounded-full border border-white/20 animate-spin" style={{
+                  animationDuration: '8s'
+                }}></div>
+                  <div className="absolute inset-1 sm:inset-2 rounded-full border border-crimson-primary/30 animate-spin" style={{
+                  animationDuration: '6s',
+                  animationDirection: 'reverse'
+                }}></div>
                 </div>
                 
                 <div>
@@ -212,8 +207,7 @@ const Index = () => {
                 {/* Efeito de scanline */}
                 <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-crimson-primary/50 to-transparent transform -translate-y-1 group-hover:animate-bounce-soft"></div>
               </CardContent>
-            </Card>
-          )}
+            </Card>)}
           </div>
 
           {/* Super Bônus Section - Design Clean e Premium */}
@@ -283,7 +277,7 @@ const Index = () => {
                           Apenas primeiros 200 alunos
                         </div>
                         <div className="flex items-center justify-center gap-2 sm:gap-4 mb-2 sm:mb-3">
-                          <span className="text-lg sm:text-xl text-white/60 line-through">R$ 200</span>
+                          <span className="text-lg sm:text-xl text-white/60 line-through">R$ 300</span>
                           <span className="text-2xl sm:text-3xl font-black text-green-400">R$ 0</span>
                         </div>
                         <div className="text-xs sm:text-sm text-white/70">
@@ -344,7 +338,7 @@ const Index = () => {
                           Valor de mercado
                         </div>
                         <div className="flex items-center justify-center gap-4 mb-3">
-                          <span className="text-xl text-white/60 line-through">R$ 300</span>
+                          <span className="text-xl text-white/60 line-through">R$ 500</span>
                           <span className="text-3xl font-black text-green-400">R$ 0</span>
                         </div>
                         <div className="text-sm text-white/70">
@@ -365,7 +359,7 @@ const Index = () => {
                         Valor total dos bônus
                       </div>
                       <div className="flex items-center justify-center gap-6 mb-4">
-                        <span className="text-2xl text-white/60 line-through">R$ 500</span>
+                        <span className="text-2xl text-white/60 line-through">R$ 800</span>
                         <span className="text-4xl font-black text-green-400">R$ 0</span>
                       </div>
                       <div className="text-sm text-green-400/80 font-semibold">
@@ -374,9 +368,7 @@ const Index = () => {
                     </div>
                     
                     <div className="pt-4 border-t border-white/10">
-                      <div className="text-white/70 text-sm">
-                        Bônus aplicados automaticamente na compra
-                      </div>
+                      <div className="text-white/70 text-sm">Economia total de R$ 800</div>
                     </div>
                   </div>
                 </div>
@@ -392,9 +384,15 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-crimson-primary/10 via-navy-accent/20 to-rose-accent/5"></div>
           <div className="absolute inset-0 pattern-circuit opacity-10"></div>
           <div className="absolute top-20 left-10 w-3 h-3 bg-crimson-primary rounded-full animate-pulse"></div>
-          <div className="absolute top-40 right-20 w-2 h-2 bg-rose-accent rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
-          <div className="absolute bottom-32 left-1/4 w-2.5 h-2.5 bg-navy-accent rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-          <div className="absolute bottom-60 right-1/3 w-1.5 h-1.5 bg-crimson-secondary rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
+          <div className="absolute top-40 right-20 w-2 h-2 bg-rose-accent rounded-full animate-pulse" style={{
+          animationDelay: '0.5s'
+        }}></div>
+          <div className="absolute bottom-32 left-1/4 w-2.5 h-2.5 bg-navy-accent rounded-full animate-pulse" style={{
+          animationDelay: '1s'
+        }}></div>
+          <div className="absolute bottom-60 right-1/3 w-1.5 h-1.5 bg-crimson-secondary rounded-full animate-pulse" style={{
+          animationDelay: '1.5s'
+        }}></div>
         </div>
         
         <div className="max-w-6xl mx-auto relative">
@@ -503,9 +501,9 @@ const Index = () => {
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                   </div>
                   <p className="text-xl text-white/90 leading-relaxed">
-                    Apenas com essas técnicas é possível <strong className="text-green-400">aumentar 20 pontos na nota final.</strong>
+                    Tem aluno que, só com essas técnicas, <strong className="text-green-400">aumentou 20 pontos na nota final. E passou.</strong>
                     <br />
-                    Porque o chute deixa de ser sorte — <strong className="text-gradient-premium">e vira estratégia.</strong>
+                    Porque o chute deixou de ser sorte — <strong className="text-gradient-premium">e virou estratégia.</strong>
                   </p>
                 </div>
               </div>
@@ -522,20 +520,17 @@ const Index = () => {
               A prova está nos <span className="text-gradient-premium">resultados reais</span>
             </h2>
             <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto">
-              Milhares de alunos estão passando com o método de estudo Escaneando OAB, da professora Melissa Justi. <strong className="text-green-400">Veja as mensagens que recebemos:</strong>
+              Centenas de alunos já foram aprovados usando essas técnicas. <strong className="text-green-400">Veja as mensagens que recebemos:</strong>
             </p>
           </div>
           
           
           {/* Carrossel de depoimentos */}
           <div className="max-w-6xl mx-auto relative">
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              className="w-full"
-            >
+            <Carousel opts={{
+            align: "start",
+            loop: true
+          }} className="w-full">
               <CarouselContent className="-ml-4">
                 {/* Print WhatsApp 1 */}
                 <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
@@ -631,8 +626,9 @@ const Index = () => {
           <div className="text-center mt-12 sm:mt-16">
             <div className="glass-card p-6 sm:p-8 rounded-3xl cinematic-shadow max-w-4xl mx-auto">
               <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
-                <span className="text-green-400 font-bold">Eles conseguiram e você pode conseguir também:</span> 
-                <span className="text-gradient-premium font-semibold"> A DECISÃO ESTÁ EM SUAS MÃOS AGORA!</span>
+                <span className="text-green-400 font-bold">Estes são apenas alguns</span> dos resultados que nossos alunos 
+                conquistaram aplicando as técnicas de chute inteligente. 
+                <span className="text-gradient-premium font-semibold"> E você pode ser o próximo!</span>
               </p>
             </div>
           </div>
@@ -645,9 +641,15 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-crimson-primary/10 via-navy-accent/20 to-rose-accent/5"></div>
           <div className="absolute inset-0 pattern-circuit opacity-10"></div>
           <div className="absolute top-10 left-10 w-2 h-2 bg-crimson-primary rounded-full animate-pulse"></div>
-          <div className="absolute top-32 right-20 w-1 h-1 bg-rose-accent rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
-          <div className="absolute bottom-20 left-1/3 w-1.5 h-1.5 bg-navy-accent rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-          <div className="absolute bottom-40 right-1/4 w-1 h-1 bg-crimson-secondary rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
+          <div className="absolute top-32 right-20 w-1 h-1 bg-rose-accent rounded-full animate-pulse" style={{
+          animationDelay: '0.5s'
+        }}></div>
+          <div className="absolute bottom-20 left-1/3 w-1.5 h-1.5 bg-navy-accent rounded-full animate-pulse" style={{
+          animationDelay: '1s'
+        }}></div>
+          <div className="absolute bottom-40 right-1/4 w-1 h-1 bg-crimson-secondary rounded-full animate-pulse" style={{
+          animationDelay: '1.5s'
+        }}></div>
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
@@ -789,107 +791,6 @@ const Index = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Seção FAQ - Esta é sua decisão */}
-      <section className="py-16 sm:py-24 px-4 bg-gradient-to-br from-slate-900 via-navy-secondary to-slate-800 relative overflow-hidden z-10">
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-crimson-primary/5 via-navy-accent/10 to-rose-accent/5"></div>
-          <div className="absolute inset-0 pattern-dots opacity-10"></div>
-        </div>
-
-        <div className="max-w-4xl mx-auto relative">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black font-poppins mb-6 text-white leading-tight">
-              Esta é <span className="text-gradient-premium">sua decisão</span>
-            </h2>
-            <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto">
-              Tire suas dúvidas sobre o material e garante sua aprovação
-            </p>
-          </div>
-
-          <div className="glass-card rounded-2xl sm:rounded-3xl border border-white/10 overflow-hidden">
-            <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="item-1" className="border-white/10">
-                <AccordionTrigger className="px-6 sm:px-8 py-4 sm:py-6 text-left hover:no-underline [&[data-state=open]>svg]:rotate-180">
-                  <span className="text-lg sm:text-xl font-bold text-crimson-primary">
-                    Como recebo o material depois da compra?
-                  </span>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 sm:px-8 pb-4 sm:pb-6">
-                  <p className="text-white/90 leading-relaxed">
-                    Assim que o pagamento for aprovado, você recebe o link no e-mail cadastrado na compra para acessar o material na plataforma da EDUZZ. É rápido, prático e seguro.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-2" className="border-white/10">
-                <AccordionTrigger className="px-6 sm:px-8 py-4 sm:py-6 text-left hover:no-underline [&[data-state=open]>svg]:rotate-180">
-                  <span className="text-lg sm:text-xl font-bold text-crimson-primary">
-                    Terei acesso imediato ao material?
-                  </span>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 sm:px-8 pb-4 sm:pb-6">
-                  <p className="text-white/90 leading-relaxed">
-                    Sim. Você terá acesso imediato à parte 1 do material. A parte 2 e o BÔNUS (agente de I.A) serão liberados 7 dias após a compra.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-3" className="border-white/10">
-                <AccordionTrigger className="px-6 sm:px-8 py-4 sm:py-6 text-left hover:no-underline [&[data-state=open]>svg]:rotate-180">
-                  <span className="text-lg sm:text-xl font-bold text-crimson-primary">
-                    Até quando terei acesso ao material?
-                  </span>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 sm:px-8 pb-4 sm:pb-6">
-                  <p className="text-white/90 leading-relaxed">
-                    O material é seu para sempre! Depois de baixar, você pode acessar, reler, imprimir e estudar quantas vezes quiser. Durante 1 ano você terá acesso às atualizações dele pela plataforma da EDUZZ.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-4" className="border-white/10">
-                <AccordionTrigger className="px-6 sm:px-8 py-4 sm:py-6 text-left hover:no-underline [&[data-state=open]>svg]:rotate-180">
-                  <span className="text-lg sm:text-xl font-bold text-crimson-primary">
-                    É garantido que vou passar com esse material?
-                  </span>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 sm:px-8 pb-4 sm:pb-6">
-                  <p className="text-white/90 leading-relaxed">
-                    O material não substitui o estudo do conteúdo da prova, mas pode ser a diferença entre passar ou bater na trave. As técnicas ajudam você a acertar questões que normalmente erraria por dúvida ou insegurança.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-5" className="border-white/10">
-                <AccordionTrigger className="px-6 sm:px-8 py-4 sm:py-6 text-left hover:no-underline [&[data-state=open]>svg]:rotate-180">
-                  <span className="text-lg sm:text-xl font-bold text-crimson-primary">
-                    O conteúdo é em vídeo ou em texto?
-                  </span>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 sm:px-8 pb-4 sm:pb-6">
-                  <p className="text-white/90 leading-relaxed">
-                    É um livro digital (PDF), que você pode ler no celular, computador ou imprimir se preferir. Tudo organizado, com linguagem simples, didática e estratégica. O BÔNUS (agente de I.A) será disponibilizado na plataforma em um link.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-6" className="border-white/10 border-b-0">
-                <AccordionTrigger className="px-6 sm:px-8 py-4 sm:py-6 text-left hover:no-underline [&[data-state=open]>svg]:rotate-180">
-                  <span className="text-lg sm:text-xl font-bold text-crimson-primary">
-                    Esse material serve para qual fase da OAB?
-                  </span>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 sm:px-8 pb-4 sm:pb-6">
-                  <p className="text-white/90 leading-relaxed">
-                    Foi feito para a 1ª fase da OAB, onde você responde questões objetivas de múltipla escolha. As técnicas funcionam especialmente bem com o estilo da banca FGV.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
           </div>
         </div>
       </section>
