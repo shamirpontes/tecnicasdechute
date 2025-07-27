@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowRight, Brain, Target, Trophy, CheckCircle, Star, Users, Clock, BookOpen, Zap, Award, TrendingUp, Shield, Sparkles, Timer, AlertCircle, Heart, X, Check } from 'lucide-react';
 const Index = () => {
   return <div className="min-h-screen bg-navy-primary overflow-x-hidden relative w-full">
@@ -789,6 +790,81 @@ const Index = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Seção FAQ */}
+      <section className="py-16 sm:py-24 px-4 bg-gradient-to-br from-navy-secondary to-navy-primary relative z-10">
+        <div className="absolute inset-0 pattern-dots opacity-10"></div>
+        <div className="max-w-4xl mx-auto relative">
+          {/* Título da seção */}
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black font-poppins text-white mb-4">
+              Dúvidas <span className="text-gradient-premium">Frequentes</span>
+            </h2>
+            <p className="text-lg sm:text-xl text-white/80 font-medium">
+              Tudo o que você precisa saber sobre o material
+            </p>
+          </div>
+
+          {/* Accordion FAQ */}
+          <div className="glass-card rounded-2xl sm:rounded-3xl border border-white/10 p-6 sm:p-8">
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              <AccordionItem value="item-1" className="border border-white/10 rounded-xl bg-white/5 px-6 py-2">
+                <AccordionTrigger className="text-white hover:text-crimson-primary text-left text-lg sm:text-xl font-semibold py-6">
+                  Como recebo o material depois da compra?
+                </AccordionTrigger>
+                <AccordionContent className="text-white/80 text-base sm:text-lg leading-relaxed pb-6">
+                  Assim que o pagamento for aprovado, você recebe o link no e-mail cadastrado na compra para acessar o material na plataforma da EDUZZ. É rápido, prático e seguro.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2" className="border border-white/10 rounded-xl bg-white/5 px-6 py-2">
+                <AccordionTrigger className="text-white hover:text-crimson-primary text-left text-lg sm:text-xl font-semibold py-6">
+                  Terei acesso imediato ao material?
+                </AccordionTrigger>
+                <AccordionContent className="text-white/80 text-base sm:text-lg leading-relaxed pb-6">
+                  Sim. Você terá acesso imediato à parte 1 do material. A parte 2 e o BÔNUS (agente de I.A) serão liberados 7 dias após a compra.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3" className="border border-white/10 rounded-xl bg-white/5 px-6 py-2">
+                <AccordionTrigger className="text-white hover:text-crimson-primary text-left text-lg sm:text-xl font-semibold py-6">
+                  Até quando terei acesso ao material?
+                </AccordionTrigger>
+                <AccordionContent className="text-white/80 text-base sm:text-lg leading-relaxed pb-6">
+                  O material é seu para sempre! Depois de baixar, você pode acessar, reler, imprimir e estudar quantas vezes quiser. Durante 1 ano você terá acesso às atualizações dele pela plataforma da EDUZZ.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-4" className="border border-white/10 rounded-xl bg-white/5 px-6 py-2">
+                <AccordionTrigger className="text-white hover:text-crimson-primary text-left text-lg sm:text-xl font-semibold py-6">
+                  É garantido que vou passar com esse material?
+                </AccordionTrigger>
+                <AccordionContent className="text-white/80 text-base sm:text-lg leading-relaxed pb-6">
+                  O material não substitui o estudo do conteúdo da prova, mas pode ser a diferença entre passar ou bater na trave. As técnicas ajudam você a acertar questões que normalmente erraria por dúvida ou insegurança.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-5" className="border border-white/10 rounded-xl bg-white/5 px-6 py-2">
+                <AccordionTrigger className="text-white hover:text-crimson-primary text-left text-lg sm:text-xl font-semibold py-6">
+                  O conteúdo é em vídeo ou em texto?
+                </AccordionTrigger>
+                <AccordionContent className="text-white/80 text-base sm:text-lg leading-relaxed pb-6">
+                  É um livro digital (PDF), que você pode ler no celular, computador ou imprimir se preferir. Tudo organizado, com linguagem simples, didática e estratégica. O BÔNUS (agente de I.A) será disponibilizado na plataforma em um link.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-6" className="border border-white/10 rounded-xl bg-white/5 px-6 py-2">
+                <AccordionTrigger className="text-white hover:text-crimson-primary text-left text-lg sm:text-xl font-semibold py-6">
+                  Esse material serve para qual fase da OAB?
+                </AccordionTrigger>
+                <AccordionContent className="text-white/80 text-base sm:text-lg leading-relaxed pb-6">
+                  Foi feito para a 1ª fase da OAB, onde você responde questões objetivas de múltipla escolha. As técnicas funcionam especialmente bem com o estilo da banca FGV.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
