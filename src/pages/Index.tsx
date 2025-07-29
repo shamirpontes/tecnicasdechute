@@ -88,15 +88,7 @@ const Index = () => {
                 {/* Mockup do Tablet */}
                 <div className="relative">
                   {/* Tablet Frame */}
-                  <div className="bg-gray-900 rounded-2xl sm:rounded-3xl p-2 sm:p-3 lg:p-4 shadow-2xl group-hover:scale-105 transition-transform duration-500">
-                    {/* Screen */}
-                    <div className="bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-inner aspect-[4/3] w-full">
-                      {/* Capa do Livro */}
-                      <img src="/lovable-uploads/49548d8a-26c8-411f-9df1-5e34e2a271d9.png" alt="Técnicas de Chute Escaneadas para a OAB" className="w-full h-full object-contain bg-white" />
-                    </div>
-                    {/* Home Button */}
-                    <div className="w-8 sm:w-10 lg:w-12 h-0.5 sm:h-1 bg-gray-600 rounded-full mx-auto mt-2 sm:mt-3"></div>
-                  </div>
+                  
                 </div>
               </div>
             </div>
