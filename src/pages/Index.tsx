@@ -87,8 +87,11 @@ const Index = () => {
                 
                 {/* Mockup do Tablet */}
                 <div className="relative">
-                  {/* Tablet Frame */}
-                  
+                  <img 
+                    src="/lovable-uploads/4f22e37c-6b9c-4d72-a8b0-dea639187b71.png" 
+                    alt="Técnicas de Chute Escaneadas para a OAB"
+                    className="w-full h-auto relative z-10 rounded-2xl sm:rounded-3xl shadow-2xl"
+                  />
                 </div>
               </div>
             </div>
