@@ -79,7 +79,7 @@ const Index = () => {
 
             {/* Mockup do Tablet - Direita */}
             <div className="order-1 lg:order-2 flex justify-center">
-              <div className="relative group animate-scale-in w-full max-w-[350px] xs:max-w-[400px] sm:max-w-[500px] md:max-w-[550px] lg:max-w-[500px] xl:max-w-[600px]" style={{
+              <div className="relative group animate-scale-in w-full max-w-[500px] xs:max-w-[600px] sm:max-w-[700px] md:max-w-[800px] lg:max-w-[650px] xl:max-w-[750px] 2xl:max-w-[850px]" style={{
               animationDelay: '0.3s'
             }}>
                 {/* Background Effects */}
