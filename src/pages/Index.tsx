@@ -36,7 +36,7 @@ const Index = () => {
                   <span className="block text-white animate-fade-in">Descubra 15 técnicas</span>
                   <span className="block text-gradient-premium animate-slide-up font-bold mt-1 sm:mt-2" style={{
                   animationDelay: '0.2s'
-                }}>que garantem até 20 pontos extras</span>
+                }}>para acertar questões mesmo SEM SABER a resposta</span>
                 </h1>
                 
                 <div className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-4 sm:mb-6 lg:mb-8 animate-scale-in" style={{
@@ -79,12 +79,10 @@ const Index = () => {
 
             {/* Mockup do Tablet - Direita */}
             <div className="order-1 lg:order-2 flex justify-center">
-              <div className="w-full max-w-2xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl animate-fade-in" style={{animationDelay: '1s'}}>
-                <img 
-                  src="/lovable-uploads/15aeca00-37b6-4b5a-8ec2-7bb9cd23352e.png" 
-                  alt="Mockup das Técnicas de Chute Escaneadas para a OAB" 
-                  className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300"
-                />
+              <div className="w-full max-w-2xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl animate-fade-in" style={{
+              animationDelay: '1s'
+            }}>
+                <img src="/lovable-uploads/15aeca00-37b6-4b5a-8ec2-7bb9cd23352e.png" alt="Mockup das Técnicas de Chute Escaneadas para a OAB" className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300" />
               </div>
             </div>
           </div>
