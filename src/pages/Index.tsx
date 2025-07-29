@@ -22,6 +22,13 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 xl:gap-16 items-center">
             {/* Conteúdo Principal - Esquerda */}
             <div className="order-2 lg:order-1 text-center lg:text-left">
+              {/* Texto de Upsell */}
+              <div className="mb-4 sm:mb-6 animate-fade-in">
+                <p className="text-base sm:text-lg md:text-xl text-white/90 font-medium">
+                  Agora que você já tem as 197 questões...
+                </p>
+              </div>
+              
               <div className="mb-4 sm:mb-6 lg:mb-8">
                 <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black font-poppins mb-3 sm:mb-4 lg:mb-6 leading-[1.1] sm:leading-tight">
                   <span className="block text-white animate-fade-in">Descubra as 15 Técnicas</span>
