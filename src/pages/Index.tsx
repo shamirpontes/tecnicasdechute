@@ -23,10 +23,12 @@ const Index = () => {
             {/* Conteúdo Principal - Esquerda */}
             <div className="order-2 lg:order-1 text-center lg:text-left">
               {/* Texto de Upsell */}
-              <div className="mb-4 sm:mb-6 animate-fade-in">
-                <p className="text-base sm:text-lg md:text-xl text-white/90 font-medium">
-                  Agora que você já tem as 197 questões...
-                </p>
+              <div className="mb-6 sm:mb-8 animate-fade-in">
+                <div className="glass-card p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-crimson-primary/30 bg-gradient-to-r from-crimson-primary/10 to-rose-accent/10">
+                  <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gradient-premium font-bold text-center lg:text-left">
+                    Agora que você já tem as 197 questões...
+                  </p>
+                </div>
               </div>
               
               <div className="mb-4 sm:mb-6 lg:mb-8">
