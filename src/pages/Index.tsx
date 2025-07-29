@@ -79,7 +79,7 @@ const Index = () => {
 
             {/* Mockup do Tablet - Direita */}
             <div className="order-1 lg:order-2 flex justify-center">
-              <div className="relative animate-scale-in w-full max-w-[800px] xs:max-w-[900px] sm:max-w-[1000px] md:max-w-[1100px] lg:max-w-[900px] xl:max-w-[1000px] 2xl:max-w-[1200px]" style={{
+              <div className="relative animate-scale-in w-full max-w-[1000px] xs:max-w-[1100px] sm:max-w-[1200px] md:max-w-[1300px] lg:max-w-[1100px] xl:max-w-[1200px] 2xl:max-w-[1400px]" style={{
               animationDelay: '0.3s'
             }}>
                 <img 
