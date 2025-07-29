@@ -500,9 +500,9 @@ const Index = () => {
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                   </div>
                   <p className="text-xl text-white/90 leading-relaxed">
-                    Tem aluno que, só com essas técnicas, <strong className="text-green-400">aumentou 20 pontos na nota final. E passou.</strong>
+                    <strong className="text-green-400">Apenas com essas técnicas é possível aumentar até 20 pontos na reta final.</strong>
                     <br />
-                    Porque o chute deixou de ser sorte — <strong className="text-gradient-premium">e virou estratégia.</strong>
+                    <strong className="text-gradient-premium">Porque o chute deixa de ser sorte e vira estratégia.</strong>
                   </p>
                 </div>
               </div>
