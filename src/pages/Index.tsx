@@ -92,7 +92,7 @@ const Index = () => {
                     {/* Screen */}
                     <div className="bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-inner aspect-[4/3] w-full">
                       {/* Capa do Livro */}
-                      <img src="/lovable-uploads/bac8de03-e236-4b02-9112-0599c4d65cbe.png" alt="Técnicas de Chute Escaneadas para a OAB" className="w-full h-full object-contain bg-white" />
+                      <img src="/lovable-uploads/49548d8a-26c8-411f-9df1-5e34e2a271d9.png" alt="Técnicas de Chute Escaneadas para a OAB" className="w-full h-full object-contain bg-white" />
                     </div>
                     {/* Home Button */}
                     <div className="w-8 sm:w-10 lg:w-12 h-0.5 sm:h-1 bg-gray-600 rounded-full mx-auto mt-2 sm:mt-3"></div>
