@@ -79,20 +79,14 @@ const Index = () => {
 
             {/* Mockup do Tablet - Direita */}
             <div className="order-1 lg:order-2 flex justify-center">
-              <div className="relative group animate-scale-in w-full max-w-[500px] xs:max-w-[600px] sm:max-w-[700px] md:max-w-[800px] lg:max-w-[650px] xl:max-w-[750px] 2xl:max-w-[850px]" style={{
+              <div className="relative animate-scale-in w-full max-w-[600px] xs:max-w-[700px] sm:max-w-[800px] md:max-w-[900px] lg:max-w-[750px] xl:max-w-[850px] 2xl:max-w-[950px]" style={{
               animationDelay: '0.3s'
             }}>
-                {/* Background Effects */}
-                <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-br from-crimson-primary/30 to-rose-accent/30 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl group-hover:blur-2xl sm:group-hover:blur-3xl transition-all duration-500"></div>
-                
-                {/* Mockup do Tablet */}
-                <div className="relative">
-                  <img 
-                    src="/lovable-uploads/4f22e37c-6b9c-4d72-a8b0-dea639187b71.png" 
-                    alt="Técnicas de Chute Escaneadas para a OAB"
-                    className="w-full h-auto relative z-10 rounded-2xl sm:rounded-3xl shadow-2xl"
-                  />
-                </div>
+                <img 
+                  src="/lovable-uploads/4f22e37c-6b9c-4d72-a8b0-dea639187b71.png" 
+                  alt="Técnicas de Chute Escaneadas para a OAB"
+                  className="w-full h-auto relative z-10 rounded-2xl sm:rounded-3xl shadow-2xl"
+                />
               </div>
             </div>
           </div>
