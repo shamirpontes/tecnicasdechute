@@ -498,20 +498,18 @@ const Index = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-green-500/20 via-emerald-500/20 to-green-600/20 rounded-3xl blur-sm opacity-60"></div>
               <div className="relative glass-card p-12 rounded-3xl cinematic-shadow border border-green-500/20">
                 <div className="text-center">
-                  <p className="text-2xl text-white leading-relaxed mb-6">
-                    <strong className="text-gradient-premium text-3xl">Quem passa, chuta com método.</strong>
-                    <br />
-                    <strong className="text-red-400">Quem reprova, chuta com medo e sem estratégia.</strong>
+                  <p className="text-lg sm:text-xl md:text-2xl text-white leading-relaxed mb-4 sm:mb-6">
+                    <strong className="text-gradient-premium text-xl sm:text-2xl md:text-3xl block mb-2">Quem passa, chuta com método.</strong>
+                    <strong className="text-red-400 block">Quem reprova, chuta com medo e sem estratégia.</strong>
                   </p>
-                  <div className="flex items-center justify-center gap-4 mb-6">
+                  <div className="flex items-center justify-center gap-2 sm:gap-4 mb-4 sm:mb-6">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                     <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                   </div>
-                  <p className="text-xl text-white/90 leading-relaxed">
-                    <strong className="text-green-400">Apenas com essas técnicas é possível aumentar até 20 pontos na reta final.</strong>
-                    <br />
-                    <strong className="text-gradient-premium">Porque o chute deixa de ser sorte e vira estratégia.</strong>
+                  <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed">
+                    <strong className="text-green-400 block mb-2">Apenas com essas técnicas é possível aumentar até 20 pontos na reta final.</strong>
+                    <strong className="text-gradient-premium block">Porque o chute deixa de ser sorte e vira estratégia.</strong>
                   </p>
                 </div>
               </div>
@@ -541,10 +539,10 @@ const Index = () => {
           }} className="w-full">
               <CarouselContent className="-ml-4">
                 {/* Print WhatsApp 1 */}
-                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
-                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8 h-full">
-                      <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                <CarouselItem className="pl-2 sm:pl-4 basis-4/5 sm:basis-3/4 md:basis-1/2 lg:basis-1/3">
+                  <div className="glass-card rounded-2xl sm:rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
+                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-3 sm:p-4 md:p-6 lg:p-8 h-full">
+                      <div className="relative overflow-hidden rounded-xl sm:rounded-2xl border border-white/20">
                         <img src="/lovable-uploads/433c288f-8b00-4d82-afe8-90590e7511de.png" alt="Depoimento WhatsApp - Aprovada OAB" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                       </div>
@@ -553,10 +551,10 @@ const Index = () => {
                 </CarouselItem>
 
                 {/* Print WhatsApp 2 */}
-                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
-                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8 h-full">
-                      <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                <CarouselItem className="pl-2 sm:pl-4 basis-4/5 sm:basis-3/4 md:basis-1/2 lg:basis-1/3">
+                  <div className="glass-card rounded-2xl sm:rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
+                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-3 sm:p-4 md:p-6 lg:p-8 h-full">
+                      <div className="relative overflow-hidden rounded-xl sm:rounded-2xl border border-white/20">
                         <img src="/lovable-uploads/b59c0d42-5f4a-48d5-b90e-9cae2154024a.png" alt="Depoimento WhatsApp - Aprovação com 46/80" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                       </div>
@@ -565,10 +563,10 @@ const Index = () => {
                 </CarouselItem>
 
                 {/* Print WhatsApp 3 */}
-                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
-                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8 h-full">
-                      <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                <CarouselItem className="pl-2 sm:pl-4 basis-4/5 sm:basis-3/4 md:basis-1/2 lg:basis-1/3">
+                  <div className="glass-card rounded-2xl sm:rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
+                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-3 sm:p-4 md:p-6 lg:p-8 h-full">
+                      <div className="relative overflow-hidden rounded-xl sm:rounded-2xl border border-white/20">
                         <img src="/lovable-uploads/9a4ad55a-4b7e-4ebb-86c8-6ccba0d24299.png" alt="Depoimento WhatsApp - Aprovação com 43/80" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                       </div>
@@ -577,10 +575,10 @@ const Index = () => {
                 </CarouselItem>
 
                 {/* Print WhatsApp 4 */}
-                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
-                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8 h-full">
-                      <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                <CarouselItem className="pl-2 sm:pl-4 basis-4/5 sm:basis-3/4 md:basis-1/2 lg:basis-1/3">
+                  <div className="glass-card rounded-2xl sm:rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
+                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-3 sm:p-4 md:p-6 lg:p-8 h-full">
+                      <div className="relative overflow-hidden rounded-xl sm:rounded-2xl border border-white/20">
                         <img src="/lovable-uploads/385e1010-f6a5-41b4-aa45-d577af7a6641.png" alt="Depoimento WhatsApp - Melissa acertei 46 questões" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                       </div>
@@ -589,10 +587,10 @@ const Index = () => {
                 </CarouselItem>
 
                 {/* Print WhatsApp 5 */}
-                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
-                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8 h-full">
-                      <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                <CarouselItem className="pl-2 sm:pl-4 basis-4/5 sm:basis-3/4 md:basis-1/2 lg:basis-1/3">
+                  <div className="glass-card rounded-2xl sm:rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
+                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-3 sm:p-4 md:p-6 lg:p-8 h-full">
+                      <div className="relative overflow-hidden rounded-xl sm:rounded-2xl border border-white/20">
                         <img src="/lovable-uploads/469c77ed-4a81-49a5-8f34-fa2df8650454.png" alt="Depoimento WhatsApp - Melissa milagre aconteceu" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                       </div>
@@ -601,10 +599,10 @@ const Index = () => {
                 </CarouselItem>
 
                 {/* Print WhatsApp 6 */}
-                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
-                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8 h-full">
-                      <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                <CarouselItem className="pl-2 sm:pl-4 basis-4/5 sm:basis-3/4 md:basis-1/2 lg:basis-1/3">
+                  <div className="glass-card rounded-2xl sm:rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
+                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-3 sm:p-4 md:p-6 lg:p-8 h-full">
+                      <div className="relative overflow-hidden rounded-xl sm:rounded-2xl border border-white/20">
                         <img src="/lovable-uploads/c236ffc8-2278-4186-9519-0e3f01967165.png" alt="Depoimento WhatsApp - Aprovação 47/80" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                       </div>
@@ -613,10 +611,10 @@ const Index = () => {
                 </CarouselItem>
 
                 {/* Print WhatsApp 7 */}
-                <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div className="glass-card rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
-                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-6 sm:p-8 h-full">
-                      <div className="relative overflow-hidden rounded-2xl border border-white/20">
+                <CarouselItem className="pl-2 sm:pl-4 basis-4/5 sm:basis-3/4 md:basis-1/2 lg:basis-1/3">
+                  <div className="glass-card rounded-2xl sm:rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
+                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-3 sm:p-4 md:p-6 lg:p-8 h-full">
+                      <div className="relative overflow-hidden rounded-xl sm:rounded-2xl border border-white/20">
                         <img src="/lovable-uploads/75019e25-3dff-4e15-9c98-e2bb4699b5a8.png" alt="Depoimento WhatsApp - 44 pontos em duas semanas" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
                       </div>
@@ -625,8 +623,8 @@ const Index = () => {
                 </CarouselItem>
               </CarouselContent>
               
-              <CarouselPrevious className="hidden md:flex glass-card border-white/20 bg-white/10 hover:bg-white/20 text-white -left-12" />
-              <CarouselNext className="hidden md:flex glass-card border-white/20 bg-white/10 hover:bg-white/20 text-white -right-12" />
+              <CarouselPrevious className="hidden lg:flex glass-card border-white/20 bg-white/10 hover:bg-white/20 text-white -left-8 lg:-left-12" />
+              <CarouselNext className="hidden lg:flex glass-card border-white/20 bg-white/10 hover:bg-white/20 text-white -right-8 lg:-right-12" />
             </Carousel>
           </div>
 
@@ -643,7 +641,7 @@ const Index = () => {
       </section>
 
       {/* Seção de Decisão Final */}
-      <section className="py-32 px-4 bg-gradient-to-br from-navy-primary via-slate-900 to-navy-secondary relative overflow-hidden z-10">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 px-3 sm:px-4 bg-gradient-to-br from-navy-primary via-slate-900 to-navy-secondary relative overflow-hidden z-10">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-crimson-primary/10 via-navy-accent/20 to-rose-accent/5"></div>
           <div className="absolute inset-0 pattern-circuit opacity-10"></div>
@@ -660,59 +658,59 @@ const Index = () => {
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Lado Esquerdo - Conteúdo */}
-            <div className="space-y-8">
-              <div className="space-y-6">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black font-poppins text-white leading-tight">
+            <div className="space-y-6 sm:space-y-8">
+              <div className="space-y-4 sm:space-y-6">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black font-poppins text-white leading-tight">
                   <span className="block">Esta é a</span>
                   <span className="block text-gradient-premium">sua decisão</span>
                 </h2>
                 
-                <div className="w-24 h-1 bg-gradient-to-r from-crimson-primary to-rose-accent"></div>
+                <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-crimson-primary to-rose-accent"></div>
                 
-                <p className="text-lg sm:text-xl text-white/90 leading-relaxed max-w-lg">
+                <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed max-w-lg">
                   Você tem duas opções na sua frente. Escolha sabiamente.
                 </p>
               </div>
 
               {/* Opções de Decisão */}
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 {/* Opção 1 - Rejeitar */}
-                <div className="p-4 sm:p-6 md:p-8 bg-slate-900/50 border-l-4 border-red-500/50 rounded-r-2xl backdrop-blur-sm">
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-red-400 mb-4">Opção 1: Continuar sem as técnicas</h3>
-                  <ul className="space-y-3 text-white/80">
-                    <li className="flex items-start gap-3">
-                      <X className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm sm:text-base">Perder pontos preciosos por não saber as técnicas de chute</span>
+                <div className="p-3 sm:p-4 md:p-6 lg:p-8 bg-slate-900/50 border-l-4 border-red-500/50 rounded-r-xl sm:rounded-r-2xl backdrop-blur-sm">
+                  <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-red-400 mb-3 sm:mb-4">Opção 1: Continuar sem as técnicas</h3>
+                  <ul className="space-y-2 sm:space-y-3 text-white/80">
+                    <li className="flex items-start gap-2 sm:gap-3">
+                      <X className="w-4 h-4 sm:w-5 sm:h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                      <span className="text-xs sm:text-sm md:text-base">Perder pontos preciosos por não saber as técnicas de chute</span>
                     </li>
-                    <li className="flex items-start gap-3">
-                      <X className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm sm:text-base">Estudar por meses sem direcionamento estratégico</span>
+                    <li className="flex items-start gap-2 sm:gap-3">
+                      <X className="w-4 h-4 sm:w-5 sm:h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                      <span className="text-xs sm:text-sm md:text-base">Estudar por meses sem direcionamento estratégico</span>
                     </li>
-                    <li className="flex items-start gap-3">
-                      <X className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm sm:text-base">Reprovar por poucos pontos que poderiam ter sido ganhos</span>
+                    <li className="flex items-start gap-2 sm:gap-3">
+                      <X className="w-4 h-4 sm:w-5 sm:h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                      <span className="text-xs sm:text-sm md:text-base">Reprovar por poucos pontos que poderiam ter sido ganhos</span>
                     </li>
                   </ul>
-                  <p className="text-base sm:text-lg font-semibold text-red-400 mt-6">Custo: R$ 0 (mas pode custar sua aprovação)</p>
+                  <p className="text-sm sm:text-base md:text-lg font-semibold text-red-400 mt-4 sm:mt-6">Custo: R$ 0 (mas pode custar sua aprovação)</p>
                 </div>
 
                 {/* Opção 2 - Aceitar */}
-                <div className="p-4 sm:p-6 md:p-8 bg-gradient-to-br from-green-900/30 via-emerald-900/20 to-green-800/30 border-l-4 border-green-500 rounded-r-2xl backdrop-blur-sm">
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-green-400 mb-4">Opção 2: Dominar as técnicas de chute</h3>
-                  <ul className="space-y-3 text-white/90">
-                    <li className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm sm:text-base">Ganhar até 20 pontos extras aplicando as técnicas</span>
+                <div className="p-3 sm:p-4 md:p-6 lg:p-8 bg-gradient-to-br from-green-900/30 via-emerald-900/20 to-green-800/30 border-l-4 border-green-500 rounded-r-xl sm:rounded-r-2xl backdrop-blur-sm">
+                  <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-green-400 mb-3 sm:mb-4">Opção 2: Dominar as técnicas de chute</h3>
+                  <ul className="space-y-2 sm:space-y-3 text-white/90">
+                    <li className="flex items-start gap-2 sm:gap-3">
+                      <Check className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span className="text-xs sm:text-sm md:text-base">Ganhar até 20 pontos extras aplicando as técnicas</span>
                     </li>
-                    <li className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm sm:text-base">Estudar com estratégia e direcionamento</span>
+                    <li className="flex items-start gap-2 sm:gap-3">
+                      <Check className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span className="text-xs sm:text-sm md:text-base">Estudar com estratégia e direcionamento</span>
                     </li>
-                    <li className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm sm:text-base">Aumentar drasticamente suas chances de aprovação</span>
+                    <li className="flex items-start gap-2 sm:gap-3">
+                      <Check className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span className="text-xs sm:text-sm md:text-base">Aumentar drasticamente suas chances de aprovação</span>
                     </li>
                   </ul>
                   
@@ -721,79 +719,79 @@ const Index = () => {
             </div>
 
             {/* Lado Direito - Card de Preço */}
-            <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
-              <div className="max-w-lg w-full">
+            <div className="flex justify-center lg:justify-end mt-6 sm:mt-8 lg:mt-0">
+              <div className="max-w-sm sm:max-w-md lg:max-w-lg w-full">
                 <div className="relative">
                   {/* Borda externa brilhante */}
-                  <div className="absolute -inset-1 bg-gradient-to-r from-crimson-primary via-rose-accent to-crimson-secondary rounded-3xl blur-sm opacity-75 animate-pulse"></div>
+                  <div className="absolute -inset-1 bg-gradient-to-r from-crimson-primary via-rose-accent to-crimson-secondary rounded-2xl sm:rounded-3xl blur-sm opacity-75 animate-pulse"></div>
                   
                   {/* Card principal */}
                   <Card className="relative glass-card border-2 border-crimson-primary/40 cinematic-shadow hover-lift overflow-hidden bg-gradient-to-br from-white/95 via-white/90 to-white/95 backdrop-blur-xl">
                     {/* Background decorativo */}
                     <div className="absolute inset-0 bg-gradient-to-br from-crimson-primary/5 via-navy-accent/10 to-rose-accent/5"></div>
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-crimson-primary/10 to-transparent rounded-bl-full"></div>
-                    <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-rose-accent/10 to-transparent rounded-tr-full"></div>
+                    <div className="absolute top-0 right-0 w-20 h-20 sm:w-32 sm:h-32 bg-gradient-to-bl from-crimson-primary/10 to-transparent rounded-bl-full"></div>
+                    <div className="absolute bottom-0 left-0 w-16 h-16 sm:w-24 sm:h-24 bg-gradient-to-tr from-rose-accent/10 to-transparent rounded-tr-full"></div>
                     
-                    <CardContent className="relative z-10 p-6 sm:p-8 md:p-10 lg:p-12 text-center">
+                    <CardContent className="relative z-10 p-4 sm:p-6 md:p-8 lg:p-12 text-center">
                       {/* Header do card */}
-                      <div className="mb-8 sm:mb-10">
-                        <div className="inline-flex items-center justify-center px-3 sm:px-4 py-2 bg-gradient-to-r from-crimson-primary/10 to-rose-accent/10 rounded-full border border-crimson-primary/20 mb-4">
+                      <div className="mb-6 sm:mb-8 md:mb-10">
+                        <div className="inline-flex items-center justify-center px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 bg-gradient-to-r from-crimson-primary/10 to-rose-accent/10 rounded-full border border-crimson-primary/20 mb-3 sm:mb-4">
                           <div className="text-xs sm:text-sm text-navy-primary uppercase tracking-wide font-bold">Oferta Limitada</div>
                         </div>
                         
-                        <div className="space-y-2 mb-6">
-                          <div className="text-lg sm:text-xl md:text-2xl text-crimson-primary font-bold line-through opacity-70">
+                        <div className="space-y-1 sm:space-y-2 mb-4 sm:mb-6">
+                          <div className="text-base sm:text-lg md:text-xl lg:text-2xl text-crimson-primary font-bold line-through opacity-70">
                             De R$ 200
                           </div>
-                          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gradient-premium leading-none">
+                          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-gradient-premium leading-none">
                             12x de R$ 9,70
                           </div>
-                          <div className="text-lg sm:text-xl text-navy-primary/70 font-medium">
+                          <div className="text-sm sm:text-base md:text-lg lg:text-xl text-navy-primary/70 font-medium">
                             ou R$ 97 à vista
                           </div>
                         </div>
                         
-                        <Badge className="bg-gradient-to-r from-green-600 to-emerald-700 text-white px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-bold rounded-full shadow-lg animate-bounce">
+                        <Badge className="bg-gradient-to-r from-green-600 to-emerald-700 text-white px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3 text-xs sm:text-sm md:text-base font-bold rounded-full shadow-lg animate-bounce">
                           84% DE DESCONTO
                         </Badge>
                       </div>
 
                       {/* Lista de benefícios */}
-                      <div className="space-y-5 mb-10 text-left bg-gradient-to-r from-slate-50/50 to-blue-50/50 rounded-2xl p-6 border border-navy-primary/10">
-                        <div className="flex items-center gap-4 text-navy-primary">
-                          <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                            <Check className="w-5 h-5 text-white" />
+                      <div className="space-y-3 sm:space-y-4 md:space-y-5 mb-6 sm:mb-8 md:mb-10 text-left bg-gradient-to-r from-slate-50/50 to-blue-50/50 rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6 border border-navy-primary/10">
+                        <div className="flex items-center gap-2 sm:gap-3 md:gap-4 text-navy-primary">
+                          <div className="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <Check className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" />
                           </div>
-                          <span className="font-medium">15 Técnicas de Chute Escaneadas</span>
+                          <span className="font-medium text-xs sm:text-sm md:text-base">15 Técnicas de Chute Escaneadas</span>
                         </div>
-                        <div className="flex items-center gap-4 text-navy-primary">
-                          <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                            <Check className="w-5 h-5 text-white" />
+                        <div className="flex items-center gap-2 sm:gap-3 md:gap-4 text-navy-primary">
+                          <div className="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <Check className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" />
                           </div>
-                          <span className="font-medium">Agente de I.A. personalizado</span>
+                          <span className="font-medium text-xs sm:text-sm md:text-base">Agente de I.A. personalizado</span>
                         </div>
-                        <div className="flex items-center gap-4 text-navy-primary">
-                          <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                            <Check className="w-5 h-5 text-white" />
+                        <div className="flex items-center gap-2 sm:gap-3 md:gap-4 text-navy-primary">
+                          <div className="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <Check className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" />
                           </div>
-                          <span className="font-medium">Acesso imediato e vitalício</span>
+                          <span className="font-medium text-xs sm:text-sm md:text-base">Acesso imediato e vitalício</span>
                         </div>
-                        <div className="flex items-center gap-4 text-navy-primary">
-                          <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                            <Check className="w-5 h-5 text-white" />
+                        <div className="flex items-center gap-2 sm:gap-3 md:gap-4 text-navy-primary">
+                          <div className="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <Check className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" />
                           </div>
-                          <span className="font-medium">Garantia de resultados</span>
+                          <span className="font-medium text-xs sm:text-sm md:text-base">Garantia de resultados</span>
                         </div>
                       </div>
 
                       {/* Botão principal */}
-                      <Button size="lg" className="w-full bg-gradient-to-r from-green-600 to-emerald-700 hover:from-green-700 hover:to-emerald-800 text-white py-6 sm:py-8 text-lg sm:text-xl font-bold rounded-xl sm:rounded-2xl cinematic-shadow hover-lift border-0 group relative overflow-hidden transform hover:scale-105 transition-all duration-300">
+                      <Button size="lg" className="w-full bg-gradient-to-r from-green-600 to-emerald-700 hover:from-green-700 hover:to-emerald-800 text-white py-4 sm:py-6 md:py-8 text-sm sm:text-base md:text-lg lg:text-xl font-bold rounded-lg sm:rounded-xl md:rounded-2xl cinematic-shadow hover-lift border-0 group relative overflow-hidden transform hover:scale-105 transition-all duration-300 min-h-[48px] sm:min-h-[56px] md:min-h-[64px]">
                         <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <span className="relative z-10">QUERO SER APROVADO</span>
-                        <ArrowRight className="ml-2 sm:ml-3 w-5 h-5 sm:w-6 sm:h-6 relative z-10 group-hover:translate-x-2 transition-transform" />
+                        <ArrowRight className="ml-1 sm:ml-2 md:ml-3 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 relative z-10 group-hover:translate-x-2 transition-transform" />
                       </Button>
                       
-                      <p className="text-xs sm:text-sm text-navy-primary/70 mt-4 sm:mt-6 font-medium">
+                      <p className="text-xs sm:text-sm text-navy-primary/70 mt-3 sm:mt-4 md:mt-6 font-medium">
                         Acesso imediato após o pagamento
                       </p>
                     </CardContent>
@@ -881,15 +879,15 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 sm:py-16 px-4 bg-navy-primary text-white relative overflow-hidden z-10">
+      <footer className="py-8 sm:py-12 md:py-16 px-3 sm:px-4 bg-navy-primary text-white relative overflow-hidden z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-primary to-navy-secondary"></div>
         <div className="absolute inset-0 pattern-dots opacity-5"></div>
         <div className="max-w-5xl mx-auto text-center relative">
-          <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 font-poppins text-gradient">Técnicas de Chute Inteligente</h3>
-          <p className="text-white/80 mb-6 sm:mb-8 text-lg sm:text-xl">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 md:mb-6 font-poppins text-gradient">Técnicas de Chute Inteligente</h3>
+          <p className="text-white/80 mb-4 sm:mb-6 md:mb-8 text-base sm:text-lg md:text-xl">
             O método que vai transformar seus chutes em estratégia
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-12 text-white/60 font-medium">
+          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-6 md:gap-12 text-white/60 font-medium text-sm sm:text-base">
             <span className="hover:text-white transition-colors cursor-pointer hover-lift">Política de Privacidade</span>
             <span className="hover:text-white transition-colors cursor-pointer hover-lift">Termos de Uso</span>
             <span className="hover:text-white transition-colors cursor-pointer hover-lift">Suporte</span>
