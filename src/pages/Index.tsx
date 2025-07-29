@@ -706,7 +706,7 @@ const Index = () => {
                       <span className="text-sm sm:text-base">Aumentar drasticamente suas chances de aprovação</span>
                     </li>
                   </ul>
-                  <p className="text-base sm:text-lg font-semibold text-green-400 mt-6">Investimento: Apenas R$ 97</p>
+                  
                 </div>
               </div>
             </div>
