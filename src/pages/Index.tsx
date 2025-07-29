@@ -79,15 +79,7 @@ const Index = () => {
 
             {/* Mockup do Tablet - Direita */}
             <div className="order-1 lg:order-2 flex justify-center">
-              <div className="relative animate-scale-in w-full max-w-[1000px] xs:max-w-[1100px] sm:max-w-[1200px] md:max-w-[1300px] lg:max-w-[1100px] xl:max-w-[1200px] 2xl:max-w-[1400px]" style={{
-              animationDelay: '0.3s'
-            }}>
-                <img 
-                  src="/lovable-uploads/4f22e37c-6b9c-4d72-a8b0-dea639187b71.png" 
-                  alt="Técnicas de Chute Escaneadas para a OAB"
-                  className="w-full h-auto relative z-10 rounded-2xl sm:rounded-3xl shadow-2xl"
-                />
-              </div>
+              
             </div>
           </div>
         </div>
