@@ -33,7 +33,7 @@ const Index = () => {
               
               <div className="mb-4 sm:mb-6 lg:mb-8">
                 <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black font-poppins mb-3 sm:mb-4 lg:mb-6 leading-[1.1] sm:leading-tight">
-                  <span className="block text-white animate-fade-in">Descubra as 15 Técnicas</span>
+                  <span className="block text-white animate-fade-in">Descubra 15 técnicas</span>
                   <span className="block text-gradient-premium animate-slide-up font-bold mt-1 sm:mt-2" style={{
                   animationDelay: '0.2s'
                 }}>que garantem até 20 pontos extras</span>
