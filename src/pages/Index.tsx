@@ -154,8 +154,8 @@ title: "Técnica Certeira",
             accent: "crimson-primary"
           }, {
             icon: Target,
-            title: "Zero Ansiedade",
-            description: "Domine técnicas de aplicação rápida para usar mesmo sob pressão extrema, nos últimos minutos da prova.",
+title: "Chute Sem Pânico",
+            description: "Táticas rápidas para acertar sob pressão. Aprenda como aplicar as técnicas mesmo nos minutos finais da prova, quando o nervosismo bate e o tempo aperta. O chute deixa de ser desespero — vira estratégia.",
             gradient: "from-crimson-primary to-rose-accent",
             accent: "rose-accent"
           }, {
