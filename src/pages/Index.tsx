@@ -17,42 +17,41 @@ const Index = () => {
       </div>
 
       {/* Hero Section - Layout com Mockup */}
-      <section className="relative py-8 px-3 sm:py-12 md:py-16 lg:py-20 xl:py-24 z-10">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 xl:gap-16 items-center">
+      <section className="relative py-6 px-4 sm:py-8 md:py-12 lg:py-16 xl:py-20 2xl:py-24 z-10">
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 items-center">
             {/* Conteúdo Principal - Esquerda */}
-            <div className="order-2 lg:order-1 text-center lg:text-left">
+            <div className="order-2 lg:order-1 text-center lg:text-left space-y-4 sm:space-y-6 md:space-y-8">
               {/* Texto de Upsell */}
-              <div className="mb-6 sm:mb-8 animate-fade-in">
-                <div className="glass-card p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-crimson-primary/30 bg-gradient-to-r from-crimson-primary/10 to-rose-accent/10">
-                  <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gradient-premium font-bold text-center lg:text-left">
+              <div className="animate-fade-in">
+                <div className="glass-card p-3 sm:p-4 md:p-6 rounded-xl md:rounded-2xl border border-crimson-primary/30 bg-gradient-to-r from-crimson-primary/10 to-rose-accent/10">
+                  <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-gradient-premium font-bold text-center lg:text-left">
                     Agora que você já tem as 197 questões...
                   </p>
                 </div>
               </div>
               
-              <div className="mb-4 sm:mb-6 lg:mb-8">
-                <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black font-poppins mb-3 sm:mb-4 lg:mb-6 leading-[1.1] sm:leading-tight">
+              <div>
+                <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black font-poppins mb-3 sm:mb-4 md:mb-6 leading-[1.1] md:leading-tight">
                   <span className="block text-white animate-fade-in">Descubra 15 técnicas</span>
                   <span className="block text-gradient-premium animate-slide-up font-bold mt-1 sm:mt-2" style={{
                   animationDelay: '0.2s'
                 }}>para acertar questões mesmo SEM SABER a resposta</span>
                 </h1>
                 
-                <div className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-4 sm:mb-6 lg:mb-8 animate-scale-in" style={{
+                <div className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-4 sm:mb-6 animate-scale-in" style={{
                 animationDelay: '0.4s'
               }}>
                   <div className="h-px bg-gradient-to-r from-crimson-primary/50 to-transparent flex-1 max-w-12 sm:max-w-16"></div>
-                  
                   <div className="h-px bg-gradient-to-l from-crimson-primary/50 to-transparent flex-1 max-w-12 sm:max-w-16"></div>
                 </div>
               </div>
 
-              <div className="mb-6 sm:mb-8 lg:mb-10 animate-fade-in" style={{
+              <div className="animate-fade-in" style={{
               animationDelay: '0.6s'
             }}>
-                <div className="glass-card p-3 sm:p-4 md:p-6 lg:p-8 rounded-xl sm:rounded-2xl lg:rounded-3xl cinematic-shadow hover-glow border border-white/10">
-                  <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white leading-relaxed font-medium">
+                <div className="glass-card p-3 sm:p-4 md:p-6 lg:p-8 rounded-xl md:rounded-2xl lg:rounded-3xl cinematic-shadow hover-glow border border-white/10">
+                  <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white leading-relaxed font-medium">
                     <strong className="text-gradient-premium">Técnicas validadas</strong> que te ensinam como 
                     <strong className="text-gradient-premium"> acertar questões mesmo SEM SABER a resposta</strong> e garantir até +20 pontos na sua nota final.
                   </p>
@@ -63,7 +62,7 @@ const Index = () => {
               <div className="animate-fade-in" style={{
               animationDelay: '0.8s'
             }}>
-                <Button size="lg" className="w-full sm:w-full lg:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 lg:px-8 rounded-xl sm:rounded-2xl text-sm sm:text-base lg:text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50 min-h-[48px] sm:min-h-[56px]">
+                <Button size="lg" className="w-full lg:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 lg:px-8 rounded-xl md:rounded-2xl text-sm sm:text-base lg:text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50 min-h-[48px] sm:min-h-[56px]">
                   <span className="flex items-center justify-center gap-2">
                     Quero Garantir Minha Aprovação
                     <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -78,11 +77,15 @@ const Index = () => {
             </div>
 
             {/* Mockup do Tablet - Direita */}
-            <div className="order-1 lg:order-2 flex justify-center">
-              <div className="w-full max-w-2xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl animate-fade-in" style={{
+            <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+              <div className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl animate-fade-in" style={{
               animationDelay: '1s'
             }}>
-                <img src="/lovable-uploads/15aeca00-37b6-4b5a-8ec2-7bb9cd23352e.png" alt="Mockup das Técnicas de Chute Escaneadas para a OAB" className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300" />
+                <img 
+                  src="/lovable-uploads/15aeca00-37b6-4b5a-8ec2-7bb9cd23352e.png" 
+                  alt="Mockup das Técnicas de Chute Escaneadas para a OAB" 
+                  className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300" 
+                />
               </div>
             </div>
           </div>
@@ -90,18 +93,18 @@ const Index = () => {
       </section>
 
       {/* Seção Problema Escondido */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-3 sm:px-4 bg-gradient-to-br from-navy-secondary/60 to-crimson-primary/20 relative z-10">
+      <section className="py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 px-4 bg-gradient-to-br from-navy-secondary/60 to-crimson-primary/20 relative z-10">
         <div className="absolute inset-0 pattern-dots opacity-10"></div>
-        <div className="max-w-5xl mx-auto text-center relative">
-          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-poppins mb-6 sm:mb-8 text-white leading-tight">
+        <div className="container mx-auto max-w-5xl text-center relative">
+          <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black font-poppins mb-6 sm:mb-8 md:mb-10 text-white leading-tight">
             Você estuda muito, mas ainda <span className="text-crimson-primary">perde pontos bobos</span>
           </h2>
           
-          <div className="glass-card p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl cinematic-shadow hover-glow mb-6 sm:mb-8">
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white leading-relaxed font-medium mb-4 sm:mb-6">
+          <div className="glass-card p-4 sm:p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-3xl cinematic-shadow hover-glow mb-6 sm:mb-8">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white leading-relaxed font-medium mb-4 sm:mb-6">
               <strong className="text-crimson-primary">A realidade cruel:</strong> Não importa quanto você estude, sempre vão existir questões que você simplesmente não consegue resolver.
             </p>
-            <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white/90 leading-relaxed">
               E é justamente nessas questões "impossíveis" que a maioria dos candidatos perde pontos preciosos... 
               <strong className="text-crimson-primary">pontos que poderiam garantir a aprovação.</strong>
             </p>
@@ -110,7 +113,7 @@ const Index = () => {
       </section>
 
       {/* Seção Apresentação do Produto */}
-      <section className="py-24 px-4 relative z-10 overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 px-4 relative z-10 overflow-hidden">
         {/* Background Atmosférico Avançado */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-navy-primary/90 via-navy-secondary/70 to-navy-accent/50"></div>
@@ -119,27 +122,27 @@ const Index = () => {
           <div className="absolute bottom-1/3 right-1/5 w-80 h-80 bg-gradient-to-tl from-rose-accent/25 to-crimson-secondary/15 rounded-full blur-3xl animate-breathing"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto relative">
+        <div className="container mx-auto max-w-7xl relative">
           {/* Título com efeito holográfico */}
-          <div className="text-center mb-20 relative">
+          <div className="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24 relative">
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-3/4 h-px bg-gradient-to-r from-transparent via-crimson-primary/50 to-transparent"></div>
             </div>
             
-            <div className="relative bg-navy-primary/50 backdrop-blur-md px-8 py-4 inline-block rounded-2xl border border-white/10">
-              <h2 className="text-4xl md:text-6xl font-black font-poppins mb-8 text-white relative">
+            <div className="relative bg-navy-primary/50 backdrop-blur-md px-4 sm:px-6 md:px-8 py-3 sm:py-4 inline-block rounded-xl md:rounded-2xl border border-white/10">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black font-poppins mb-4 sm:mb-6 md:mb-8 text-white relative">
                 O método que 
-                <span className="text-gradient-premium block mt-2 animate-gradient-shift relative">
+                <span className="text-gradient-premium block mt-1 sm:mt-2 animate-gradient-shift relative">
                   transforma chutes em estratégia
                   <div className="absolute -inset-1 bg-gradient-to-r from-crimson-primary/20 to-rose-accent/20 blur-lg -z-10 animate-pulse-glow"></div>
                 </span>
               </h2>
             </div>
             
-            <div className="max-w-4xl mx-auto mt-8">
-              <div className="glass-card p-6 rounded-2xl border-2 border-crimson-primary/30 relative overflow-hidden">
+            <div className="max-w-4xl mx-auto mt-6 sm:mt-8">
+              <div className="glass-card p-4 sm:p-6 rounded-xl md:rounded-2xl border-2 border-crimson-primary/30 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-crimson-primary/5 via-transparent to-rose-accent/5"></div>
-                <p className="text-xl text-white/90 font-medium leading-relaxed relative z-10">
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 font-medium leading-relaxed relative z-10">
                   Pare de depender da sorte. Aprenda as <strong className="text-gradient-premium">15 técnicas validadas</strong> que os aprovados usam para acertar questões que nunca viram antes:
                 </p>
               </div>
@@ -147,7 +150,7 @@ const Index = () => {
           </div>
 
           {/* Cards com Design Hexagonal e Efeitos Holográficos */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-10 mb-12 sm:mb-16 md:mb-20">
             {[{
             icon: Brain,
             title: "Método Anti-Erro",
