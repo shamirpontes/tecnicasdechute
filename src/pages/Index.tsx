@@ -164,8 +164,8 @@ const Index = () => {
             accent: "rose-accent"
           }, {
             icon: Zap,
-            title: "Ciência dos Dados",
-            description: "Estratégias baseadas em análise estatística real das provas anteriores da OAB - não é achismo, é ciência.",
+            title: "Chute com Base em Dados",
+            description: "Nada de achismo: aqui é análise real. Cada técnica foi criada com base em padrões estatísticos reais das provas anteriores da OAB. Você vai chutar com base no comportamento da banca — e não no \"feeling\".",
             gradient: "from-rose-accent to-crimson-secondary",
             accent: "navy-accent"
           }].map((feature, index) => <Card key={index} className="group relative overflow-hidden border-0 bg-transparent animate-scale-in" style={{
