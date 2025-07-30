@@ -80,11 +80,7 @@ const Index = () => {
               <div className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl animate-fade-in" style={{
               animationDelay: '1s'
             }}>
-                <img 
-                  src="/lovable-uploads/15aeca00-37b6-4b5a-8ec2-7bb9cd23352e.png" 
-                  alt="Mockup das Técnicas de Chute Escaneadas para a OAB" 
-                  className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300" 
-                />
+                <img src="/lovable-uploads/15aeca00-37b6-4b5a-8ec2-7bb9cd23352e.png" alt="Mockup das Técnicas de Chute Escaneadas para a OAB" className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300" />
               </div>
             </div>
           </div>
@@ -142,30 +138,30 @@ const Index = () => {
               <div className="glass-card p-4 sm:p-6 rounded-xl md:rounded-2xl border-2 border-crimson-primary/30 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-crimson-primary/5 via-transparent to-rose-accent/5"></div>
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 font-medium leading-relaxed relative z-10">
-                  Aprenda as <strong className="text-gradient-premium">15 técnicas validadas</strong> para acertar questões que você nunca viu antes:
+                  Pare de depender da sorte. Aprenda as <strong className="text-gradient-premium">15 técnicas validadas</strong> que os aprovados usam para acertar questões que nunca viram antes:
                 </p>
               </div>
             </div>
           </div>
 
           {/* Cards com Design Hexagonal e Efeitos Holográficos */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-10 mb-12 sm:mb-16 md:mb-20 items-stretch">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-10 mb-12 sm:mb-16 md:mb-20">
             {[{
             icon: Brain,
-            title: "Técnica Certeira",
-            description: "15 estratégias práticas para transformar incertezas em acertos. Descubra padrões ocultos nas questões da FGV, elimine alternativas erradas com confiança e aumente sua pontuação mesmo quando não souber a resposta exata.",
+            title: "Método Anti-Erro",
+            description: "15 técnicas comprovadas que identificam padrões da FGV, eliminam pegadinhas e transformam chutes em acertos estratégicos.",
             gradient: "from-navy-accent to-crimson-primary",
             accent: "crimson-primary"
           }, {
             icon: Target,
-            title: "Chute Sem Pânico",
-            description: "Táticas rápidas para acertar sob pressão. Aprenda como aplicar as técnicas mesmo nos minutos finais da prova, quando o nervosismo bate e o tempo aperta. O chute deixa de ser desespero — vira estratégia.",
+            title: "Zero Ansiedade",
+            description: "Domine técnicas de aplicação rápida para usar mesmo sob pressão extrema, nos últimos minutos da prova.",
             gradient: "from-crimson-primary to-rose-accent",
             accent: "rose-accent"
           }, {
             icon: Zap,
-            title: "Chute com Base em Dados",
-            description: "Nada de achismo: aqui é análise real. Cada técnica foi criada com base em padrões estatísticos reais das provas anteriores da OAB. Você vai chutar com base no comportamento da banca — e não no \"feeling\".",
+            title: "Ciência dos Dados",
+            description: "Estratégias baseadas em análise estatística real das provas anteriores da OAB - não é achismo, é ciência.",
             gradient: "from-rose-accent to-crimson-secondary",
             accent: "navy-accent"
           }].map((feature, index) => <Card key={index} className="group relative overflow-hidden border-0 bg-transparent animate-scale-in" style={{
@@ -181,7 +177,7 @@ const Index = () => {
               
               <CardContent className="relative p-4 sm:p-6 lg:p-8 text-center h-full flex flex-col justify-between">
                 {/* Ícone com efeito orbital */}
-                <div className="relative mb-2 sm:mb-3 lg:mb-4">
+                <div className="relative mb-4 sm:mb-6 lg:mb-8">
                   <div className={`w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-gradient-to-br ${feature.gradient} rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-all duration-300 relative z-10`}>
                     <feature.icon className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-white" />
                   </div>
@@ -513,7 +509,7 @@ const Index = () => {
               A prova está nos <span className="text-gradient-premium">resultados reais</span>
             </h2>
             <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto">
-              Milhares de alunos já foram aprovados usando os materiais de estudo Escaneando OAB da professora Melissa. Veja as mensagens que recebemos:
+              Centenas de alunos já foram aprovados usando essas técnicas. <strong className="text-green-400">Veja as mensagens que recebemos:</strong>
             </p>
           </div>
           
@@ -727,9 +723,7 @@ const Index = () => {
                         </div>
                         
                         <div className="space-y-1 sm:space-y-2 mb-4 sm:mb-6">
-                          <div className="text-base sm:text-lg md:text-xl lg:text-2xl text-crimson-primary font-bold line-through opacity-70">
-                            De R$ 200
-                          </div>
+                          <div className="text-base sm:text-lg md:text-xl lg:text-2xl text-crimson-primary font-bold line-through opacity-70">De R$ 700</div>
                           <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-gradient-premium leading-none">
                             12x de R$ 9,70
                           </div>
