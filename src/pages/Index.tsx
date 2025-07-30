@@ -138,7 +138,7 @@ const Index = () => {
               <div className="glass-card p-4 sm:p-6 rounded-xl md:rounded-2xl border-2 border-crimson-primary/30 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-crimson-primary/5 via-transparent to-rose-accent/5"></div>
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 font-medium leading-relaxed relative z-10">
-                  Pare de depender da sorte. Aprenda as <strong className="text-gradient-premium">15 técnicas validadas</strong> que os aprovados usam para acertar questões que nunca viram antes:
+                  Aprenda as 15 ténicas validadas para acertar questões que você nunca viu antes:
                 </p>
               </div>
             </div>
