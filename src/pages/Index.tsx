@@ -509,7 +509,7 @@ title: "Chute com Base em Dados",
               A prova está nos <span className="text-gradient-premium">resultados reais</span>
             </h2>
             <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto">
-              Milhares de alunos já foram aprovados usando os materiais de estudo Escaneando OAB da professora Melissa. <strong className="text-green-400">Veja as mensagens que recebemos:</strong>
+              Milhares de alunos já foram aprovados usando os materiais de estudo do método Escaneando OAB da professora Melissa. <strong className="text-green-400">Veja as mensagens que recebemos:</strong>
             </p>
           </div>
           
