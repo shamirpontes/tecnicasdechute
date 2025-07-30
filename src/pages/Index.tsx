@@ -752,22 +752,14 @@ Acesso imediato e atualizações por 1 ano
                           <span className="font-medium text-xs sm:text-sm md:text-base">Acesso imediato e atualizações por 1 ano</span>
                         </div>
                         <div className="flex items-center gap-2 sm:gap-3 md:gap-4 text-navy-primary">
-                          <div className="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-green-500 rounded-full flex items-center justify-center">
-                            <Check className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" />
-                          </div>
-                          <span className="font-medium text-xs sm:text-sm md:text-base">Agente de I.A. personalizado</span>
+                          
+                          
                         </div>
                         <div className="flex items-center gap-2 sm:gap-3 md:gap-4 text-navy-primary">
                           <div className="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-green-500 rounded-full flex items-center justify-center">
                             <Check className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" />
                           </div>
-                          <span className="font-medium text-xs sm:text-sm md:text-base">Até +20 pontos extras na nota final</span>
-                        </div>
-                        <div className="flex items-center gap-2 sm:gap-3 md:gap-4 text-navy-primary">
-                          <div className="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-green-500 rounded-full flex items-center justify-center">
-                            <Check className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" />
-                          </div>
-                          <span className="font-medium text-xs sm:text-sm md:text-base">Garantia de resultados</span>
+                          <span className="font-medium text-xs sm:text-sm md:text-base">Até +20 pontos extGarantia de resultados</span>
                         </div>
                       </div>
 
