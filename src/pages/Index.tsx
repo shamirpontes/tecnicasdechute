@@ -148,8 +148,8 @@ const Index = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-10 mb-12 sm:mb-16 md:mb-20">
             {[{
             icon: Brain,
-            title: "Método Anti-Erro",
-            description: "15 técnicas comprovadas que identificam padrões da FGV, eliminam pegadinhas e transformam chutes em acertos estratégicos.",
+title: "Técnica Certeira",
+            description: "15 estratégias práticas para transformar incertezas em acertos. Descubra padrões ocultos nas questões da FGV, elimine alternativas erradas com confiança e aumente sua pontuação mesmo quando não souber a resposta exata.",
             gradient: "from-navy-accent to-crimson-primary",
             accent: "crimson-primary"
           }, {
