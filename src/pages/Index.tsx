@@ -52,8 +52,7 @@ const Index = () => {
             }}>
                 <div className="glass-card p-3 sm:p-4 md:p-6 lg:p-8 rounded-xl md:rounded-2xl lg:rounded-3xl cinematic-shadow hover-glow border border-white/10">
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white leading-relaxed font-medium">
-                    <strong className="text-gradient-premium">Técnicas validadas</strong> que te ensinam como 
-                    <strong className="text-gradient-premium"> acertar questões mesmo SEM SABER a resposta</strong> e garantir até +20 pontos na sua nota final.
+                    <strong className="text-gradient-premium">Técnicas validadas que te ajudam a garantir até + 20 pontos na sua nota final</strong>
                   </p>
                 </div>
               </div>
