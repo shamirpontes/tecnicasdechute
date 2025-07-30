@@ -181,7 +181,7 @@ const Index = () => {
               
               <CardContent className="relative p-4 sm:p-6 lg:p-8 text-center h-full flex flex-col justify-between">
                 {/* Ícone com efeito orbital */}
-                <div className="relative mb-4 sm:mb-6 lg:mb-8">
+                <div className="relative mb-2 sm:mb-3 lg:mb-4">
                   <div className={`w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-gradient-to-br ${feature.gradient} rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-all duration-300 relative z-10`}>
                     <feature.icon className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-white" />
                   </div>
