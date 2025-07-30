@@ -732,8 +732,7 @@ const Index = () => {
                           </div>
                         </div>
                         
-                        <Badge className="bg-gradient-to-r from-green-600 to-emerald-700 text-white px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3 text-xs sm:text-sm md:text-base font-bold rounded-full shadow-lg animate-bounce">15 Técnicas de Chute Escaneadas
-Acesso imediato e atualizações por 1 ano
+                        <Badge className="bg-gradient-to-r from-green-600 to-emerald-700 text-white px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3 text-xs sm:text-sm md:text-base font-bold rounded-full shadow-lg animate-bounce">+80% de desconto
                       </Badge>
                       </div>
 
