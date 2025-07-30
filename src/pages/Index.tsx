@@ -148,19 +148,19 @@ const Index = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-10 mb-12 sm:mb-16 md:mb-20">
             {[{
             icon: Brain,
-title: "Técnica Certeira",
+            title: "Técnica Certeira",
             description: "15 estratégias práticas para transformar incertezas em acertos. Descubra padrões ocultos nas questões da FGV, elimine alternativas erradas com confiança e aumente sua pontuação mesmo quando não souber a resposta exata.",
             gradient: "from-navy-accent to-crimson-primary",
             accent: "crimson-primary"
           }, {
             icon: Target,
-title: "Chute Sem Pânico",
+            title: "Chute Sem Pânico",
             description: "Táticas rápidas para acertar sob pressão. Aprenda como aplicar as técnicas mesmo nos minutos finais da prova, quando o nervosismo bate e o tempo aperta. O chute deixa de ser desespero — vira estratégia.",
             gradient: "from-crimson-primary to-rose-accent",
             accent: "rose-accent"
           }, {
             icon: Zap,
-title: "Chute com Base em Dados",
+            title: "Chute com Base em Dados",
             description: "Nada de achismo: aqui é análise real. Cada técnica foi criada com base em padrões estatísticos reais das provas anteriores da OAB. Você vai chutar com base no comportamento da banca — e não no \"feeling\".",
             gradient: "from-rose-accent to-crimson-secondary",
             accent: "navy-accent"
@@ -491,7 +491,7 @@ title: "Chute com Base em Dados",
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                   </div>
                   <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed">
-                    <strong className="text-green-400 block mb-2">Apenas com essas técnicas é possível aumentar até 20 pontos na reta final.</strong>
+                    <strong className="text-green-400 block mb-2">Apenas com essas técnicas é possível aumentar até 20 pontos na nota final.</strong>
                     <strong className="text-gradient-premium block">Porque o chute deixa de ser sorte e vira estratégia.</strong>
                   </p>
                 </div>
