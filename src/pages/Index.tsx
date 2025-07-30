@@ -216,9 +216,7 @@ const Index = () => {
                   <h3 className="text-4xl sm:text-5xl md:text-6xl font-black font-poppins text-white mb-4">
                     <span className="text-gradient-premium">SUPER BÔNUS</span>
                   </h3>
-                  <p className="text-lg sm:text-xl text-white/80 font-medium">
-                    O que realmente multiplica o valor do seu investimento
-                  </p>
+                  
                 </div>
               </div>
               
