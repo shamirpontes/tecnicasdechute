@@ -80,7 +80,7 @@ const Index = () => {
               <div className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl animate-fade-in" style={{
               animationDelay: '1s'
             }}>
-                <img src="/lovable-uploads/15aeca00-37b6-4b5a-8ec2-7bb9cd23352e.png" alt="Mockup das Técnicas de Chute Escaneadas para a OAB" className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300" />
+                <img src="/lovable-uploads/16fddfc6-e1db-4373-b368-e7b1210a4df8.png" alt="Mockup das Técnicas de Chute Escaneadas para a OAB" className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300" />
               </div>
             </div>
           </div>
