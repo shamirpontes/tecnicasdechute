@@ -368,7 +368,7 @@ const Index = () => {
           {/* CTA Estratégico */}
           <div className="mt-16 text-center">
             <div className="max-w-2xl mx-auto">
-              <Button size="lg" className="w-full lg:w-auto bg-gradient-to-r from-crimson-primary to-rose-accent hover:from-crimson-secondary hover:to-crimson-primary text-white font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-crimson-primary/50 min-h-[64px]">
+              <Button size="lg" className="w-full lg:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50 min-h-[64px]">
                 <span className="flex items-center justify-center gap-3">
                   QUERO TODOS OS BÔNUS + AS TÉCNICAS
                   <ArrowRight className="w-5 h-5" />
