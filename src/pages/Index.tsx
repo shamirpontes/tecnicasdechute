@@ -61,7 +61,11 @@ const Index = () => {
               <div className="animate-fade-in" style={{
               animationDelay: '0.8s'
             }}>
-                <Button size="lg" className="w-full lg:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 lg:px-8 rounded-xl md:rounded-2xl text-sm sm:text-base lg:text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50 min-h-[48px] sm:min-h-[56px]">
+                <Button 
+                  size="lg" 
+                  className="w-full lg:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 lg:px-8 rounded-xl md:rounded-2xl text-sm sm:text-base lg:text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50 min-h-[48px] sm:min-h-[56px]"
+                  onClick={() => window.open('https://sun.eduzz.com/7WXQ8J429A?p=01', '_blank')}
+                >
                   <span className="flex items-center justify-center gap-2">
                     QUERO AS TÉCNICAS AGORA
                     <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -368,7 +372,11 @@ const Index = () => {
           {/* CTA Estratégico */}
           <div className="mt-16 text-center">
             <div className="max-w-2xl mx-auto">
-              <Button size="lg" className="w-full lg:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50 min-h-[64px]">
+              <Button 
+                size="lg" 
+                className="w-full lg:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50 min-h-[64px]"
+                onClick={() => window.open('https://sun.eduzz.com/7WXQ8J429A?p=01', '_blank')}
+              >
                 <span className="flex items-center justify-center gap-3">
                   QUERO TODOS OS BÔNUS + AS TÉCNICAS
                   <ArrowRight className="w-5 h-5" />
@@ -772,7 +780,11 @@ const Index = () => {
                       </div>
 
                       {/* Botão principal */}
-                      <Button size="lg" className="w-full bg-gradient-to-r from-green-600 to-emerald-700 hover:from-green-700 hover:to-emerald-800 text-white py-4 sm:py-6 md:py-8 text-sm sm:text-base md:text-lg lg:text-xl font-bold rounded-lg sm:rounded-xl md:rounded-2xl cinematic-shadow hover-lift border-0 group relative overflow-hidden transform hover:scale-105 transition-all duration-300 min-h-[48px] sm:min-h-[56px] md:min-h-[64px]">
+                      <Button 
+                        size="lg" 
+                        className="w-full bg-gradient-to-r from-green-600 to-emerald-700 hover:from-green-700 hover:to-emerald-800 text-white py-4 sm:py-6 md:py-8 text-sm sm:text-base md:text-lg lg:text-xl font-bold rounded-lg sm:rounded-xl md:rounded-2xl cinematic-shadow hover-lift border-0 group relative overflow-hidden transform hover:scale-105 transition-all duration-300 min-h-[48px] sm:min-h-[56px] md:min-h-[64px]"
+                        onClick={() => window.open('https://sun.eduzz.com/7WXQ8J429A?p=01', '_blank')}
+                      >
                         <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <span className="relative z-10">QUERO SER APROVADO</span>
                         <ArrowRight className="ml-1 sm:ml-2 md:ml-3 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 relative z-10 group-hover:translate-x-2 transition-transform" />
