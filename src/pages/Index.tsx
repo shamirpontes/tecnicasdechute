@@ -368,23 +368,7 @@ const Index = () => {
           {/* CTA Estratégico */}
           <div className="mt-16 text-center">
             <div className="max-w-2xl mx-auto">
-              <div className="glass-card p-8 rounded-3xl border-2 border-crimson-primary/30 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-crimson-primary/10 to-rose-accent/10"></div>
-                <div className="relative z-10">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-4">
-                    Não deixe sua aprovação <span className="text-crimson-primary">nas mãos do acaso</span>
-                  </h3>
-                  <p className="text-lg text-white/90 mb-8 leading-relaxed">
-                    Cada segundo que você hesita é uma vantagem que você dá para outros candidatos
-                  </p>
-                  <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-green-600 to-emerald-700 hover:from-green-700 hover:to-emerald-800 text-white font-bold py-6 px-12 rounded-2xl text-xl transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50 min-h-[64px]">
-                    <span className="flex items-center justify-center gap-3">
-                      GARANTIR MINHA VAGA AGORA
-                      <ArrowRight className="w-6 h-6" />
-                    </span>
-                  </Button>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
