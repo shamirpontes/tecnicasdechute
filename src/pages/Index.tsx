@@ -348,11 +348,14 @@ const Index = () => {
               {/* Total Value Card - Design Clean */}
               <div className="mt-16 max-w-md mx-auto">
                 <div className="glass-card rounded-3xl border-2 border-green-500/30 overflow-hidden">
-                    <div className="bg-gradient-to-br from-green-500/10 to-emerald-600/10 p-8 text-center">
-                      <div className="mb-4">
-                        <div className="text-lg text-white/80 font-medium mb-2">
-                          Material de Técnicas de Chute
-                        </div>
+                  <div className="bg-gradient-to-br from-green-500/10 to-emerald-600/10 p-8 text-center">
+                    <div className="mb-6">
+                      <img src="/lovable-uploads/74339801-04ae-4f60-af07-f4370da59b3c.png" alt="Técnicas de Chute Escaneadas para a OAB" className="w-32 h-auto mx-auto mb-4 rounded-lg shadow-lg" />
+                    </div>
+                    <div className="mb-4">
+                      <div className="text-lg text-white/80 font-medium mb-2">
+                        Material de Técnicas de Chute
+                      </div>
                         <div className="flex items-center justify-center gap-6 mb-4">
                           <span className="text-2xl text-white/60 line-through">R$ 200</span>
                           <span className="text-4xl font-black text-green-400">R$ 97</span>
