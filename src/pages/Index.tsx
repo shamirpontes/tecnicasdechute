@@ -403,10 +403,7 @@ const Index = () => {
         
         <div className="max-w-6xl mx-auto relative">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-crimson-primary/20 to-rose-accent/20 rounded-full border border-crimson-primary/30 mb-8">
-              <AlertCircle className="w-5 h-5 text-crimson-primary mr-2" />
-              <span className="text-crimson-primary font-bold uppercase tracking-wide text-sm">A Verdade Que Ninguém Conta</span>
-            </div>
+            
             
             <h2 className="text-4xl md:text-6xl font-black font-poppins mb-8 text-white leading-tight">
               Vamos encarar o que <br />
