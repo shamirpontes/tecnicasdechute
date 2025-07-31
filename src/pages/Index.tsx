@@ -63,7 +63,7 @@ const Index = () => {
             }}>
                 <Button size="lg" className="w-full lg:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 lg:px-8 rounded-xl md:rounded-2xl text-sm sm:text-base lg:text-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/50 min-h-[48px] sm:min-h-[56px]">
                   <span className="flex items-center justify-center gap-2">
-                    Quero Garantir Minha Aprovação
+                    QUERO AS TÉCNICAS AGORA
                     <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
                   </span>
                 </Button>
