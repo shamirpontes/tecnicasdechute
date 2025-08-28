@@ -619,6 +619,18 @@ const Index = () => {
                     </div>
                   </div>
                 </CarouselItem>
+
+                {/* Print WhatsApp 8 - Aprovação 1ª fase OAB com técnicas do Chico */}
+                <CarouselItem className="pl-2 sm:pl-4 basis-4/5 sm:basis-3/4 md:basis-1/2 lg:basis-1/3">
+                  <div className="glass-card rounded-2xl sm:rounded-3xl overflow-hidden cinematic-shadow hover-lift group h-full">
+                    <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-3 sm:p-4 md:p-6 lg:p-8 h-full">
+                      <div className="relative overflow-hidden rounded-xl sm:rounded-2xl border border-white/20">
+                        <img src="/lovable-uploads/bbf32436-cb5c-4a66-a6be-4f30ba4f32c6.png" alt="Depoimento WhatsApp - Aprovação 1ª fase OAB com técnicas do Chico" className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
               </CarouselContent>
               
               <CarouselPrevious className="hidden lg:flex glass-card border-white/20 bg-white/10 hover:bg-white/20 text-white -left-8 lg:-left-12" />
